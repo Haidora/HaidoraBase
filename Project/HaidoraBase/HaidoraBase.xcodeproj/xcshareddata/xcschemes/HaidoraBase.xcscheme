@@ -20,6 +20,20 @@
                ReferencedContainer = "container:HaidoraBase.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AB76226D197DF52D0049215B"
+               BuildableName = "HaidoraBaseTests.xctest"
+               BlueprintName = "HaidoraBaseTests"
+               ReferencedContainer = "container:HaidoraBase.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
