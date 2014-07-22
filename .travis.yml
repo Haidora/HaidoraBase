@@ -1,6 +1,7 @@
 language: objective-c
 xcode_workspace: HaidoraBase.xcworkspace
 xcode_scheme: HaidoraBase
+xcode_sdk: iphonesimulator
 install: 
   - cd Project/HaidoraBase/
   - pod install
