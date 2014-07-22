@@ -1,5 +1,5 @@
 language: objective-c
-xcode_project: Project/HaidoraBase/HaidoraBase.xcworkspace
+xcode_project: HaidoraBase.xcworkspace
 xcode_scheme: HaidoraBase
 install: 
   - cd Project/HaidoraBase/
