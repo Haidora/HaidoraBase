@@ -7,6 +7,7 @@
 //
 
 #import "UIViewController+HABBase.h"
+#import "UIViewController+HABBarButton.h"
 #import <objc/runtime.h>
 #import <JRSwizzle.h>
 #import <NUIRenderer.h>
