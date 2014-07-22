@@ -5,3 +5,6 @@ xcode_sdk: iphonesimulator
 install: 
   - cd Project/HaidoraBase/
   - pod install
+script:
+  - xctool -workspace HaidoraBase.xcworkspace -scheme HaidoraBase -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xctool test -workspace HaidoraBase.xcworkspace -scheme HaidoraBaseTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
