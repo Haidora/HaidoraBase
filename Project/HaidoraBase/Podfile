@@ -1,0 +1,17 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, "6.0"
+
+target "HaidoraBase" do
+
+pod 'MKNetworkKit', '~> 0.87'
+pod 'JRSwizzle', '~> 1.0'
+pod 'NUI', '~> 0.5.4'
+pod 'RETableViewManager', '~> 1.5.11'
+pod 'MBProgressHUD', '~> 0.8'
+
+end
+
+target "HaidoraBaseTests" do
+
+end
+

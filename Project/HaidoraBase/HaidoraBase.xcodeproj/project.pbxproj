@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB150AEA197E298E006E99D4 /* HaidoraBase.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AB150AE9197E298E006E99D4 /* HaidoraBase.bundle */; };
+		AB76224E197DF52C0049215B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB76224D197DF52C0049215B /* Foundation.framework */; };
+		AB762250197DF52C0049215B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB76224F197DF52C0049215B /* CoreGraphics.framework */; };
+		AB762252197DF52C0049215B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB762251197DF52C0049215B /* UIKit.framework */; };
+		AB762258197DF52C0049215B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB762256197DF52C0049215B /* InfoPlist.strings */; };
+		AB76225A197DF52C0049215B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB762259197DF52C0049215B /* main.m */; };
+		AB76225E197DF52C0049215B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB76225D197DF52C0049215B /* AppDelegate.m */; };
+		AB762261197DF52C0049215B /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB76225F197DF52C0049215B /* Main_iPhone.storyboard */; };
+		AB762264197DF52C0049215B /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB762262197DF52C0049215B /* Main_iPad.storyboard */; };
+		AB762267197DF52C0049215B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB762266197DF52C0049215B /* ViewController.m */; };
+		AB762269197DF52C0049215B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB762268197DF52C0049215B /* Images.xcassets */; };
+		AB762270197DF52D0049215B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB76226F197DF52D0049215B /* XCTest.framework */; };
+		AB762271197DF52D0049215B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB76224D197DF52C0049215B /* Foundation.framework */; };
+		AB762272197DF52D0049215B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB762251197DF52C0049215B /* UIKit.framework */; };
+		AB76227A197DF52D0049215B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB762278197DF52D0049215B /* InfoPlist.strings */; };
+		AB76227C197DF52D0049215B /* HaidoraBaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB76227B197DF52D0049215B /* HaidoraBaseTests.m */; };
+		AB762296197DF9970049215B /* HABNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = AB762295197DF9970049215B /* HABNetworkEngine.m */; };
+		AB762299197DF9C90049215B /* HABNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AB762298197DF9C90049215B /* HABNetworkOperation.m */; };
+		AB76229C197E03A50049215B /* HABTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB76229B197E03A50049215B /* HABTableViewCell.m */; };
+		AB7622A2197E073E0049215B /* UIViewController+HABBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7622A1197E073E0049215B /* UIViewController+HABBarButton.m */; };
+		ABB35816197E0A9500F19C58 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB35815197E0A9500F19C58 /* BaseViewController.m */; };
+		ABB3581A197E0D6F00F19C58 /* UINavigationController+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB35819197E0D6F00F19C58 /* UINavigationController+HABBase.m */; };
+		ABB3581D197E0DDB00F19C58 /* UIApplication+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB3581C197E0DDB00F19C58 /* UIApplication+HABBase.m */; };
+		ABB35820197E0E9200F19C58 /* UIViewController+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB3581F197E0E9200F19C58 /* UIViewController+HABBase.m */; };
+		C5BC598F63344D8EB0CA6A6F /* libPods-HaidoraBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 742B86741E6541009779294D /* libPods-HaidoraBase.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB762273197DF52D0049215B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB762242197DF52C0049215B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB762249197DF52C0049215B;
+			remoteInfo = HaidoraBase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03F8563F52194C0A9AB68954 /* Pods-HaidoraBase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaidoraBase.xcconfig"; path = "Pods/Pods-HaidoraBase.xcconfig"; sourceTree = "<group>"; };
+		742B86741E6541009779294D /* libPods-HaidoraBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HaidoraBase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB150AE9197E298E006E99D4 /* HaidoraBase.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HaidoraBase.bundle; sourceTree = "<group>"; };
+		AB76224A197DF52C0049215B /* HaidoraBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaidoraBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB76224D197DF52C0049215B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AB76224F197DF52C0049215B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AB762251197DF52C0049215B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AB762255197DF52C0049215B /* HaidoraBase-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HaidoraBase-Info.plist"; sourceTree = "<group>"; };
+		AB762257197DF52C0049215B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB762259197DF52C0049215B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB76225B197DF52C0049215B /* HaidoraBase-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HaidoraBase-Prefix.pch"; sourceTree = "<group>"; };
+		AB76225C197DF52C0049215B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AB76225D197DF52C0049215B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AB762260197DF52C0049215B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		AB762263197DF52C0049215B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		AB762265197DF52C0049215B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AB762266197DF52C0049215B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AB762268197DF52C0049215B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AB76226E197DF52D0049215B /* HaidoraBaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaidoraBaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB76226F197DF52D0049215B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AB762277197DF52D0049215B /* HaidoraBaseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HaidoraBaseTests-Info.plist"; sourceTree = "<group>"; };
+		AB762279197DF52D0049215B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB76227B197DF52D0049215B /* HaidoraBaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaidoraBaseTests.m; sourceTree = "<group>"; };
+		AB762287197DF55D0049215B /* HaidoraBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HaidoraBase.h; sourceTree = "<group>"; };
+		AB762291197DF5FF0049215B /* HABView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABView.h; sourceTree = "<group>"; };
+		AB762292197DF6080049215B /* HABNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABNetWork.h; sourceTree = "<group>"; };
+		AB762293197DF6110049215B /* HABCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABCategory.h; sourceTree = "<group>"; };
+		AB762294197DF9970049215B /* HABNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABNetworkEngine.h; sourceTree = "<group>"; };
+		AB762295197DF9970049215B /* HABNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABNetworkEngine.m; sourceTree = "<group>"; };
+		AB762297197DF9C90049215B /* HABNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABNetworkOperation.h; sourceTree = "<group>"; };
+		AB762298197DF9C90049215B /* HABNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABNetworkOperation.m; sourceTree = "<group>"; };
+		AB76229A197E03A50049215B /* HABTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABTableViewCell.h; sourceTree = "<group>"; };
+		AB76229B197E03A50049215B /* HABTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABTableViewCell.m; sourceTree = "<group>"; };
+		AB76229F197E06CF0049215B /* HABStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABStyle.h; sourceTree = "<group>"; };
+		AB7622A0197E073E0049215B /* UIViewController+HABBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HABBarButton.h"; sourceTree = "<group>"; };
+		AB7622A1197E073E0049215B /* UIViewController+HABBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HABBarButton.m"; sourceTree = "<group>"; };
+		ABB35814197E0A9500F19C58 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		ABB35815197E0A9500F19C58 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		ABB35818197E0D6F00F19C58 /* UINavigationController+HABBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+HABBase.h"; sourceTree = "<group>"; };
+		ABB35819197E0D6F00F19C58 /* UINavigationController+HABBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+HABBase.m"; sourceTree = "<group>"; };
+		ABB3581B197E0DDB00F19C58 /* UIApplication+HABBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+HABBase.h"; sourceTree = "<group>"; };
+		ABB3581C197E0DDB00F19C58 /* UIApplication+HABBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+HABBase.m"; sourceTree = "<group>"; };
+		ABB3581E197E0E9200F19C58 /* UIViewController+HABBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HABBase.h"; sourceTree = "<group>"; };
+		ABB3581F197E0E9200F19C58 /* UIViewController+HABBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HABBase.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB762247197DF52C0049215B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB762250197DF52C0049215B /* CoreGraphics.framework in Frameworks */,
+				AB762252197DF52C0049215B /* UIKit.framework in Frameworks */,
+				AB76224E197DF52C0049215B /* Foundation.framework in Frameworks */,
+				C5BC598F63344D8EB0CA6A6F /* libPods-HaidoraBase.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB76226B197DF52D0049215B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB762270197DF52D0049215B /* XCTest.framework in Frameworks */,
+				AB762272197DF52D0049215B /* UIKit.framework in Frameworks */,
+				AB762271197DF52D0049215B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB150AE8197E298E006E99D4 /* bundle */ = {
+			isa = PBXGroup;
+			children = (
+				AB150AE9197E298E006E99D4 /* HaidoraBase.bundle */,
+			);
+			path = bundle;
+			sourceTree = "<group>";
+		};
+		AB762241197DF52C0049215B = {
+			isa = PBXGroup;
+			children = (
+				AB762285197DF5430049215B /* Resource */,
+				AB762286197DF5430049215B /* Source */,
+				AB762253197DF52C0049215B /* HaidoraBase */,
+				AB762275197DF52D0049215B /* HaidoraBaseTests */,
+				AB76224C197DF52C0049215B /* Frameworks */,
+				AB76224B197DF52C0049215B /* Products */,
+				03F8563F52194C0A9AB68954 /* Pods-HaidoraBase.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		AB76224B197DF52C0049215B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB76224A197DF52C0049215B /* HaidoraBase.app */,
+				AB76226E197DF52D0049215B /* HaidoraBaseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB76224C197DF52C0049215B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB76224D197DF52C0049215B /* Foundation.framework */,
+				AB76224F197DF52C0049215B /* CoreGraphics.framework */,
+				AB762251197DF52C0049215B /* UIKit.framework */,
+				AB76226F197DF52D0049215B /* XCTest.framework */,
+				742B86741E6541009779294D /* libPods-HaidoraBase.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB762253197DF52C0049215B /* HaidoraBase */ = {
+			isa = PBXGroup;
+			children = (
+				AB76225C197DF52C0049215B /* AppDelegate.h */,
+				AB76225D197DF52C0049215B /* AppDelegate.m */,
+				ABB35817197E0A9E00F19C58 /* TestVC */,
+				AB76225F197DF52C0049215B /* Main_iPhone.storyboard */,
+				AB762262197DF52C0049215B /* Main_iPad.storyboard */,
+				AB762265197DF52C0049215B /* ViewController.h */,
+				AB762266197DF52C0049215B /* ViewController.m */,
+				AB762268197DF52C0049215B /* Images.xcassets */,
+				AB762254197DF52C0049215B /* Supporting Files */,
+			);
+			path = HaidoraBase;
+			sourceTree = "<group>";
+		};
+		AB762254197DF52C0049215B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB762255197DF52C0049215B /* HaidoraBase-Info.plist */,
+				AB762256197DF52C0049215B /* InfoPlist.strings */,
+				AB762259197DF52C0049215B /* main.m */,
+				AB76225B197DF52C0049215B /* HaidoraBase-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB762275197DF52D0049215B /* HaidoraBaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB76227B197DF52D0049215B /* HaidoraBaseTests.m */,
+				AB762276197DF52D0049215B /* Supporting Files */,
+			);
+			path = HaidoraBaseTests;
+			sourceTree = "<group>";
+		};
+		AB762276197DF52D0049215B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB762277197DF52D0049215B /* HaidoraBaseTests-Info.plist */,
+				AB762278197DF52D0049215B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB762285197DF5430049215B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				AB150AE8197E298E006E99D4 /* bundle */,
+			);
+			name = Resource;
+			path = ../../Resource;
+			sourceTree = "<group>";
+		};
+		AB762286197DF5430049215B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				AB762287197DF55D0049215B /* HaidoraBase.h */,
+				AB76229D197E06BE0049215B /* HABStyle */,
+				AB76228E197DF5F30049215B /* HABCategory */,
+				AB76228F197DF5F30049215B /* HABNetWork */,
+				AB762290197DF5F30049215B /* HABView */,
+			);
+			name = Source;
+			path = ../../Source;
+			sourceTree = "<group>";
+		};
+		AB76228E197DF5F30049215B /* HABCategory */ = {
+			isa = PBXGroup;
+			children = (
+				AB762293197DF6110049215B /* HABCategory.h */,
+				AB7622A0197E073E0049215B /* UIViewController+HABBarButton.h */,
+				AB7622A1197E073E0049215B /* UIViewController+HABBarButton.m */,
+				ABB3581E197E0E9200F19C58 /* UIViewController+HABBase.h */,
+				ABB3581F197E0E9200F19C58 /* UIViewController+HABBase.m */,
+				ABB35818197E0D6F00F19C58 /* UINavigationController+HABBase.h */,
+				ABB35819197E0D6F00F19C58 /* UINavigationController+HABBase.m */,
+				ABB3581B197E0DDB00F19C58 /* UIApplication+HABBase.h */,
+				ABB3581C197E0DDB00F19C58 /* UIApplication+HABBase.m */,
+			);
+			path = HABCategory;
+			sourceTree = "<group>";
+		};
+		AB76228F197DF5F30049215B /* HABNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				AB762292197DF6080049215B /* HABNetWork.h */,
+				AB762294197DF9970049215B /* HABNetworkEngine.h */,
+				AB762295197DF9970049215B /* HABNetworkEngine.m */,
+				AB762297197DF9C90049215B /* HABNetworkOperation.h */,
+				AB762298197DF9C90049215B /* HABNetworkOperation.m */,
+			);
+			path = HABNetWork;
+			sourceTree = "<group>";
+		};
+		AB762290197DF5F30049215B /* HABView */ = {
+			isa = PBXGroup;
+			children = (
+				AB762291197DF5FF0049215B /* HABView.h */,
+				AB76229A197E03A50049215B /* HABTableViewCell.h */,
+				AB76229B197E03A50049215B /* HABTableViewCell.m */,
+			);
+			path = HABView;
+			sourceTree = "<group>";
+		};
+		AB76229D197E06BE0049215B /* HABStyle */ = {
+			isa = PBXGroup;
+			children = (
+				AB76229F197E06CF0049215B /* HABStyle.h */,
+				AB76229E197E06BE0049215B /* RetableView */,
+			);
+			path = HABStyle;
+			sourceTree = "<group>";
+		};
+		AB76229E197E06BE0049215B /* RetableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RetableView;
+			sourceTree = "<group>";
+		};
+		ABB35817197E0A9E00F19C58 /* TestVC */ = {
+			isa = PBXGroup;
+			children = (
+				ABB35814197E0A9500F19C58 /* BaseViewController.h */,
+				ABB35815197E0A9500F19C58 /* BaseViewController.m */,
+			);
+			name = TestVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB762249197DF52C0049215B /* HaidoraBase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB76227F197DF52D0049215B /* Build configuration list for PBXNativeTarget "HaidoraBase" */;
+			buildPhases = (
+				8621A15CCFD34FAE87A5944D /* Check Pods Manifest.lock */,
+				AB762246197DF52C0049215B /* Sources */,
+				AB762247197DF52C0049215B /* Frameworks */,
+				AB762248197DF52C0049215B /* Resources */,
+				F381782073224FCEA802CBCB /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HaidoraBase;
+			productName = HaidoraBase;
+			productReference = AB76224A197DF52C0049215B /* HaidoraBase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB76226D197DF52D0049215B /* HaidoraBaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB762282197DF52D0049215B /* Build configuration list for PBXNativeTarget "HaidoraBaseTests" */;
+			buildPhases = (
+				AB76226A197DF52D0049215B /* Sources */,
+				AB76226B197DF52D0049215B /* Frameworks */,
+				AB76226C197DF52D0049215B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB762274197DF52D0049215B /* PBXTargetDependency */,
+			);
+			name = HaidoraBaseTests;
+			productName = HaidoraBaseTests;
+			productReference = AB76226E197DF52D0049215B /* HaidoraBaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB762242197DF52C0049215B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Haidora;
+				TargetAttributes = {
+					AB76226D197DF52D0049215B = {
+						TestTargetID = AB762249197DF52C0049215B;
+					};
+				};
+			};
+			buildConfigurationList = AB762245197DF52C0049215B /* Build configuration list for PBXProject "HaidoraBase" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB762241197DF52C0049215B;
+			productRefGroup = AB76224B197DF52C0049215B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB762249197DF52C0049215B /* HaidoraBase */,
+				AB76226D197DF52D0049215B /* HaidoraBaseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB762248197DF52C0049215B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB762264197DF52C0049215B /* Main_iPad.storyboard in Resources */,
+				AB762269197DF52C0049215B /* Images.xcassets in Resources */,
+				AB150AEA197E298E006E99D4 /* HaidoraBase.bundle in Resources */,
+				AB762261197DF52C0049215B /* Main_iPhone.storyboard in Resources */,
+				AB762258197DF52C0049215B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB76226C197DF52D0049215B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB76227A197DF52D0049215B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8621A15CCFD34FAE87A5944D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F381782073224FCEA802CBCB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-HaidoraBase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB762246197DF52C0049215B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB7622A2197E073E0049215B /* UIViewController+HABBarButton.m in Sources */,
+				ABB3581A197E0D6F00F19C58 /* UINavigationController+HABBase.m in Sources */,
+				ABB35820197E0E9200F19C58 /* UIViewController+HABBase.m in Sources */,
+				ABB35816197E0A9500F19C58 /* BaseViewController.m in Sources */,
+				AB762296197DF9970049215B /* HABNetworkEngine.m in Sources */,
+				AB76229C197E03A50049215B /* HABTableViewCell.m in Sources */,
+				ABB3581D197E0DDB00F19C58 /* UIApplication+HABBase.m in Sources */,
+				AB762267197DF52C0049215B /* ViewController.m in Sources */,
+				AB76225E197DF52C0049215B /* AppDelegate.m in Sources */,
+				AB762299197DF9C90049215B /* HABNetworkOperation.m in Sources */,
+				AB76225A197DF52C0049215B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB76226A197DF52D0049215B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB76227C197DF52D0049215B /* HaidoraBaseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB762274197DF52D0049215B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB762249197DF52C0049215B /* HaidoraBase */;
+			targetProxy = AB762273197DF52D0049215B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB762256197DF52C0049215B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB762257197DF52C0049215B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AB76225F197DF52C0049215B /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB762260197DF52C0049215B /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		AB762262197DF52C0049215B /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB762263197DF52C0049215B /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		AB762278197DF52D0049215B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB762279197DF52D0049215B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB76227D197DF52D0049215B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB76227E197DF52D0049215B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB762280197DF52D0049215B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03F8563F52194C0A9AB68954 /* Pods-HaidoraBase.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HaidoraBase/HaidoraBase-Prefix.pch";
+				INFOPLIST_FILE = "HaidoraBase/HaidoraBase-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AB762281197DF52D0049215B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03F8563F52194C0A9AB68954 /* Pods-HaidoraBase.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HaidoraBase/HaidoraBase-Prefix.pch";
+				INFOPLIST_FILE = "HaidoraBase/HaidoraBase-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AB762283197DF52D0049215B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HaidoraBase.app/HaidoraBase";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HaidoraBase/HaidoraBase-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HaidoraBaseTests/HaidoraBaseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AB762284197DF52D0049215B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HaidoraBase.app/HaidoraBase";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HaidoraBase/HaidoraBase-Prefix.pch";
+				INFOPLIST_FILE = "HaidoraBaseTests/HaidoraBaseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB762245197DF52C0049215B /* Build configuration list for PBXProject "HaidoraBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB76227D197DF52D0049215B /* Debug */,
+				AB76227E197DF52D0049215B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB76227F197DF52D0049215B /* Build configuration list for PBXNativeTarget "HaidoraBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB762280197DF52D0049215B /* Debug */,
+				AB762281197DF52D0049215B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB762282197DF52D0049215B /* Build configuration list for PBXNativeTarget "HaidoraBaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB762283197DF52D0049215B /* Debug */,
+				AB762284197DF52D0049215B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB762242197DF52C0049215B /* Project object */;
+}
