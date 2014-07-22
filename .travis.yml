@@ -1,3 +1,4 @@
 language: objective-c
 xcode_project: Project/HaidoraBase/HaidoraBase.xcworkspace
 xcode_scheme: HaidoraBase
+install: pod install
