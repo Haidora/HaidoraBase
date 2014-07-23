@@ -31,6 +31,7 @@
 		ABB3581A197E0D6F00F19C58 /* UINavigationController+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB35819197E0D6F00F19C58 /* UINavigationController+HABBase.m */; };
 		ABB3581D197E0DDB00F19C58 /* UIApplication+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB3581C197E0DDB00F19C58 /* UIApplication+HABBase.m */; };
 		ABB35820197E0E9200F19C58 /* UIViewController+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB3581F197E0E9200F19C58 /* UIViewController+HABBase.m */; };
+		ABCFBF04197F862D003ED1F1 /* HABViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCFBF03197F862D003ED1F1 /* HABViewVC.m */; };
 		C5BC598F63344D8EB0CA6A6F /* libPods-HaidoraBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 742B86741E6541009779294D /* libPods-HaidoraBase.a */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,8 @@
 		ABB3581C197E0DDB00F19C58 /* UIApplication+HABBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+HABBase.m"; sourceTree = "<group>"; };
 		ABB3581E197E0E9200F19C58 /* UIViewController+HABBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HABBase.h"; sourceTree = "<group>"; };
 		ABB3581F197E0E9200F19C58 /* UIViewController+HABBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HABBase.m"; sourceTree = "<group>"; };
+		ABCFBF02197F862D003ED1F1 /* HABViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABViewVC.h; sourceTree = "<group>"; };
+		ABCFBF03197F862D003ED1F1 /* HABViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABViewVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +287,8 @@
 			children = (
 				ABB35814197E0A9500F19C58 /* BaseViewController.h */,
 				ABB35815197E0A9500F19C58 /* BaseViewController.m */,
+				ABCFBF02197F862D003ED1F1 /* HABViewVC.h */,
+				ABCFBF03197F862D003ED1F1 /* HABViewVC.m */,
 			);
 			name = TestVC;
 			sourceTree = "<group>";
@@ -423,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB7622A2197E073E0049215B /* UIViewController+HABBarButton.m in Sources */,
+				ABCFBF04197F862D003ED1F1 /* HABViewVC.m in Sources */,
 				ABB3581A197E0D6F00F19C58 /* UINavigationController+HABBase.m in Sources */,
 				ABB35820197E0E9200F19C58 /* UIViewController+HABBase.m in Sources */,
 				ABB35816197E0A9500F19C58 /* BaseViewController.m in Sources */,
