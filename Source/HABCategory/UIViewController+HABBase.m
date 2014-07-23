@@ -56,7 +56,10 @@
     self.navigationItem.titleView = self.titleLabel;
     [self addDefaultBackBar:@selector(backAction)];
 #ifdef __IPHONE_7_0
-    self.edgesForExtendedLayout = UIRectEdgeNone;
+    if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)])
+    {
+        self.edgesForExtendedLayout = UIRectEdgeNone;        
+    }
 #endif
 }
 
