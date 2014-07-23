@@ -54,14 +54,14 @@
         UIView *separatorView = [self viewWithTag:kHABSeparatorViewTag];
         if (!separatorView)
         {
-            [self.contentView insertSubview:self.separatorView atIndex:0];
+            [self addSubview:self.separatorView];
             self.separatorView.tag = kHABSeparatorViewTag;
             separatorView = self.separatorView;
         }
         CGRect preFrame = self.separatorView.frame;
         separatorView.frame = CGRectMake(_habSeparatorEdgeInset.left,
-                                         CGRectGetHeight(self.contentView.frame)-CGRectGetHeight(preFrame),
-                                         CGRectGetWidth(self.contentView.frame)-_habSeparatorEdgeInset.right,
+                                         CGRectGetHeight(self.frame)-CGRectGetHeight(preFrame),
+                                         CGRectGetWidth(self.frame)-_habSeparatorEdgeInset.right-_habSeparatorEdgeInset.left,
                                          CGRectGetHeight(preFrame));
     }
 }
@@ -88,8 +88,8 @@
 -(UIControl *)generateView:(UIColor *)color height:(CGFloat)height
 {
     UIControl *control = [[UIControl alloc]initWithFrame:CGRectMake(0.0f,
-                                                                    CGRectGetHeight(self.contentView.frame)-height,
-                                                                    CGRectGetWidth(self.contentView.frame),
+                                                                    CGRectGetHeight(self.frame)-height,
+                                                                    CGRectGetWidth(self.frame),
                                                                     height)];
     control.backgroundColor = color;
     return control;
