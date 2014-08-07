@@ -140,7 +140,7 @@
     HABTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     if (cell == nil)
     {
-        cell = [[HABTableViewCell alloc] initWithStyle:style reuseIdentifier:cellID];
+        cell = [[[self class] alloc] initWithStyle:style reuseIdentifier:cellID];
     }
     [cell reset];
     cell.tableView = tableView;
