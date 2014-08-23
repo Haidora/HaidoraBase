@@ -10,17 +10,15 @@
 
 @implementation HABNetworkEngine
 
--(id)initWithHostName:(NSString*)hostName customHeaderFields:(NSDictionary*)headers
+-(id)initWithHostName:(NSString*)hostName apiPath:(NSString*)apiPath customHeaderFields:(NSDictionary*)headers
 {
-    self = [super initWithHostName:hostName customHeaderFields:headers];
-    if (self)
-    {
-        [self registerOperationSubclass:[HABNetworkOperation class]];
-        self.workingOperations = [NSMutableArray array];
-        
-        return self;
-    }
-    return nil;
+	self = [super initWithHostName:hostName apiPath:apiPath customHeaderFields:headers];
+	if (self)
+	{
+		[self registerOperationSubclass:[HABNetworkOperation class]];
+        _workingOperations = [NSMutableArray array];
+	}
+	return self;
 }
 
 -(void)enqueueOperation:(MKNetworkOperation*)operation forceReload:(BOOL)forceReload
@@ -99,11 +97,11 @@
              successBlock(completedOperation,completedOperation.responseData);
          }
      }
-     errorHandler:^(MKNetworkOperation *completedOperation, NSError *error)
+					   errorHandler:^(MKNetworkOperation *completedOperation, NSError *error)
      {
          if (error)
          {
-            errorBlock(error);
+			 errorBlock(error);
          }
      }];
     [self enqueueOperation:operation];
@@ -121,9 +119,9 @@
     //generate soapbody
     __block NSString *soapbody = [NSString string];
     [params enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop)
-    {
-        soapbody = [soapbody stringByAppendingFormat:@"<%@>%@</%@>\n",key,obj,key];
-    }];
+	 {
+		 soapbody = [soapbody stringByAppendingFormat:@"<%@>%@</%@>\n",key,obj,key];
+	 }];
     //generate soapMsg
     NSString *soapMsg = [NSString stringWithFormat:
                          @"<?xml version=\"1.0\" encoding=\"utf-8\"?> \n"

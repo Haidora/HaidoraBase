@@ -54,7 +54,10 @@
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
     [NUIRenderer renderLabel:self.titleLabel withClass:self.styleClassNameForTitleLabel];
     self.navigationItem.titleView = self.titleLabel;
-    [self addDefaultBackBar:@selector(backAction)];
+	if (self.navigationController.viewControllers.count>2)
+	{
+		[self addDefaultBackBar:@selector(backAction)];
+	}
 #ifdef __IPHONE_7_0
     if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)])
     {
