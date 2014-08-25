@@ -20,6 +20,9 @@ typedef NS_ENUM(NSInteger,HABTableViewCellSeparatorStyle)
 //for tableView
 @property (nonatomic, weak) UITableView *tableView;
 
+//for tableViewCell
+@property (nonatomic, strong) NSIndexPath *indexPath;
+
 //for tableviewcell style
 /**
  *  default is HABTableViewCellSeparatorStyleNone
@@ -62,8 +65,11 @@ typedef NS_ENUM(NSInteger,HABTableViewCellSeparatorStyle)
 + (CGFloat)cellHeightForTableView:(UITableView *)tableView content:(id)content;
 
 + (id)cellForTableView:(UITableView *)tableView withStyle:(UITableViewCellStyle)style;
++ (id)cellForTableView:(UITableView *)tableView withStyle:(UITableViewCellStyle)style indexPath:(NSIndexPath *)indexPath;
 + (id)cellForTableView:(UITableView *)tableView fromNib:(UINib *)nib;
++ (id)cellForTableView:(UITableView *)tableView fromNib:(UINib *)nib indexPath:(NSIndexPath *)indexPath;
 + (id)cellForTableView:(UITableView *)tableView fromNib:(UINib *)nib withCellIdentifier:(NSString *)cellIdentifier;
++ (id)cellForTableView:(UITableView *)tableView fromNib:(UINib *)nib withCellIdentifier:(NSString *)cellIdentifier indexPath:(NSIndexPath *)indexPath;
 
 - (void)setContent:(id)content;
 /**

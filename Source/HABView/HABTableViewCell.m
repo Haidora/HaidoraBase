@@ -125,7 +125,12 @@
 
 + (id)cellForTableView:(UITableView *)tableView withStyle:(UITableViewCellStyle)style
 {
-    NSString *cellID = nil;
+	return [HABTableViewCell cellForTableView:tableView withStyle:style indexPath:nil];
+}
+
++ (id)cellForTableView:(UITableView *)tableView withStyle:(UITableViewCellStyle)style indexPath:(NSIndexPath *)indexPath
+{
+	NSString *cellID = nil;
     if (style == UITableViewCellStyleDefault)
         cellID = @"HABTableViewCellStyleDefault";
     else if (style == UITableViewCellStyleValue1)
@@ -142,30 +147,40 @@
     {
         cell = [[[self class] alloc] initWithStyle:style reuseIdentifier:cellID];
     }
+	cell.tableView = tableView;
+	cell.indexPath = indexPath;
     [cell reset];
-    cell.tableView = tableView;
     return cell;
 }
 
 + (id)cellForTableView:(UITableView *)tableView fromNib:(UINib *)nib
 {
-    NSString *cellID = [self cellIdentifier];
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+	return [HABTableViewCell cellForTableView:tableView fromNib:nib indexPath:nil];
+}
+
++ (id)cellForTableView:(UITableView *)tableView fromNib:(UINib *)nib indexPath:(NSIndexPath *)indexPath
+{
+	NSString *cellID = [self cellIdentifier];
+    HABTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     if (cell == nil)
     {
         NSArray *nibObjects = [nib instantiateWithOwner:nil options:nil];
         cell = nibObjects[0];
     }
-    [(HABTableViewCell *)cell reset];
-    ((HABTableViewCell *)cell).tableView = tableView;
-    
+	cell.tableView = tableView;
+	cell.indexPath = indexPath;
+    [cell reset];
     return cell;
 }
 
 + (id)cellForTableView:(UITableView *)tableView fromNib:(UINib *)nib withCellIdentifier:(NSString *)cellIdentifier
 {
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    return [HABTableViewCell cellForTableView:tableView fromNib:nib withCellIdentifier:cellIdentifier indexPath:nil];
+}
+
++ (id)cellForTableView:(UITableView *)tableView fromNib:(UINib *)nib withCellIdentifier:(NSString *)cellIdentifier indexPath:(NSIndexPath *)indexPath
+{
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (cell == nil)
     {
         NSArray *nibObjects = [nib instantiateWithOwner:nil options:nil];
@@ -178,9 +193,9 @@
             }
         }
     }
+	((HABTableViewCell *)cell).tableView = tableView;
+    ((HABTableViewCell *)cell).indexPath = indexPath;
     [(HABTableViewCell *)cell reset];
-    ((HABTableViewCell *)cell).tableView = tableView;
-    
     return cell;
 }
 
