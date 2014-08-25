@@ -54,7 +54,7 @@
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
     [NUIRenderer renderLabel:self.titleLabel withClass:self.styleClassNameForTitleLabel];
     self.navigationItem.titleView = self.titleLabel;
-	if (self.navigationController.viewControllers.count>2)
+	if (self.navigationController.viewControllers.count>1)
 	{
 		[self addDefaultBackBar:@selector(backAction)];
 	}
