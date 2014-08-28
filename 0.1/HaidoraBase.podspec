@@ -23,12 +23,16 @@ Pod::Spec.new do |s|
 
   s.source_files  = 'Source/*.{h,m}'
 
+  s.subspec 'HABCore' do |habCore|
+    habCore.source_files = 'Source/HABCore/**/*.{h,m}','Source/*.{h,m}'
+  end
   s.subspec 'HABStyle' do |habStyle|
     habStyle.source_files = 'Source/HABStyle/**/*.{h,m}','Source/*.{h,m}'
     habStyle.dependency "RETableViewManager", "~> 1.5.11"
   end
   s.subspec 'HABCategory' do |habCategory|
     habCategory.source_files = 'Source/HABCategory/**/*.{h,m}','Source/*.{h,m}'
+    habCategory.dependency 'HaidoraBase/HABCore'
     habCategory.dependency "JRSwizzle", "~> 1.0"
     habCategory.dependency "NUI", "~> 0.5.4"
     habCategory.dependency "MBProgressHUD", "~> 0.8"
