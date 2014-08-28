@@ -8,6 +8,7 @@
 
 #import "UIViewController+HABBase.h"
 #import "UIViewController+HABBarButton.h"
+#import "HABCoreMacros.h"
 #import <objc/runtime.h>
 #import <JRSwizzle.h>
 #import <NUIRenderer.h>
@@ -30,19 +31,19 @@
 
 +(void)load
 {
-    NSLog(@"UIViewController (HABBase) JRSwizzle start");
+    HAB_DLog(@"UIViewController (HABBase) JRSwizzle start");
     NSError *error;
     [self jr_swizzleMethod:@selector(viewDidLoad) withMethod:@selector(habbase_viewDidLoad) error:&error];
     if (error)
     {
-        NSLog(@"%@",error.domain);
+        HAB_DLog(@"%@",error.domain);
     }
     [self jr_swizzleMethod:@selector(setTitle:) withMethod:@selector(habbase_setTitle:) error:&error];
     if (error)
     {
-        NSLog(@"%@",error.domain);
+        HAB_DLog(@"%@",error.domain);
     }
-    NSLog(@"UIViewController (HABBase) JRSwizzle end");    
+    HAB_DLog(@"UIViewController (HABBase) JRSwizzle end");
 }
 
 -(void)habbase_viewDidLoad

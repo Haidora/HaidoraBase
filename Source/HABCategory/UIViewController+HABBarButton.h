@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HABCore.h"
 
 /**
  *  UIBarButtonItem custom with UIButton
@@ -49,6 +50,18 @@
  *  @param action
  */
 -(UIBarButtonItem *)barButtonItemWithImage:(UIImage *)image
+                                 andAction:(SEL)action HAB_DEPRECATED_METHOD;
+
+/**
+ *  Generate UIBarButtonItem with image
+ *
+ *  @param image
+ *  @param highlightImage
+ *  @param action
+ *
+ */
+-(UIBarButtonItem *)barButtonItemWithImage:(UIImage *)image
+							highlightImage:(UIImage *)highlightImage
                                  andAction:(SEL)action;
 
 #pragma mark

@@ -9,6 +9,12 @@
 #ifndef HaidoraBase_HaidoraBase_h
 #define HaidoraBase_HaidoraBase_h
 
+#if __has_include("HABCore.h")
+
+#import "HABCore.h"
+
+#endif
+
 #if __has_include("HABStyle.h")
 
 #import "HABStyle.h"

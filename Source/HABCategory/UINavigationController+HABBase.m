@@ -7,22 +7,23 @@
 //
 
 #import "UINavigationController+HABBase.h"
+#import "HABCoreMacros.h"
 #import <JRSwizzle.h>
 
 @implementation UINavigationController (HABBase)
 
 +(void)load
 {
-    NSLog(@"UINavigationController (HABBase) JRSwizzle start");
+    HAB_DLog(@"UINavigationController (HABBase) JRSwizzle start");
     NSError *error;
     [self jr_swizzleMethod:@selector(pushViewController:animated:)
                 withMethod:@selector(habbase_pushViewController:animated:)
                      error:&error];
     if (error)
     {
-        NSLog(@"%@",error.domain);
+        HAB_DLog(@"%@",error.domain);
     }
-    NSLog(@"UINavigationController (HABBase) JRSwizzle end");
+    HAB_DLog(@"UINavigationController (HABBase) JRSwizzle end");
 }
 
 -(void)habbase_pushViewController:(UIViewController *)viewController animated:(BOOL)animated

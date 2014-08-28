@@ -49,8 +49,16 @@
 -(UIBarButtonItem *)barButtonItemWithImage:(UIImage *)image
                                  andAction:(SEL)action
 {
-    UIButton *buttonItem = [UIButton buttonWithType:UIButtonTypeCustom];
+    return [self barButtonItemWithImage:image highlightImage:nil andAction:action];
+}
+
+-(UIBarButtonItem *)barButtonItemWithImage:(UIImage *)image
+							highlightImage:(UIImage *)highlightImage
+                                 andAction:(SEL)action
+{
+	UIButton *buttonItem = [UIButton buttonWithType:UIButtonTypeCustom];
     [buttonItem setImage:image forState:UIControlStateNormal];
+	[buttonItem setImage:highlightImage forState:UIControlStateHighlighted];
     [buttonItem sizeToFit];
     [buttonItem addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *barItem = [[UIBarButtonItem alloc] initWithCustomView:buttonItem];

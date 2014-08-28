@@ -82,6 +82,8 @@
 		AB76229F197E06CF0049215B /* HABStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABStyle.h; sourceTree = "<group>"; };
 		AB7622A0197E073E0049215B /* UIViewController+HABBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HABBarButton.h"; sourceTree = "<group>"; };
 		AB7622A1197E073E0049215B /* UIViewController+HABBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HABBarButton.m"; sourceTree = "<group>"; };
+		AB8B86D319AEDAA800EE4B06 /* HABCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABCore.h; sourceTree = "<group>"; };
+		AB8B86D419AEDACF00EE4B06 /* HABCoreMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABCoreMacros.h; sourceTree = "<group>"; };
 		ABB35814197E0A9500F19C58 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		ABB35815197E0A9500F19C58 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		ABB35818197E0D6F00F19C58 /* UINavigationController+HABBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+HABBase.h"; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				AB762287197DF55D0049215B /* HaidoraBase.h */,
+				AB8B86D219AEDA9100EE4B06 /* HABCore */,
 				AB76229D197E06BE0049215B /* HABStyle */,
 				AB76228E197DF5F30049215B /* HABCategory */,
 				AB76228F197DF5F30049215B /* HABNetWork */,
@@ -280,6 +283,15 @@
 			children = (
 			);
 			path = RetableView;
+			sourceTree = "<group>";
+		};
+		AB8B86D219AEDA9100EE4B06 /* HABCore */ = {
+			isa = PBXGroup;
+			children = (
+				AB8B86D319AEDAA800EE4B06 /* HABCore.h */,
+				AB8B86D419AEDACF00EE4B06 /* HABCoreMacros.h */,
+			);
+			path = HABCore;
 			sourceTree = "<group>";
 		};
 		ABB35817197E0A9E00F19C58 /* TestVC */ = {
