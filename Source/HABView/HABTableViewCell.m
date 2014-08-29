@@ -120,12 +120,12 @@
 }
 + (CGFloat)cellHeightForTableView:(UITableView *)tableView content:(id)content
 {
-    return [HABTableViewCell cellHeight];
+    return [self cellHeight];
 }
 
 + (id)cellForTableView:(UITableView *)tableView withStyle:(UITableViewCellStyle)style
 {
-	return [HABTableViewCell cellForTableView:tableView withStyle:style indexPath:nil];
+	return [self cellForTableView:tableView withStyle:style indexPath:nil];
 }
 
 + (id)cellForTableView:(UITableView *)tableView withStyle:(UITableViewCellStyle)style indexPath:(NSIndexPath *)indexPath
@@ -155,7 +155,7 @@
 
 + (id)cellForTableView:(UITableView *)tableView fromNib:(UINib *)nib
 {
-	return [HABTableViewCell cellForTableView:tableView fromNib:nib indexPath:nil];
+	return [self cellForTableView:tableView fromNib:nib indexPath:nil];
 }
 
 + (id)cellForTableView:(UITableView *)tableView fromNib:(UINib *)nib indexPath:(NSIndexPath *)indexPath
@@ -175,7 +175,7 @@
 
 + (id)cellForTableView:(UITableView *)tableView fromNib:(UINib *)nib withCellIdentifier:(NSString *)cellIdentifier
 {
-    return [HABTableViewCell cellForTableView:tableView fromNib:nib withCellIdentifier:cellIdentifier indexPath:nil];
+    return [self cellForTableView:tableView fromNib:nib withCellIdentifier:cellIdentifier indexPath:nil];
 }
 
 + (id)cellForTableView:(UITableView *)tableView fromNib:(UINib *)nib withCellIdentifier:(NSString *)cellIdentifier indexPath:(NSIndexPath *)indexPath
