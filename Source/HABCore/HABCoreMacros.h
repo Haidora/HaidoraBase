@@ -14,17 +14,4 @@
  */
 #define HAB_DEPRECATED_METHOD __attribute__((deprecated))
 
-#ifdef DEBUG
-#define HAB_DLog(format, ...)\
-	{\
-		fprintf(stderr, "<%s : %d> %s\n",\
-		[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String],  \
-		__LINE__, __func__);                                                        \
-		(NSLog)((format), ##__VA_ARGS__);                                           \
-		fprintf(stderr, "-------\n");                                               \
-	}
-#else
-	#define HAB_DLog(format, ...)
-#endif
-
 #endif

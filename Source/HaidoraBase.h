@@ -15,6 +15,12 @@
 
 #endif
 
+#if __has_include("HABMacro.h")
+
+#import "HABMacro.h"
+
+#endif
+
 #if __has_include("HABStyle.h")
 
 #import "HABStyle.h"
@@ -36,6 +42,12 @@
 #if __has_include("HABView.h")
 
 #import "HABView.h"
+
+#endif
+
+#if __has_include("HABUtil.h")
+
+#import "HABUtil.h"
 
 #endif
 

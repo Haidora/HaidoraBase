@@ -8,7 +8,7 @@
 
 #import "UIViewController+HABBase.h"
 #import "UIViewController+HABBarButton.h"
-#import "HABCoreMacros.h"
+#import "HABMacro.h"
 #import <objc/runtime.h>
 #import <JRSwizzle.h>
 #import <NUIRenderer.h>
@@ -31,40 +31,44 @@
 
 +(void)load
 {
-    HAB_DLog(@"UIViewController (HABBase) JRSwizzle start");
+    HABM_DLog(@"UIViewController (HABBase) JRSwizzle start");
     NSError *error;
     [self jr_swizzleMethod:@selector(viewDidLoad) withMethod:@selector(habbase_viewDidLoad) error:&error];
     if (error)
     {
-        HAB_DLog(@"%@",error.domain);
+        HABM_DLog(@"%@",error.domain);
     }
     [self jr_swizzleMethod:@selector(setTitle:) withMethod:@selector(habbase_setTitle:) error:&error];
     if (error)
     {
-        HAB_DLog(@"%@",error.domain);
+        HABM_DLog(@"%@",error.domain);
     }
-    HAB_DLog(@"UIViewController (HABBase) JRSwizzle end");
+    HABM_DLog(@"UIViewController (HABBase) JRSwizzle end");
 }
 
 -(void)habbase_viewDidLoad
 {
     [self habbase_viewDidLoad];
+	//Nav Custom TitleLabel
     self.titleLabel = [[UILabel alloc]init];
     self.titleLabel.backgroundColor = [UIColor clearColor];
     self.titleLabel.numberOfLines = 2;
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
     [NUIRenderer renderLabel:self.titleLabel withClass:self.styleClassNameForTitleLabel];
     self.navigationItem.titleView = self.titleLabel;
-	if (self.navigationController.viewControllers.count>1)
+	
+	//Nav BackItem
+	if ([self isCustomBackItem] && self.navigationController.viewControllers.count>1)
 	{
 		[self addDefaultBackBar:@selector(backAction)];
 	}
-#ifdef __IPHONE_7_0
-    if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)])
-    {
-        self.edgesForExtendedLayout = UIRectEdgeNone;        
-    }
-#endif
+	if (IOS7_OR_LATER)
+	{
+		if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)])
+		{
+			self.edgesForExtendedLayout = UIRectEdgeNone;
+		}		
+	}
 }
 
 - (void)habbase_viewWillAppear:(BOOL)animated
@@ -106,6 +110,9 @@
 
 
 @implementation UIViewController (HABBase)
+
+#pragma mark
+#pragma mark Common Animation
 
 -(void)hidHubView:(MBProgressHUD *)hud
 {
@@ -159,6 +166,17 @@
 {
     [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
 }
+
+#pragma mark
+#pragma mark Config
+
+-(BOOL)isCustomBackItem
+{
+	return NO;
+}
+
+#pragma mark
+#pragma mark Style
 
 -(NSString *)styleClassNameForTitleLabel
 {

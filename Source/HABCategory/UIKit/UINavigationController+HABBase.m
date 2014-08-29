@@ -7,35 +7,37 @@
 //
 
 #import "UINavigationController+HABBase.h"
-#import "HABCoreMacros.h"
+#import "HABMacro.h"
+#import "UIViewController+HABBase.h"
 #import <JRSwizzle.h>
 
 @implementation UINavigationController (HABBase)
 
 +(void)load
 {
-    HAB_DLog(@"UINavigationController (HABBase) JRSwizzle start");
+    HABM_DLog(@"UINavigationController (HABBase) JRSwizzle start");
     NSError *error;
     [self jr_swizzleMethod:@selector(pushViewController:animated:)
                 withMethod:@selector(habbase_pushViewController:animated:)
                      error:&error];
     if (error)
     {
-        HAB_DLog(@"%@",error.domain);
+        HABM_DLog(@"%@",error.domain);
     }
-    HAB_DLog(@"UINavigationController (HABBase) JRSwizzle end");
+    HABM_DLog(@"UINavigationController (HABBase) JRSwizzle end");
 }
 
 -(void)habbase_pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     [self habbase_pushViewController:viewController animated:animated];
-    //fix ios7 later
-#ifdef __IPHONE_7_0
-    if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)])
-    {
-        self.interactivePopGestureRecognizer.delegate = nil;
-    }
-#endif
+
+	if (IOS7_OR_LATER)
+	{		
+		if ([self isCustomBackItem] &&[self respondsToSelector:@selector(interactivePopGestureRecognizer)])
+		{
+			self.interactivePopGestureRecognizer.delegate = nil;
+		}
+	}
 }
 
 @end

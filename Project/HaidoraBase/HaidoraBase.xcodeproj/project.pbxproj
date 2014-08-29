@@ -26,11 +26,15 @@
 		AB762296197DF9970049215B /* HABNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = AB762295197DF9970049215B /* HABNetworkEngine.m */; };
 		AB762299197DF9C90049215B /* HABNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AB762298197DF9C90049215B /* HABNetworkOperation.m */; };
 		AB76229C197E03A50049215B /* HABTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB76229B197E03A50049215B /* HABTableViewCell.m */; };
-		AB7622A2197E073E0049215B /* UIViewController+HABBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7622A1197E073E0049215B /* UIViewController+HABBarButton.m */; };
+		AB8F479019B04D1C0043509A /* HABUtil_Device.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F478F19B04D1C0043509A /* HABUtil_Device.m */; };
+		AB8F479319B04FD30043509A /* HABUtil_Path.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F479219B04FD30043509A /* HABUtil_Path.m */; };
+		AB8F479619B070E80043509A /* HABUtil_UI.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F479519B070E80043509A /* HABUtil_UI.m */; };
+		AB8F479919B071860043509A /* HABUtil_UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F479819B071860043509A /* HABUtil_UserDefaults.m */; };
+		AB8F47A419B0736D0043509A /* UIApplication+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F479D19B0736D0043509A /* UIApplication+HABBase.m */; };
+		AB8F47A519B0736D0043509A /* UINavigationController+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F479F19B0736D0043509A /* UINavigationController+HABBase.m */; };
+		AB8F47A619B0736D0043509A /* UIViewController+HABBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F47A119B0736D0043509A /* UIViewController+HABBarButton.m */; };
+		AB8F47A719B0736D0043509A /* UIViewController+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F47A319B0736D0043509A /* UIViewController+HABBase.m */; };
 		ABB35816197E0A9500F19C58 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB35815197E0A9500F19C58 /* BaseViewController.m */; };
-		ABB3581A197E0D6F00F19C58 /* UINavigationController+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB35819197E0D6F00F19C58 /* UINavigationController+HABBase.m */; };
-		ABB3581D197E0DDB00F19C58 /* UIApplication+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB3581C197E0DDB00F19C58 /* UIApplication+HABBase.m */; };
-		ABB35820197E0E9200F19C58 /* UIViewController+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB3581F197E0E9200F19C58 /* UIViewController+HABBase.m */; };
 		ABCFBF04197F862D003ED1F1 /* HABViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCFBF03197F862D003ED1F1 /* HABViewVC.m */; };
 		C5BC598F63344D8EB0CA6A6F /* libPods-HaidoraBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 742B86741E6541009779294D /* libPods-HaidoraBase.a */; };
 /* End PBXBuildFile section */
@@ -80,18 +84,33 @@
 		AB76229A197E03A50049215B /* HABTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABTableViewCell.h; sourceTree = "<group>"; };
 		AB76229B197E03A50049215B /* HABTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABTableViewCell.m; sourceTree = "<group>"; };
 		AB76229F197E06CF0049215B /* HABStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABStyle.h; sourceTree = "<group>"; };
-		AB7622A0197E073E0049215B /* UIViewController+HABBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HABBarButton.h"; sourceTree = "<group>"; };
-		AB7622A1197E073E0049215B /* UIViewController+HABBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HABBarButton.m"; sourceTree = "<group>"; };
 		AB8B86D319AEDAA800EE4B06 /* HABCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABCore.h; sourceTree = "<group>"; };
 		AB8B86D419AEDACF00EE4B06 /* HABCoreMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABCoreMacros.h; sourceTree = "<group>"; };
+		AB8F478D19B04CFC0043509A /* HABUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABUtil.h; sourceTree = "<group>"; };
+		AB8F478E19B04D1C0043509A /* HABUtil_Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABUtil_Device.h; sourceTree = "<group>"; };
+		AB8F478F19B04D1C0043509A /* HABUtil_Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABUtil_Device.m; sourceTree = "<group>"; };
+		AB8F479119B04FD30043509A /* HABUtil_Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABUtil_Path.h; sourceTree = "<group>"; };
+		AB8F479219B04FD30043509A /* HABUtil_Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABUtil_Path.m; sourceTree = "<group>"; };
+		AB8F479419B070E80043509A /* HABUtil_UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABUtil_UI.h; sourceTree = "<group>"; };
+		AB8F479519B070E80043509A /* HABUtil_UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABUtil_UI.m; sourceTree = "<group>"; };
+		AB8F479719B071860043509A /* HABUtil_UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABUtil_UserDefaults.h; sourceTree = "<group>"; };
+		AB8F479819B071860043509A /* HABUtil_UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABUtil_UserDefaults.m; sourceTree = "<group>"; };
+		AB8F479C19B0736D0043509A /* UIApplication+HABBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+HABBase.h"; sourceTree = "<group>"; };
+		AB8F479D19B0736D0043509A /* UIApplication+HABBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+HABBase.m"; sourceTree = "<group>"; };
+		AB8F479E19B0736D0043509A /* UINavigationController+HABBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+HABBase.h"; sourceTree = "<group>"; };
+		AB8F479F19B0736D0043509A /* UINavigationController+HABBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+HABBase.m"; sourceTree = "<group>"; };
+		AB8F47A019B0736D0043509A /* UIViewController+HABBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HABBarButton.h"; sourceTree = "<group>"; };
+		AB8F47A119B0736D0043509A /* UIViewController+HABBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HABBarButton.m"; sourceTree = "<group>"; };
+		AB8F47A219B0736D0043509A /* UIViewController+HABBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HABBase.h"; sourceTree = "<group>"; };
+		AB8F47A319B0736D0043509A /* UIViewController+HABBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HABBase.m"; sourceTree = "<group>"; };
+		AB8F47A819B0738C0043509A /* HABCategory_Foundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABCategory_Foundation.h; sourceTree = "<group>"; };
+		AB8F47A919B0739F0043509A /* HABCategory_UIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABCategory_UIKit.h; sourceTree = "<group>"; };
+		AB92FD4819B0440A00D30562 /* HABMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABMacro.h; sourceTree = "<group>"; };
+		AB92FD4919B0443A00D30562 /* HABMacro_Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABMacro_Color.h; sourceTree = "<group>"; };
+		AB92FD4A19B0474000D30562 /* HABMacro_Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABMacro_Util.h; sourceTree = "<group>"; };
+		AB92FD4B19B0489600D30562 /* HABMacro_Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABMacro_Singleton.h; sourceTree = "<group>"; };
 		ABB35814197E0A9500F19C58 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		ABB35815197E0A9500F19C58 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		ABB35818197E0D6F00F19C58 /* UINavigationController+HABBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+HABBase.h"; sourceTree = "<group>"; };
-		ABB35819197E0D6F00F19C58 /* UINavigationController+HABBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+HABBase.m"; sourceTree = "<group>"; };
-		ABB3581B197E0DDB00F19C58 /* UIApplication+HABBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+HABBase.h"; sourceTree = "<group>"; };
-		ABB3581C197E0DDB00F19C58 /* UIApplication+HABBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+HABBase.m"; sourceTree = "<group>"; };
-		ABB3581E197E0E9200F19C58 /* UIViewController+HABBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HABBase.h"; sourceTree = "<group>"; };
-		ABB3581F197E0E9200F19C58 /* UIViewController+HABBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HABBase.m"; sourceTree = "<group>"; };
 		ABCFBF02197F862D003ED1F1 /* HABViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABViewVC.h; sourceTree = "<group>"; };
 		ABCFBF03197F862D003ED1F1 /* HABViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABViewVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -222,10 +241,12 @@
 			children = (
 				AB762287197DF55D0049215B /* HaidoraBase.h */,
 				AB8B86D219AEDA9100EE4B06 /* HABCore */,
+				AB92FD4719B043F400D30562 /* HABMacro */,
 				AB76229D197E06BE0049215B /* HABStyle */,
 				AB76228E197DF5F30049215B /* HABCategory */,
 				AB76228F197DF5F30049215B /* HABNetWork */,
 				AB762290197DF5F30049215B /* HABView */,
+				AB8F478C19B04CD00043509A /* HABUtil */,
 			);
 			name = Source;
 			path = ../../Source;
@@ -235,14 +256,8 @@
 			isa = PBXGroup;
 			children = (
 				AB762293197DF6110049215B /* HABCategory.h */,
-				AB7622A0197E073E0049215B /* UIViewController+HABBarButton.h */,
-				AB7622A1197E073E0049215B /* UIViewController+HABBarButton.m */,
-				ABB3581E197E0E9200F19C58 /* UIViewController+HABBase.h */,
-				ABB3581F197E0E9200F19C58 /* UIViewController+HABBase.m */,
-				ABB35818197E0D6F00F19C58 /* UINavigationController+HABBase.h */,
-				ABB35819197E0D6F00F19C58 /* UINavigationController+HABBase.m */,
-				ABB3581B197E0DDB00F19C58 /* UIApplication+HABBase.h */,
-				ABB3581C197E0DDB00F19C58 /* UIApplication+HABBase.m */,
+				AB8F479A19B0736D0043509A /* Foundation */,
+				AB8F479B19B0736D0043509A /* UIKit */,
 			);
 			path = HABCategory;
 			sourceTree = "<group>";
@@ -292,6 +307,57 @@
 				AB8B86D419AEDACF00EE4B06 /* HABCoreMacros.h */,
 			);
 			path = HABCore;
+			sourceTree = "<group>";
+		};
+		AB8F478C19B04CD00043509A /* HABUtil */ = {
+			isa = PBXGroup;
+			children = (
+				AB8F478D19B04CFC0043509A /* HABUtil.h */,
+				AB8F478E19B04D1C0043509A /* HABUtil_Device.h */,
+				AB8F478F19B04D1C0043509A /* HABUtil_Device.m */,
+				AB8F479119B04FD30043509A /* HABUtil_Path.h */,
+				AB8F479219B04FD30043509A /* HABUtil_Path.m */,
+				AB8F479419B070E80043509A /* HABUtil_UI.h */,
+				AB8F479519B070E80043509A /* HABUtil_UI.m */,
+				AB8F479719B071860043509A /* HABUtil_UserDefaults.h */,
+				AB8F479819B071860043509A /* HABUtil_UserDefaults.m */,
+			);
+			path = HABUtil;
+			sourceTree = "<group>";
+		};
+		AB8F479A19B0736D0043509A /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				AB8F47A819B0738C0043509A /* HABCategory_Foundation.h */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		AB8F479B19B0736D0043509A /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				AB8F47A919B0739F0043509A /* HABCategory_UIKit.h */,
+				AB8F479C19B0736D0043509A /* UIApplication+HABBase.h */,
+				AB8F479D19B0736D0043509A /* UIApplication+HABBase.m */,
+				AB8F479E19B0736D0043509A /* UINavigationController+HABBase.h */,
+				AB8F479F19B0736D0043509A /* UINavigationController+HABBase.m */,
+				AB8F47A019B0736D0043509A /* UIViewController+HABBarButton.h */,
+				AB8F47A119B0736D0043509A /* UIViewController+HABBarButton.m */,
+				AB8F47A219B0736D0043509A /* UIViewController+HABBase.h */,
+				AB8F47A319B0736D0043509A /* UIViewController+HABBase.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		AB92FD4719B043F400D30562 /* HABMacro */ = {
+			isa = PBXGroup;
+			children = (
+				AB92FD4819B0440A00D30562 /* HABMacro.h */,
+				AB92FD4919B0443A00D30562 /* HABMacro_Color.h */,
+				AB92FD4A19B0474000D30562 /* HABMacro_Util.h */,
+				AB92FD4B19B0489600D30562 /* HABMacro_Singleton.h */,
+			);
+			path = HABMacro;
 			sourceTree = "<group>";
 		};
 		ABB35817197E0A9E00F19C58 /* TestVC */ = {
@@ -439,15 +505,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB7622A2197E073E0049215B /* UIViewController+HABBarButton.m in Sources */,
+				AB8F47A419B0736D0043509A /* UIApplication+HABBase.m in Sources */,
+				AB8F479919B071860043509A /* HABUtil_UserDefaults.m in Sources */,
+				AB8F47A619B0736D0043509A /* UIViewController+HABBarButton.m in Sources */,
+				AB8F47A719B0736D0043509A /* UIViewController+HABBase.m in Sources */,
 				ABCFBF04197F862D003ED1F1 /* HABViewVC.m in Sources */,
-				ABB3581A197E0D6F00F19C58 /* UINavigationController+HABBase.m in Sources */,
-				ABB35820197E0E9200F19C58 /* UIViewController+HABBase.m in Sources */,
 				ABB35816197E0A9500F19C58 /* BaseViewController.m in Sources */,
 				AB762296197DF9970049215B /* HABNetworkEngine.m in Sources */,
 				AB76229C197E03A50049215B /* HABTableViewCell.m in Sources */,
-				ABB3581D197E0DDB00F19C58 /* UIApplication+HABBase.m in Sources */,
+				AB8F479619B070E80043509A /* HABUtil_UI.m in Sources */,
 				AB762267197DF52C0049215B /* ViewController.m in Sources */,
+				AB8F47A519B0736D0043509A /* UINavigationController+HABBase.m in Sources */,
+				AB8F479019B04D1C0043509A /* HABUtil_Device.m in Sources */,
+				AB8F479319B04FD30043509A /* HABUtil_Path.m in Sources */,
 				AB76225E197DF52C0049215B /* AppDelegate.m in Sources */,
 				AB762299197DF9C90049215B /* HABNetworkOperation.m in Sources */,
 				AB76225A197DF52C0049215B /* main.m in Sources */,

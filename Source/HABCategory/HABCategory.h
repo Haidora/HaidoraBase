@@ -9,9 +9,16 @@
 #ifndef HaidoraBase_HABCategory_h
 #define HaidoraBase_HABCategory_h
 
-#import "UIViewController+HABBarButton.h"
-#import "UIViewController+HABBase.h"
-#import "UINavigationController+HABBase.h"
-#import "UIApplication+HABBase.h"
+#if __has_include("HABCategory_Foundation.h")
+
+#import "HABCategory_Foundation.h"
+
+#endif
+
+#if __has_include("HABCategory_UIKit.h")
+
+#import "HABCategory_UIKit.h"
+
+#endif
 
 #endif

@@ -22,6 +22,18 @@
 
 -(void)hideLoadingAnimation;
 
+#pragma mark
+#pragma mark Config
+
+/**
+ *  Returns a Boolean value indicating whether the viewcontroller can custom Nav Back Item
+ *
+ *  @return default is NO;
+ */
+-(BOOL)isCustomBackItem;
+
+#pragma mark
+#pragma mark Style
 /**
  *  NavigationBar titleView Style(Label) default is @"label-navTitle"
  *
