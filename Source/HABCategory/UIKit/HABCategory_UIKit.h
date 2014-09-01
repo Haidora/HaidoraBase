@@ -14,4 +14,7 @@
 #import "UINavigationController+HABBase.h"
 #import "UIApplication+HABBase.h"
 
+//uiview
+#import "UIView+HABGeometryExtend.h"
+
 #endif
