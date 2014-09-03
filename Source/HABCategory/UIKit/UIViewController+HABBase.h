@@ -32,6 +32,13 @@
  */
 -(BOOL)isCustomBackItem;
 
+/**
+ *  Returns a Boolean value indicating whether the view of viewcontroller is self
+ *
+ *  @return
+ */
+-(BOOL)isCurrentView;
+
 #pragma mark
 #pragma mark Style
 /**

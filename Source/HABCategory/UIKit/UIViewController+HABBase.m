@@ -15,9 +15,11 @@
 #import <MBProgressHUD.h>
 
 #define kTitleLabel_HABBase @"kTitleLabel_HABBase"
+#define kCurrent_HABBase  @"kCurrent_HABBase"
 
 @interface UIViewController (HABBasePrivate)
 
+@property (nonatomic, assign) BOOL current;
 /**
  * custom for NavigationBar titleView
  */
@@ -28,12 +30,23 @@
 @implementation UIViewController (HABBasePrivate)
 
 @dynamic titleLabel;
+@dynamic current;
 
 +(void)load
 {
     HABM_DLog(@"UIViewController (HABBase) JRSwizzle start");
     NSError *error;
     [self jr_swizzleMethod:@selector(viewDidLoad) withMethod:@selector(habbase_viewDidLoad) error:&error];
+    if (error)
+    {
+        HABM_DLog(@"%@",error.domain);
+    }
+	[self jr_swizzleMethod:@selector(viewWillAppear:) withMethod:@selector(habbase_viewWillAppear:) error:&error];
+    if (error)
+    {
+        HABM_DLog(@"%@",error.domain);
+    }
+	[self jr_swizzleMethod:@selector(viewWillDisappear:) withMethod:@selector(habbase_viewWillDisappear:) error:&error];
     if (error)
     {
         HABM_DLog(@"%@",error.domain);
@@ -76,6 +89,13 @@
     [self habbase_viewWillAppear:animated];
     self.titleLabel.text = self.title;
     [self.titleLabel sizeToFit];
+	self.current = YES;
+}
+
+-(void)habbase_viewWillDisappear:(BOOL)animated
+{
+	[self habbase_viewWillDisappear:animated];
+	self.current = NO;
 }
 
 -(void)habbase_setTitle:(NSString *)title
@@ -104,6 +124,16 @@
 -(UILabel *)titleLabel
 {
     return objc_getAssociatedObject(self, kTitleLabel_HABBase);
+}
+
+-(void)setCurrent:(BOOL)current
+{
+	objc_setAssociatedObject(self, kCurrent_HABBase, @(current), OBJC_ASSOCIATION_ASSIGN);
+}
+
+-(BOOL)current
+{
+	return [objc_getAssociatedObject(self, kCurrent_HABBase) boolValue];
 }
 
 @end
@@ -173,6 +203,11 @@
 -(BOOL)isCustomBackItem
 {
 	return NO;
+}
+
+-(BOOL)isCurrentView
+{
+	return self.current;
 }
 
 #pragma mark
