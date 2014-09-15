@@ -22,7 +22,13 @@
 
 -(NSMutableDictionary *)userInfo
 {
-    return objc_getAssociatedObject(self, kUIApplicationHABBase_UserInfo);
+	NSMutableDictionary *dictionary = objc_getAssociatedObject(self, kUIApplicationHABBase_UserInfo);
+	if (nil == dictionary)
+	{
+		dictionary = [NSMutableDictionary dictionary];
+		objc_setAssociatedObject(self, kUIApplicationHABBase_UserInfo, dictionary, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+	}
+    return dictionary;
 }
 
 @end
