@@ -36,6 +36,7 @@
 		AB8F47A619B0736D0043509A /* UIViewController+HABBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F47A119B0736D0043509A /* UIViewController+HABBarButton.m */; };
 		AB8F47A719B0736D0043509A /* UIViewController+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F47A319B0736D0043509A /* UIViewController+HABBase.m */; };
 		ABB35816197E0A9500F19C58 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB35815197E0A9500F19C58 /* BaseViewController.m */; };
+		ABC2091D19C6C7C200420CE3 /* UIView+HABShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2091C19C6C7C200420CE3 /* UIView+HABShadow.m */; };
 		ABCFBF04197F862D003ED1F1 /* HABViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCFBF03197F862D003ED1F1 /* HABViewVC.m */; };
 		C5BC598F63344D8EB0CA6A6F /* libPods-HaidoraBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 742B86741E6541009779294D /* libPods-HaidoraBase.a */; };
 /* End PBXBuildFile section */
@@ -114,6 +115,8 @@
 		AB92FD4B19B0489600D30562 /* HABMacro_Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABMacro_Singleton.h; sourceTree = "<group>"; };
 		ABB35814197E0A9500F19C58 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		ABB35815197E0A9500F19C58 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		ABC2091B19C6C7C200420CE3 /* UIView+HABShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HABShadow.h"; sourceTree = "<group>"; };
+		ABC2091C19C6C7C200420CE3 /* UIView+HABShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HABShadow.m"; sourceTree = "<group>"; };
 		ABCFBF02197F862D003ED1F1 /* HABViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABViewVC.h; sourceTree = "<group>"; };
 		ABCFBF03197F862D003ED1F1 /* HABViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABViewVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -350,6 +353,8 @@
 				AB8F47A319B0736D0043509A /* UIViewController+HABBase.m */,
 				AB59970D19B4735000BD2B67 /* UIView+HABGeometryExtend.h */,
 				AB59970E19B4735000BD2B67 /* UIView+HABGeometryExtend.m */,
+				ABC2091B19C6C7C200420CE3 /* UIView+HABShadow.h */,
+				ABC2091C19C6C7C200420CE3 /* UIView+HABShadow.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -520,6 +525,7 @@
 				AB762296197DF9970049215B /* HABNetworkEngine.m in Sources */,
 				AB76229C197E03A50049215B /* HABTableViewCell.m in Sources */,
 				AB8F479619B070E80043509A /* HABUtil_UI.m in Sources */,
+				ABC2091D19C6C7C200420CE3 /* UIView+HABShadow.m in Sources */,
 				AB762267197DF52C0049215B /* ViewController.m in Sources */,
 				AB8F47A519B0736D0043509A /* UINavigationController+HABBase.m in Sources */,
 				AB8F479019B04D1C0043509A /* HABUtil_Device.m in Sources */,

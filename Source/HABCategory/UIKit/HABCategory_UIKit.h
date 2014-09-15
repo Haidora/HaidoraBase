@@ -16,5 +16,6 @@
 
 //uiview
 #import "UIView+HABGeometryExtend.h"
+#import "UIView+HABShadow.h"
 
 #endif
