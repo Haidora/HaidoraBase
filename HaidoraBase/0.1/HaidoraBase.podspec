@@ -41,6 +41,7 @@ Pod::Spec.new do |s|
     end
     habCategory.subspec 'HABCategory_UIKit' do |habCategory_UIKit|
       habCategory_UIKit.source_files = 'Source/HABCategory/UIKit/**/*.{h,m}','Source/HABCategory/*.{h,m}'
+      habCategory_UIKit.dependency 'HaidoraBase/habMacro'
       habCategory.dependency "NUI", "~> 0.5.4"
       habCategory.dependency "MBProgressHUD", "~> 0.8"
     end
