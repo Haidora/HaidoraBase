@@ -38,6 +38,7 @@
 		ABB35816197E0A9500F19C58 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB35815197E0A9500F19C58 /* BaseViewController.m */; };
 		ABC2091D19C6C7C200420CE3 /* UIView+HABShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2091C19C6C7C200420CE3 /* UIView+HABShadow.m */; };
 		ABCFBF04197F862D003ED1F1 /* HABViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCFBF03197F862D003ED1F1 /* HABViewVC.m */; };
+		ABDA559019EE22A8008D6E03 /* NSObject+HABEnumerate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDA558F19EE22A8008D6E03 /* NSObject+HABEnumerate.m */; };
 		C5BC598F63344D8EB0CA6A6F /* libPods-HaidoraBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 742B86741E6541009779294D /* libPods-HaidoraBase.a */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +120,8 @@
 		ABC2091C19C6C7C200420CE3 /* UIView+HABShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HABShadow.m"; sourceTree = "<group>"; };
 		ABCFBF02197F862D003ED1F1 /* HABViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABViewVC.h; sourceTree = "<group>"; };
 		ABCFBF03197F862D003ED1F1 /* HABViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABViewVC.m; sourceTree = "<group>"; };
+		ABDA558E19EE22A8008D6E03 /* NSObject+HABEnumerate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HABEnumerate.h"; sourceTree = "<group>"; };
+		ABDA558F19EE22A8008D6E03 /* NSObject+HABEnumerate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HABEnumerate.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -335,6 +338,8 @@
 			isa = PBXGroup;
 			children = (
 				AB8F47A819B0738C0043509A /* HABCategory_Foundation.h */,
+				ABDA558E19EE22A8008D6E03 /* NSObject+HABEnumerate.h */,
+				ABDA558F19EE22A8008D6E03 /* NSObject+HABEnumerate.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -520,6 +525,7 @@
 				AB8F479919B071860043509A /* HABUtil_UserDefaults.m in Sources */,
 				AB8F47A619B0736D0043509A /* UIViewController+HABBarButton.m in Sources */,
 				AB8F47A719B0736D0043509A /* UIViewController+HABBase.m in Sources */,
+				ABDA559019EE22A8008D6E03 /* NSObject+HABEnumerate.m in Sources */,
 				ABCFBF04197F862D003ED1F1 /* HABViewVC.m in Sources */,
 				ABB35816197E0A9500F19C58 /* BaseViewController.m in Sources */,
 				AB762296197DF9970049215B /* HABNetworkEngine.m in Sources */,
