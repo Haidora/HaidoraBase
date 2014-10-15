@@ -9,6 +9,6 @@
 #ifndef HaidoraBase_HABCategory_Foundation_h
 #define HaidoraBase_HABCategory_Foundation_h
 
-
+#import "NSObject+HABEnumerate.h"
 
 #endif
