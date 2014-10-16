@@ -11,4 +11,10 @@
 
 #import "HABTableViewCell.h"
 
+#if __has_include("HABAliginLabel.h")
+
+#import "HABAliginLabel.h"
+
+#endif
+
 #endif
