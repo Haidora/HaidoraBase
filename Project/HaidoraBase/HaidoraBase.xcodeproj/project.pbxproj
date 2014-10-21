@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AB150AEA197E298E006E99D4 /* HaidoraBase.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AB150AE9197E298E006E99D4 /* HaidoraBase.bundle */; };
+		AB33DA8F19F68F7400C4EAF0 /* NSObject+HABCurrent.m in Sources */ = {isa = PBXBuildFile; fileRef = AB33DA8E19F68F7400C4EAF0 /* NSObject+HABCurrent.m */; };
 		AB59970F19B4735000BD2B67 /* UIView+HABGeometryExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = AB59970E19B4735000BD2B67 /* UIView+HABGeometryExtend.m */; };
 		AB76224E197DF52C0049215B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB76224D197DF52C0049215B /* Foundation.framework */; };
 		AB762250197DF52C0049215B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB76224F197DF52C0049215B /* CoreGraphics.framework */; };
@@ -58,6 +59,8 @@
 		03F8563F52194C0A9AB68954 /* Pods-HaidoraBase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaidoraBase.xcconfig"; path = "Pods/Pods-HaidoraBase.xcconfig"; sourceTree = "<group>"; };
 		742B86741E6541009779294D /* libPods-HaidoraBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HaidoraBase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB150AE9197E298E006E99D4 /* HaidoraBase.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HaidoraBase.bundle; sourceTree = "<group>"; };
+		AB33DA8D19F68F7400C4EAF0 /* NSObject+HABCurrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HABCurrent.h"; sourceTree = "<group>"; };
+		AB33DA8E19F68F7400C4EAF0 /* NSObject+HABCurrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HABCurrent.m"; sourceTree = "<group>"; };
 		AB59970D19B4735000BD2B67 /* UIView+HABGeometryExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HABGeometryExtend.h"; sourceTree = "<group>"; };
 		AB59970E19B4735000BD2B67 /* UIView+HABGeometryExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HABGeometryExtend.m"; sourceTree = "<group>"; };
 		AB76224A197DF52C0049215B /* HaidoraBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaidoraBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -356,6 +359,8 @@
 				AB8F47A819B0738C0043509A /* HABCategory_Foundation.h */,
 				ABDA558E19EE22A8008D6E03 /* NSObject+HABEnumerate.h */,
 				ABDA558F19EE22A8008D6E03 /* NSObject+HABEnumerate.m */,
+				AB33DA8D19F68F7400C4EAF0 /* NSObject+HABCurrent.h */,
+				AB33DA8E19F68F7400C4EAF0 /* NSObject+HABCurrent.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -543,6 +548,7 @@
 				AB8968AA19B86E9000FEC07B /* HABAliginLabel.m in Sources */,
 				AB8F479919B071860043509A /* HABUtil_UserDefaults.m in Sources */,
 				AB8F47A619B0736D0043509A /* UIViewController+HABBarButton.m in Sources */,
+				AB33DA8F19F68F7400C4EAF0 /* NSObject+HABCurrent.m in Sources */,
 				AB8F47A719B0736D0043509A /* UIViewController+HABBase.m in Sources */,
 				ABDA559019EE22A8008D6E03 /* NSObject+HABEnumerate.m in Sources */,
 				ABCFBF04197F862D003ED1F1 /* HABViewVC.m in Sources */,

@@ -10,5 +10,6 @@
 #define HaidoraBase_HABCategory_Foundation_h
 
 #import "NSObject+HABEnumerate.h"
+#import "NSObject+HABCurrent.h"
 
 #endif
