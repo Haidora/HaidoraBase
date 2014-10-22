@@ -37,6 +37,7 @@
 		AB8F47A519B0736D0043509A /* UINavigationController+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F479F19B0736D0043509A /* UINavigationController+HABBase.m */; };
 		AB8F47A619B0736D0043509A /* UIViewController+HABBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F47A119B0736D0043509A /* UIViewController+HABBarButton.m */; };
 		AB8F47A719B0736D0043509A /* UIViewController+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F47A319B0736D0043509A /* UIViewController+HABBase.m */; };
+		ABA01B8419F7A8370015C5E9 /* UIScrollView+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA01B8319F7A8370015C5E9 /* UIScrollView+HABBase.m */; };
 		ABB35816197E0A9500F19C58 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB35815197E0A9500F19C58 /* BaseViewController.m */; };
 		ABC2091D19C6C7C200420CE3 /* UIView+HABShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2091C19C6C7C200420CE3 /* UIView+HABShadow.m */; };
 		ABCFBF04197F862D003ED1F1 /* HABViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCFBF03197F862D003ED1F1 /* HABViewVC.m */; };
@@ -121,6 +122,8 @@
 		AB92FD4919B0443A00D30562 /* HABMacro_Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABMacro_Color.h; sourceTree = "<group>"; };
 		AB92FD4A19B0474000D30562 /* HABMacro_Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABMacro_Util.h; sourceTree = "<group>"; };
 		AB92FD4B19B0489600D30562 /* HABMacro_Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABMacro_Singleton.h; sourceTree = "<group>"; };
+		ABA01B8219F7A8370015C5E9 /* UIScrollView+HABBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+HABBase.h"; sourceTree = "<group>"; };
+		ABA01B8319F7A8370015C5E9 /* UIScrollView+HABBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+HABBase.m"; sourceTree = "<group>"; };
 		ABB35814197E0A9500F19C58 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		ABB35815197E0A9500F19C58 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		ABC2091B19C6C7C200420CE3 /* UIView+HABShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HABShadow.h"; sourceTree = "<group>"; };
@@ -383,6 +386,8 @@
 				ABC2091C19C6C7C200420CE3 /* UIView+HABShadow.m */,
 				ABDE74E019EF960500509F78 /* UIView+HABBundle.h */,
 				ABDE74E119EF960500509F78 /* UIView+HABBundle.m */,
+				ABA01B8219F7A8370015C5E9 /* UIScrollView+HABBase.h */,
+				ABA01B8319F7A8370015C5E9 /* UIScrollView+HABBase.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -554,6 +559,7 @@
 				ABCFBF04197F862D003ED1F1 /* HABViewVC.m in Sources */,
 				ABB35816197E0A9500F19C58 /* BaseViewController.m in Sources */,
 				AB762296197DF9970049215B /* HABNetworkEngine.m in Sources */,
+				ABA01B8419F7A8370015C5E9 /* UIScrollView+HABBase.m in Sources */,
 				AB76229C197E03A50049215B /* HABTableViewCell.m in Sources */,
 				ABDE74E219EF960500509F78 /* UIView+HABBundle.m in Sources */,
 				AB8F479619B070E80043509A /* HABUtil_UI.m in Sources */,
