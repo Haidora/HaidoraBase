@@ -40,6 +40,7 @@
 		ABA01B8419F7A8370015C5E9 /* UIScrollView+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA01B8319F7A8370015C5E9 /* UIScrollView+HABBase.m */; };
 		ABB35816197E0A9500F19C58 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB35815197E0A9500F19C58 /* BaseViewController.m */; };
 		ABC2091D19C6C7C200420CE3 /* UIView+HABShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2091C19C6C7C200420CE3 /* UIView+HABShadow.m */; };
+		ABC67FBC19FC0A9800025BFA /* HABLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC67FBB19FC0A9800025BFA /* HABLineView.m */; };
 		ABCFBF04197F862D003ED1F1 /* HABViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCFBF03197F862D003ED1F1 /* HABViewVC.m */; };
 		ABDA559019EE22A8008D6E03 /* NSObject+HABEnumerate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDA558F19EE22A8008D6E03 /* NSObject+HABEnumerate.m */; };
 		ABDE74E219EF960500509F78 /* UIView+HABBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDE74E119EF960500509F78 /* UIView+HABBundle.m */; };
@@ -128,6 +129,8 @@
 		ABB35815197E0A9500F19C58 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		ABC2091B19C6C7C200420CE3 /* UIView+HABShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HABShadow.h"; sourceTree = "<group>"; };
 		ABC2091C19C6C7C200420CE3 /* UIView+HABShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HABShadow.m"; sourceTree = "<group>"; };
+		ABC67FBA19FC0A9800025BFA /* HABLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABLineView.h; sourceTree = "<group>"; };
+		ABC67FBB19FC0A9800025BFA /* HABLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABLineView.m; sourceTree = "<group>"; };
 		ABCFBF02197F862D003ED1F1 /* HABViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABViewVC.h; sourceTree = "<group>"; };
 		ABCFBF03197F862D003ED1F1 /* HABViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABViewVC.m; sourceTree = "<group>"; };
 		ABDA558E19EE22A8008D6E03 /* NSObject+HABEnumerate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HABEnumerate.h"; sourceTree = "<group>"; };
@@ -301,6 +304,7 @@
 				AB762291197DF5FF0049215B /* HABView.h */,
 				AB76229A197E03A50049215B /* HABTableViewCell.h */,
 				AB76229B197E03A50049215B /* HABTableViewCell.m */,
+				ABC67FB919FC0A9800025BFA /* UIView */,
 				AB8968A719B86D4800FEC07B /* UILabel */,
 			);
 			path = HABView;
@@ -412,6 +416,15 @@
 				ABCFBF03197F862D003ED1F1 /* HABViewVC.m */,
 			);
 			name = TestVC;
+			sourceTree = "<group>";
+		};
+		ABC67FB919FC0A9800025BFA /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				ABC67FBA19FC0A9800025BFA /* HABLineView.h */,
+				ABC67FBB19FC0A9800025BFA /* HABLineView.m */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -554,6 +567,7 @@
 				AB8F479919B071860043509A /* HABUtil_UserDefaults.m in Sources */,
 				AB8F47A619B0736D0043509A /* UIViewController+HABBarButton.m in Sources */,
 				AB33DA8F19F68F7400C4EAF0 /* NSObject+HABCurrent.m in Sources */,
+				ABC67FBC19FC0A9800025BFA /* HABLineView.m in Sources */,
 				AB8F47A719B0736D0043509A /* UIViewController+HABBase.m in Sources */,
 				ABDA559019EE22A8008D6E03 /* NSObject+HABEnumerate.m in Sources */,
 				ABCFBF04197F862D003ED1F1 /* HABViewVC.m in Sources */,

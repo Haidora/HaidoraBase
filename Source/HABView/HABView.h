@@ -17,4 +17,10 @@
 
 #endif
 
+#if __has_include("HABLineView.h")
+
+#import "HABLineView.h"
+
+#endif
+
 #endif
