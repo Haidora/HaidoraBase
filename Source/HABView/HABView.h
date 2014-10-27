@@ -23,4 +23,10 @@
 
 #endif
 
+#if __has_include("HABTextView.h")
+
+#import "HABTextView.h"
+
+#endif
+
 #endif
