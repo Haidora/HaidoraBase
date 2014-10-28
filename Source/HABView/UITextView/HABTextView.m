@@ -58,6 +58,7 @@
     _showPlaceHolder = NO;
 
     _placeholderLabel = [[HABAliginLabel alloc] init];
+	_placeholderLabel.numberOfLines = 0;
     [self addSubview:_placeholderLabel];
 
     [[NSNotificationCenter defaultCenter] addObserver:self

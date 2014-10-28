@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-IB_DESIGNABLE
+// IB_DESIGNABLE
 @interface HABTextView : UITextView
 
 @property (nonatomic, strong) IBInspectable NSString *placeholder;
