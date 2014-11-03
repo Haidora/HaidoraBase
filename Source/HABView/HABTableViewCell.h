@@ -8,22 +8,31 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import "HABCore.h"
+#import "HABUtil_Device.h"
 
-typedef NS_ENUM(NSInteger,HABTableViewCellSeparatorStyle)
+typedef NS_ENUM(NSInteger, HABTableViewCellSeparatorStyle)
 {
     HABTableViewCellSeparatorStyleNone = 0,
     HABTableViewCellSeparatorStyleCustom
 };
 
+typedef NS_ENUM(NSInteger, HABTableViewCellSelectionStyle)
+{
+    HABTableViewCellSelectionStyleNone = 0,
+    HABTableViewCellSelectionStyleCustom
+};
+
 @interface HABTableViewCell : UITableViewCell
 
-//for tableView
+// for tableView
 @property (nonatomic, weak) UITableView *tableView;
 
-//for tableViewCell
+// for tableViewCell
 @property (nonatomic, strong) NSIndexPath *indexPath;
 
-//for tableviewcell style
+#pragma mark
+#pragma mark TableViewCell Separator Style
 /**
  *  default is HABTableViewCellSeparatorStyleNone
  */
@@ -31,16 +40,34 @@ typedef NS_ENUM(NSInteger,HABTableViewCellSeparatorStyle)
 /**
  *  default is 0.5f
  */
-@property (nonatomic, assign) CGFloat       habSeparatorPadding;
+@property (nonatomic, assign) CGFloat habSeparatorPadding;
 /**
  *  default is [UIColor grayColor]
  */
-@property (nonatomic, strong) UIColor       *habSeparatorColor;
+@property (nonatomic, strong) UIColor *habSeparatorColor;
 /**
- *  default is UIEdgeInsetsMake(0, 0, 0, 0)
+ *  default is UIEdgeInsetsMake(0, 0, 0, 0),only left and right works.
  */
-@property (nonatomic, assign) UIEdgeInsets  habSeparatorEdgeInset;
+@property (nonatomic, assign) UIEdgeInsets habSeparatorEdgeInset;
 
+#pragma mark
+#pragma mark TableViewCell Selection Style
+
+/**
+ *  default is HABTableViewCellSelectionStyleNone
+ */
+@property (nonatomic, assign) HABTableViewCellSelectionStyle habSelectionStyle;
+/**
+ *  default is [UIColor whiteColor]
+ */
+@property (nonatomic, strong) UIColor *habBackGroundColor;
+/**
+ *  default is [UIColor whiteColor]
+ */
+@property (nonatomic, strong) UIColor *habSelectedBackGroundColor;
+
+#pragma mark
+#pragma mark Cell Config
 /**
  *  cellIdentifier default is class name.
  *
@@ -64,17 +91,41 @@ typedef NS_ENUM(NSInteger,HABTableViewCellSeparatorStyle)
 + (CGFloat)cellHeight;
 + (CGFloat)cellHeightForTableView:(UITableView *)tableView content:(id)content;
 
-+ (id)cellForTableView:(UITableView *)tableView withStyle:(UITableViewCellStyle)style;
-+ (id)cellForTableView:(UITableView *)tableView withStyle:(UITableViewCellStyle)style indexPath:(NSIndexPath *)indexPath;
-+ (id)cellForTableView:(UITableView *)tableView fromNib:(UINib *)nib;
-+ (id)cellForTableView:(UITableView *)tableView fromNib:(UINib *)nib indexPath:(NSIndexPath *)indexPath;
-+ (id)cellForTableView:(UITableView *)tableView fromNib:(UINib *)nib withCellIdentifier:(NSString *)cellIdentifier;
-+ (id)cellForTableView:(UITableView *)tableView fromNib:(UINib *)nib withCellIdentifier:(NSString *)cellIdentifier indexPath:(NSIndexPath *)indexPath;
+#pragma mark
+#pragma mark Load Cell
+
++ (id)cellForTableView:(UITableView *)tableView
+             withStyle:(UITableViewCellStyle)style
+    HAB_DEPRECATED_METHOD_NEW_METHOD("use -cellForTableView:withStyle:indexPath:");
++ (id)cellForTableView:(UITableView *)tableView
+             withStyle:(UITableViewCellStyle)style
+             indexPath:(NSIndexPath *)indexPath;
+
++ (id)cellForTableView:(UITableView *)tableView
+               fromNib:(UINib *)nib
+    HAB_DEPRECATED_METHOD_NEW_METHOD("use -cellForTableView:fromNib:indexPath:");
++ (id)cellForTableView:(UITableView *)tableView
+               fromNib:(UINib *)nib
+             indexPath:(NSIndexPath *)indexPath;
+
++ (id)cellForTableView:(UITableView *)tableView
+               fromNib:(UINib *)nib
+    withCellIdentifier:(NSString *)cellIdentifier
+    HAB_DEPRECATED_METHOD_NEW_METHOD("use -cellForTableView:fromNib:withCellIdentifier:indexPath:");
++ (id)cellForTableView:(UITableView *)tableView
+               fromNib:(UINib *)nib
+    withCellIdentifier:(NSString *)cellIdentifier
+             indexPath:(NSIndexPath *)indexPath;
 
 - (void)setContent:(id)content;
-/**
- *  tableViewcell复用时回调
- */
-- (void)reset;
+
+#pragma mark
+#pragma mark cell Life cycles
+
+- (void)cellDidLoad;
+- (void)cellWillAppear;
+
+- (void)reset
+    HAB_DEPRECATED_METHOD_NEW_METHOD("reset will not work.user -cellDidLoad cellWillAppear");
 
 @end

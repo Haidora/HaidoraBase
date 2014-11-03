@@ -18,7 +18,7 @@
 
 @implementation HABTableViewCell
 
--(id)initWithCoder:(NSCoder *)aDecoder
+- (id)initWithCoder:(NSCoder *)aDecoder
 {
     self = [super initWithCoder:aDecoder];
     if (self)
@@ -38,15 +38,19 @@
     return self;
 }
 
--(void)defaultInit
+- (void)defaultInit
 {
     _habSeparatorStyle = HABTableViewCellSeparatorStyleNone;
     _habSeparatorColor = [UIColor grayColor];
     _habSeparatorPadding = 0.5;
     _habSeparatorEdgeInset = UIEdgeInsetsMake(0, 0, 0, 0);
+
+    _habSelectionStyle = HABTableViewCellSelectionStyleNone;
+    _habBackGroundColor = [UIColor whiteColor];
+    _habSelectedBackGroundColor = [UIColor colorWithWhite:0.812 alpha:1.000];
 }
 
--(void)layoutSubviews
+- (void)layoutSubviews
 {
     [super layoutSubviews];
     if (self.habSeparatorStyle != HABTableViewCellSeparatorStyleNone)
@@ -54,43 +58,58 @@
         UIView *separatorView = [self viewWithTag:kHABSeparatorViewTag];
         if (!separatorView)
         {
-            [self addSubview:self.separatorView];
+            [self insertSubview:self.separatorView atIndex:0];
             self.separatorView.tag = kHABSeparatorViewTag;
             separatorView = self.separatorView;
         }
-        CGRect preFrame = self.separatorView.frame;
-        separatorView.frame = CGRectMake(_habSeparatorEdgeInset.left,
-                                         CGRectGetHeight(self.frame)-CGRectGetHeight(preFrame),
-                                         CGRectGetWidth(self.frame)-_habSeparatorEdgeInset.right-_habSeparatorEdgeInset.left,
-                                         CGRectGetHeight(preFrame));
+        separatorView.frame = CGRectMake(
+            _habSeparatorEdgeInset.left, CGRectGetHeight(self.bounds) - _habSeparatorPadding,
+            CGRectGetWidth(self.bounds) - _habSeparatorEdgeInset.right -
+                _habSeparatorEdgeInset.left,
+            _habSeparatorPadding);
+    }
+
+    if (self.habSelectionStyle != HABTableViewCellSelectionStyleNone)
+    {
+        if (self.backgroundView == nil)
+        {
+            self.backgroundView = [[UIImageView alloc] initWithFrame:self.bounds];
+        }
+        self.backgroundView.backgroundColor = self.habBackGroundColor;
+
+        if (![self.selectedBackgroundView isKindOfClass:[UIImageView class]] ||
+            self.selectedBackgroundView == nil)
+        {
+            self.selectedBackgroundView = [[UIImageView alloc] initWithFrame:self.bounds];
+        }
+        self.selectedBackgroundView.backgroundColor = self.habSelectedBackGroundColor;
     }
 }
 
--(UIControl *)separatorView
+- (UIControl *)separatorView
 {
     if (nil == _separatorView)
     {
         switch (_habSeparatorStyle)
         {
-            case HABTableViewCellSeparatorStyleCustom:
-            {
-                _separatorView = [self generateView:_habSeparatorColor height:_habSeparatorPadding];
-            }
-                break;
-            case HABTableViewCellSeparatorStyleNone:
-            default:
-                break;
+        case HABTableViewCellSeparatorStyleCustom:
+        {
+            _separatorView = [self generateView:_habSeparatorColor height:_habSeparatorPadding];
+        }
+        break;
+        case HABTableViewCellSeparatorStyleNone:
+        default:
+            break;
         }
     }
     return _separatorView;
 }
 
--(UIControl *)generateView:(UIColor *)color height:(CGFloat)height
+- (UIControl *)generateView:(UIColor *)color height:(CGFloat)height
 {
-    UIControl *control = [[UIControl alloc]initWithFrame:CGRectMake(0.0f,
-                                                                    CGRectGetHeight(self.frame)-height,
-                                                                    CGRectGetWidth(self.frame),
-                                                                    height)];
+    UIControl *control =
+        [[UIControl alloc] initWithFrame:CGRectMake(0.0f, CGRectGetHeight(self.frame) - height,
+                                                    CGRectGetWidth(self.frame), height)];
     control.backgroundColor = color;
     return control;
 }
@@ -100,12 +119,20 @@
 
 + (NSString *)cellIdentifier
 {
+
     return NSStringFromClass([self class]);
 }
 
 + (NSString *)nibName
 {
-    return [self cellIdentifier];
+    if ([HABUtil_Device isPhoneDevice])
+    {
+        return [self cellIdentifier];
+    }
+    else
+    {
+        return [NSString stringWithFormat:@"%@HD", [self cellIdentifier]];
+    }
 }
 
 + (UINib *)nib
@@ -125,12 +152,14 @@
 
 + (id)cellForTableView:(UITableView *)tableView withStyle:(UITableViewCellStyle)style
 {
-	return [self cellForTableView:tableView withStyle:style indexPath:nil];
+    return [self cellForTableView:tableView withStyle:style indexPath:nil];
 }
 
-+ (id)cellForTableView:(UITableView *)tableView withStyle:(UITableViewCellStyle)style indexPath:(NSIndexPath *)indexPath
++ (id)cellForTableView:(UITableView *)tableView
+             withStyle:(UITableViewCellStyle)style
+             indexPath:(NSIndexPath *)indexPath
 {
-	NSString *cellID = nil;
+    NSString *cellID = nil;
     if (style == UITableViewCellStyleDefault)
         cellID = @"HABTableViewCellStyleDefault";
     else if (style == UITableViewCellStyleValue1)
@@ -141,46 +170,60 @@
         cellID = @"HABTableViewCellStyleSubtitle";
     else
         cellID = @"HABTableViewCellSystem";
-    
+
     HABTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     if (cell == nil)
     {
         cell = [[[self class] alloc] initWithStyle:style reuseIdentifier:cellID];
+        [cell cellDidLoad];
     }
-	cell.tableView = tableView;
-	cell.indexPath = indexPath;
-    [cell reset];
+    cell.tableView = tableView;
+    cell.indexPath = indexPath;
+    [cell cellWillAppear];
+
     return cell;
 }
 
 + (id)cellForTableView:(UITableView *)tableView fromNib:(UINib *)nib
 {
-	return [self cellForTableView:tableView fromNib:nib indexPath:nil];
+    return [self cellForTableView:tableView fromNib:nib indexPath:nil];
 }
 
-+ (id)cellForTableView:(UITableView *)tableView fromNib:(UINib *)nib indexPath:(NSIndexPath *)indexPath
++ (id)cellForTableView:(UITableView *)tableView
+               fromNib:(UINib *)nib
+             indexPath:(NSIndexPath *)indexPath
 {
-	NSString *cellID = [self cellIdentifier];
+    NSString *cellID = [self cellIdentifier];
     HABTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     if (cell == nil)
     {
         NSArray *nibObjects = [nib instantiateWithOwner:nil options:nil];
         cell = nibObjects[0];
+        [cell cellDidLoad];
     }
-	cell.tableView = tableView;
-	cell.indexPath = indexPath;
-    [cell reset];
+    cell.tableView = tableView;
+    cell.indexPath = indexPath;
+    [cell cellWillAppear];
+
     return cell;
 }
 
-+ (id)cellForTableView:(UITableView *)tableView fromNib:(UINib *)nib withCellIdentifier:(NSString *)cellIdentifier
++ (id)cellForTableView:(UITableView *)tableView
+               fromNib:(UINib *)nib
+    withCellIdentifier:(NSString *)cellIdentifier
 {
-    return [self cellForTableView:tableView fromNib:nib withCellIdentifier:cellIdentifier indexPath:nil];
+    return [self cellForTableView:tableView
+                          fromNib:nib
+               withCellIdentifier:cellIdentifier
+                        indexPath:nil];
 }
 
-+ (id)cellForTableView:(UITableView *)tableView fromNib:(UINib *)nib withCellIdentifier:(NSString *)cellIdentifier indexPath:(NSIndexPath *)indexPath
++ (id)cellForTableView:(UITableView *)tableView
+               fromNib:(UINib *)nib
+    withCellIdentifier:(NSString *)cellIdentifier
+             indexPath:(NSIndexPath *)indexPath
 {
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (cell == nil)
     {
         NSArray *nibObjects = [nib instantiateWithOwner:nil options:nil];
@@ -189,13 +232,15 @@
             if ([nibCell.reuseIdentifier isEqualToString:cellIdentifier])
             {
                 cell = nibCell;
+                [(HABTableViewCell *)cell cellDidLoad];
                 break;
             }
         }
     }
-	((HABTableViewCell *)cell).tableView = tableView;
+    ((HABTableViewCell *)cell).tableView = tableView;
     ((HABTableViewCell *)cell).indexPath = indexPath;
-    [(HABTableViewCell *)cell reset];
+    [(HABTableViewCell *)cell cellWillAppear];
+
     return cell;
 }
 
@@ -203,9 +248,18 @@
 {
 }
 
+#pragma mark
+#pragma mark cell Life cycles
+
+- (void)cellDidLoad
+{
+}
+- (void)cellWillAppear
+{
+}
+
 - (void)reset
 {
-#warning write by yourself
 }
 
 @end
