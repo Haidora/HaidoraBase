@@ -13,5 +13,6 @@
  *  See https://github.com/jverkoey/nimbus/blob/master/src/core/src/NIPreprocessorMacros.h 105 line
  */
 #define HAB_DEPRECATED_METHOD __attribute__((deprecated))
+#define HAB_DEPRECATED_METHOD_NEW_METHOD(...) __attribute__((deprecated("" __VA_ARGS__)))
 
 #endif

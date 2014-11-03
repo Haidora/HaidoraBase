@@ -7,8 +7,9 @@
 //
 
 #import "HABViewVC.h"
+#import "TestCell.h"
 
-@interface HABViewVC ()<UITableViewDataSource,UITableViewDelegate>
+@interface HABViewVC () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 
@@ -19,7 +20,8 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
+    if (self)
+    {
         // Custom initialization
     }
     return self;
@@ -29,12 +31,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
-    _tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    _tableView.autoresizingMask =
+        UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableView.dataSource = self;
     _tableView.delegate = self;
-//    _tableView.backgroundColor = [UIColor yellowColor];
+    //    _tableView.backgroundColor = [UIColor yellowColor];
     [self.view addSubview:_tableView];
 }
 
@@ -47,7 +50,8 @@
 /*
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+// In a storyboard-based application, you will often want to do a little preparation before
+navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Get the new view controller using [segue destinationViewController].
@@ -55,7 +59,7 @@
 }
 */
 
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
 }
@@ -64,11 +68,19 @@
 {
     return 3;
 }
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    HABTableViewCell *cell = [HABTableViewCell cellForTableView:tableView withStyle:UITableViewCellStyleDefault];
+    TestCell *cell =
+        [HABTableViewCell cellForTableView:tableView withStyle:UITableViewCellStyleDefault];
     cell.textLabel.text = @"dsfdsf";
     cell.habSeparatorStyle = HABTableViewCellSeparatorStyleCustom;
+    cell.habSelectionStyle = HABTableViewCellSelectionStyleCustom;
+    cell.habSeparatorColor = [UIColor redColor];
+    //    cell.habBackGroundColor = [UIColor redColor];
+    //    cell.habSelectedBackGroundColor = [UIColor yellowColor];
+
+    [cell reset];
     return cell;
 }
 

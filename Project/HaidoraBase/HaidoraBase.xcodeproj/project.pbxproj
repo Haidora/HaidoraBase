@@ -28,6 +28,8 @@
 		AB762296197DF9970049215B /* HABNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = AB762295197DF9970049215B /* HABNetworkEngine.m */; };
 		AB762299197DF9C90049215B /* HABNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AB762298197DF9C90049215B /* HABNetworkOperation.m */; };
 		AB76229C197E03A50049215B /* HABTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB76229B197E03A50049215B /* HABTableViewCell.m */; };
+		AB768C211A075CCD009BC576 /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB768C201A075CCD009BC576 /* TestCell.m */; };
+		AB768C231A075CD5009BC576 /* TestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB768C221A075CD5009BC576 /* TestCell.xib */; };
 		AB7E8A4219FE8A2F00E5663B /* HABTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7E8A4119FE8A2F00E5663B /* HABTextView.m */; };
 		AB8968AA19B86E9000FEC07B /* HABAliginLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8968A919B86E9000FEC07B /* HABAliginLabel.m */; };
 		AB8F479019B04D1C0043509A /* HABUtil_Device.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F478F19B04D1C0043509A /* HABUtil_Device.m */; };
@@ -97,6 +99,9 @@
 		AB76229A197E03A50049215B /* HABTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABTableViewCell.h; sourceTree = "<group>"; };
 		AB76229B197E03A50049215B /* HABTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABTableViewCell.m; sourceTree = "<group>"; };
 		AB76229F197E06CF0049215B /* HABStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABStyle.h; sourceTree = "<group>"; };
+		AB768C1F1A075CCD009BC576 /* TestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCell.h; sourceTree = "<group>"; };
+		AB768C201A075CCD009BC576 /* TestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
+		AB768C221A075CD5009BC576 /* TestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestCell.xib; sourceTree = "<group>"; };
 		AB7E8A4019FE8A2F00E5663B /* HABTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABTextView.h; sourceTree = "<group>"; };
 		AB7E8A4119FE8A2F00E5663B /* HABTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABTextView.m; sourceTree = "<group>"; };
 		AB8968A819B86E9000FEC07B /* HABAliginLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABAliginLabel.h; sourceTree = "<group>"; };
@@ -427,6 +432,9 @@
 				ABB35815197E0A9500F19C58 /* BaseViewController.m */,
 				ABCFBF02197F862D003ED1F1 /* HABViewVC.h */,
 				ABCFBF03197F862D003ED1F1 /* HABViewVC.m */,
+				AB768C1F1A075CCD009BC576 /* TestCell.h */,
+				AB768C221A075CD5009BC576 /* TestCell.xib */,
+				AB768C201A075CCD009BC576 /* TestCell.m */,
 			);
 			name = TestVC;
 			sourceTree = "<group>";
@@ -523,6 +531,7 @@
 				AB150AEA197E298E006E99D4 /* HaidoraBase.bundle in Resources */,
 				AB762261197DF52C0049215B /* Main_iPhone.storyboard in Resources */,
 				AB762258197DF52C0049215B /* InfoPlist.strings in Resources */,
+				AB768C231A075CD5009BC576 /* TestCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +588,7 @@
 				AB8968AA19B86E9000FEC07B /* HABAliginLabel.m in Sources */,
 				AB8F479919B071860043509A /* HABUtil_UserDefaults.m in Sources */,
 				AB8F47A619B0736D0043509A /* UIViewController+HABBarButton.m in Sources */,
+				AB768C211A075CCD009BC576 /* TestCell.m in Sources */,
 				AB33DA8F19F68F7400C4EAF0 /* NSObject+HABCurrent.m in Sources */,
 				ABC67FBC19FC0A9800025BFA /* HABLineView.m in Sources */,
 				AB7E8A4219FE8A2F00E5663B /* HABTextView.m in Sources */,
@@ -688,7 +698,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -721,7 +731,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
