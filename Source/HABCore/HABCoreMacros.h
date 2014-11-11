@@ -15,4 +15,19 @@
 #define HAB_DEPRECATED_METHOD __attribute__((deprecated))
 #define HAB_DEPRECATED_METHOD_NEW_METHOD(...) __attribute__((deprecated("" __VA_ARGS__)))
 
+#pragma mark
+#pragma mark Living Render Supporting older Xcode
+
+#ifndef IBInspectable
+
+#define IBInspectable
+
+#endif
+
+#ifndef IB_DESIGNABLE
+
+#define IBInspectable
+
+#endif
+
 #endif

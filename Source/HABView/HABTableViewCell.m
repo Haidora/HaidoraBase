@@ -125,14 +125,7 @@
 
 + (NSString *)nibName
 {
-    if ([HABUtil_Device isPhoneDevice])
-    {
-        return [self cellIdentifier];
-    }
-    else
-    {
-        return [NSString stringWithFormat:@"%@HD", [self cellIdentifier]];
-    }
+    return [self cellIdentifier];
 }
 
 + (UINib *)nib
