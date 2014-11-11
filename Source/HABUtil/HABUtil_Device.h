@@ -15,6 +15,7 @@
 
 + (NSString *)osVersion;
 + (NSString *)appVersion;
++ (NSString *)appBuild;
 + (NSString *)appIdentifier;
 + (NSString *)deviceModel;
 
