@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HABCoreMacros.h"
 
 // IB_DESIGNABLE
 @interface HABLineView : UIView
