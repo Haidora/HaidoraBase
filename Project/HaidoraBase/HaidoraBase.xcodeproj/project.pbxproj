@@ -30,6 +30,7 @@
 		AB76229C197E03A50049215B /* HABTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB76229B197E03A50049215B /* HABTableViewCell.m */; };
 		AB768C211A075CCD009BC576 /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB768C201A075CCD009BC576 /* TestCell.m */; };
 		AB768C231A075CD5009BC576 /* TestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB768C221A075CD5009BC576 /* TestCell.xib */; };
+		AB7847E51A14B196005D603E /* HABTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7847E41A14B196005D603E /* HABTextField.m */; };
 		AB7E8A4219FE8A2F00E5663B /* HABTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7E8A4119FE8A2F00E5663B /* HABTextView.m */; };
 		AB8968AA19B86E9000FEC07B /* HABAliginLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8968A919B86E9000FEC07B /* HABAliginLabel.m */; };
 		AB8F479019B04D1C0043509A /* HABUtil_Device.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F478F19B04D1C0043509A /* HABUtil_Device.m */; };
@@ -102,6 +103,8 @@
 		AB768C1F1A075CCD009BC576 /* TestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCell.h; sourceTree = "<group>"; };
 		AB768C201A075CCD009BC576 /* TestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
 		AB768C221A075CD5009BC576 /* TestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestCell.xib; sourceTree = "<group>"; };
+		AB7847E31A14B196005D603E /* HABTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABTextField.h; sourceTree = "<group>"; };
+		AB7847E41A14B196005D603E /* HABTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABTextField.m; sourceTree = "<group>"; };
 		AB7E8A4019FE8A2F00E5663B /* HABTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABTextView.h; sourceTree = "<group>"; };
 		AB7E8A4119FE8A2F00E5663B /* HABTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABTextView.m; sourceTree = "<group>"; };
 		AB8968A819B86E9000FEC07B /* HABAliginLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABAliginLabel.h; sourceTree = "<group>"; };
@@ -335,6 +338,16 @@
 			path = RetableView;
 			sourceTree = "<group>";
 		};
+		AB7847E21A14B180005D603E /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				AB7847E31A14B196005D603E /* HABTextField.h */,
+				AB7847E41A14B196005D603E /* HABTextField.m */,
+			);
+			name = UITextField;
+			path = ../UITextField;
+			sourceTree = "<group>";
+		};
 		AB7E8A3F19FE8A0B00E5663B /* UITextView */ = {
 			isa = PBXGroup;
 			children = (
@@ -444,6 +457,7 @@
 			children = (
 				ABC67FBA19FC0A9800025BFA /* HABLineView.h */,
 				ABC67FBB19FC0A9800025BFA /* HABLineView.m */,
+				AB7847E21A14B180005D603E /* UITextField */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -600,6 +614,7 @@
 				ABA01B8419F7A8370015C5E9 /* UIScrollView+HABBase.m in Sources */,
 				AB76229C197E03A50049215B /* HABTableViewCell.m in Sources */,
 				ABDE74E219EF960500509F78 /* UIView+HABBundle.m in Sources */,
+				AB7847E51A14B196005D603E /* HABTextField.m in Sources */,
 				AB8F479619B070E80043509A /* HABUtil_UI.m in Sources */,
 				ABC2091D19C6C7C200420CE3 /* UIView+HABShadow.m in Sources */,
 				AB762267197DF52C0049215B /* ViewController.m in Sources */,
