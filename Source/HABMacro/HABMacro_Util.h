@@ -54,4 +54,11 @@
 
 #endif
 
+#pragma mark
+#pragma mark Utils
+
+#define HABM_StringWithFormat(format, ...) [NSString stringWithFormat:format, ##__VA_ARGS__]
+#define HABM_LocalizedStringWithFormat(format, ...)                                                \
+    [NSString localizedStringWithFormat:format, ##__VA_ARGS__]
+
 #endif
