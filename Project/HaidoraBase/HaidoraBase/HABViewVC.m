@@ -38,7 +38,7 @@
     _tableView.dataSource = self;
     _tableView.delegate = self;
     //    _tableView.backgroundColor = [UIColor yellowColor];
-    [self.view addSubview:_tableView];
+    //    [self.view addSubview:_tableView];
 }
 
 - (void)didReceiveMemoryWarning

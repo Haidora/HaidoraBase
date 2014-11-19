@@ -61,4 +61,7 @@
 #define HABM_LocalizedStringWithFormat(format, ...)                                                \
     [NSString localizedStringWithFormat:format, ##__VA_ARGS__]
 
+#undef HABM_StringIsEmpty
+#define HABM_StringIsEmpty(string) (((string) == nil || [(string)isEqualToString:@""]) ? YES : NO)
+
 #endif

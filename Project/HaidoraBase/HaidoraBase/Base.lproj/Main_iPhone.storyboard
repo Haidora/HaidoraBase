@@ -110,12 +110,26 @@
                     <view key="view" contentMode="scaleToFill" id="p7O-cg-gPZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CMCMCMCM" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H66-hS-k9b" customClass="HABTextField">
+                                <rect key="frame" x="51" y="104" width="231" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showSuffix" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="suffixColor">
+                                        <color key="value" red="0.082352943720000002" green="0.57647061349999995" blue="0.7607843876" alpha="1" colorSpace="deviceRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="suffix" value="Kg"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R0t-4l-yDG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="814" y="170"/>
+            <point key="canvasLocation" x="-733" y="-87"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
