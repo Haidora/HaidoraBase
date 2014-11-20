@@ -26,6 +26,7 @@ Pod::Spec.new do |s|
   end
   s.subspec 'HABMacro' do |habMacro|
     habMacro.source_files = 'Source/HABMacro/**/*.{h,m}','Source/*.{h,m}'
+    habMacro.dependency 'HaidoraBase/HABCore'
   end
   s.subspec 'HABStyle' do |habStyle|
     habStyle.source_files = 'Source/HABStyle/**/*.{h,m}','Source/*.{h,m}'
@@ -33,7 +34,7 @@ Pod::Spec.new do |s|
   end
   s.subspec 'HABCategory' do |habCategory|
     habCategory.source_files = 'Source/*.{h,m}'
-    habCategory.dependency 'HaidoraBase/HABCore'
+    habCategory.dependency 'HaidoraBase/HABMacro'
     habCategory.dependency "JRSwizzle", "~> 1.0"
 
     habCategory.subspec 'HABCategory_Foundation' do |habCategory_Foundation|
@@ -41,7 +42,6 @@ Pod::Spec.new do |s|
     end
     habCategory.subspec 'HABCategory_UIKit' do |habCategory_UIKit|
       habCategory_UIKit.source_files = 'Source/HABCategory/UIKit/**/*.{h,m}','Source/HABCategory/*.{h,m}'
-      habCategory_UIKit.dependency 'HaidoraBase/HABMacro'
       habCategory.dependency "NUI", "~> 0.5.4"
       habCategory.dependency "MBProgressHUD", "~> 0.8"
     end
@@ -52,11 +52,12 @@ Pod::Spec.new do |s|
   end
   s.subspec 'HABView' do |habView|
     habView.source_files = 'Source/HABView/**/*.{h,m}','Source/*.{h,m}'
-    habView.dependency 'HaidoraBase/HABCore'
+    habView.dependency 'HaidoraBase/HABMacro'
     habView.dependency 'HaidoraBase/HABUtil'
   end
   s.subspec 'HABUtil' do |habUtil|
     habUtil.source_files = 'Source/HABUtil/**/*.{h,m}','Source/*.{h,m}'
+    habUtil.dependency 'HaidoraBase/HABMacro'
   end
 
   s.resources = "Resource/storyboard/**/*.{storyboard}","Resource/xib/**/*.{xib}","Resource/bundle/**/*.{bundle}"
