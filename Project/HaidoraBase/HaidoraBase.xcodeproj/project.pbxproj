@@ -1,2641 +1,921 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>10ED5AA88426D9D10080B8A0</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-HaidoraBaseTests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>2B7043DDD5FC98FF26A632DA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-HaidoraBase.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-HaidoraBase/Pods-HaidoraBase.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4D5F1E3B77B39610D6FCFCAA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-HaidoraBaseTests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-HaidoraBaseTests/Pods-HaidoraBaseTests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5F640B5B563109598557F12A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-HaidoraBaseTests/Pods-HaidoraBaseTests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>742B86741E6541009779294D</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-HaidoraBase.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>8621A15CCFD34FAE87A5944D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>A939AFB82142BA5A0050B787</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>AB150AE8197E298E006E99D4</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB150AE9197E298E006E99D4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>bundle</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB150AE9197E298E006E99D4</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.plug-in</string>
-			<key>path</key>
-			<string>HaidoraBase.bundle</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB150AEA197E298E006E99D4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB150AE9197E298E006E99D4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB27F0FE1A1C3EC10028A98E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSString+HABUtils.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB27F0FF1A1C3EC10028A98E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSString+HABUtils.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB27F1001A1C3EC10028A98E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB27F0FF1A1C3EC10028A98E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB33DA8D19F68F7400C4EAF0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSObject+HABCurrent.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB33DA8E19F68F7400C4EAF0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSObject+HABCurrent.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB33DA8F19F68F7400C4EAF0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB33DA8E19F68F7400C4EAF0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB59970D19B4735000BD2B67</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UIView+HABGeometryExtend.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB59970E19B4735000BD2B67</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UIView+HABGeometryExtend.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB59970F19B4735000BD2B67</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB59970E19B4735000BD2B67</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB762241197DF52C0049215B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB762285197DF5430049215B</string>
-				<string>AB762286197DF5430049215B</string>
-				<string>AB762253197DF52C0049215B</string>
-				<string>AB762275197DF52D0049215B</string>
-				<string>AB76224C197DF52C0049215B</string>
-				<string>AB76224B197DF52C0049215B</string>
-				<string>F6D7BAB709D02E7886932CD5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762242197DF52C0049215B</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Haidora</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>AB76226D197DF52D0049215B</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>AB762249197DF52C0049215B</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>AB762245197DF52C0049215B</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>AB762241197DF52C0049215B</string>
-			<key>productRefGroup</key>
-			<string>AB76224B197DF52C0049215B</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>AB762249197DF52C0049215B</string>
-				<string>AB76226D197DF52D0049215B</string>
-			</array>
-		</dict>
-		<key>AB762245197DF52C0049215B</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>AB76227D197DF52D0049215B</string>
-				<string>AB76227E197DF52D0049215B</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>AB762246197DF52C0049215B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>AB59970F19B4735000BD2B67</string>
-				<string>AB27F1001A1C3EC10028A98E</string>
-				<string>AB8F47A419B0736D0043509A</string>
-				<string>AB8968AA19B86E9000FEC07B</string>
-				<string>AB8F479919B071860043509A</string>
-				<string>AB8F47A619B0736D0043509A</string>
-				<string>AB768C211A075CCD009BC576</string>
-				<string>AB33DA8F19F68F7400C4EAF0</string>
-				<string>ABC67FBC19FC0A9800025BFA</string>
-				<string>AB7E8A4219FE8A2F00E5663B</string>
-				<string>AB8F47A719B0736D0043509A</string>
-				<string>ABDA559019EE22A8008D6E03</string>
-				<string>ABCFBF04197F862D003ED1F1</string>
-				<string>ABB35816197E0A9500F19C58</string>
-				<string>AB762296197DF9970049215B</string>
-				<string>ABA01B8419F7A8370015C5E9</string>
-				<string>AB76229C197E03A50049215B</string>
-				<string>ABDE74E219EF960500509F78</string>
-				<string>AB7847E51A14B196005D603E</string>
-				<string>AB8F479619B070E80043509A</string>
-				<string>ABC2091D19C6C7C200420CE3</string>
-				<string>AB762267197DF52C0049215B</string>
-				<string>AB8F47A519B0736D0043509A</string>
-				<string>AB8F479019B04D1C0043509A</string>
-				<string>AB8F479319B04FD30043509A</string>
-				<string>AB76225E197DF52C0049215B</string>
-				<string>AB762299197DF9C90049215B</string>
-				<string>AB76225A197DF52C0049215B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>AB762247197DF52C0049215B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>AB762250197DF52C0049215B</string>
-				<string>AB762252197DF52C0049215B</string>
-				<string>AB76224E197DF52C0049215B</string>
-				<string>C5BC598F63344D8EB0CA6A6F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>AB762248197DF52C0049215B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>AB762264197DF52C0049215B</string>
-				<string>AB762269197DF52C0049215B</string>
-				<string>AB150AEA197E298E006E99D4</string>
-				<string>AB762261197DF52C0049215B</string>
-				<string>AB762258197DF52C0049215B</string>
-				<string>AB768C231A075CD5009BC576</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>AB762249197DF52C0049215B</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>AB76227F197DF52D0049215B</string>
-			<key>buildPhases</key>
-			<array>
-				<string>8621A15CCFD34FAE87A5944D</string>
-				<string>AB762246197DF52C0049215B</string>
-				<string>AB762247197DF52C0049215B</string>
-				<string>AB762248197DF52C0049215B</string>
-				<string>F381782073224FCEA802CBCB</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>HaidoraBase</string>
-			<key>productName</key>
-			<string>HaidoraBase</string>
-			<key>productReference</key>
-			<string>AB76224A197DF52C0049215B</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>AB76224A197DF52C0049215B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>HaidoraBase.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>AB76224B197DF52C0049215B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB76224A197DF52C0049215B</string>
-				<string>AB76226E197DF52D0049215B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB76224C197DF52C0049215B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB76224D197DF52C0049215B</string>
-				<string>AB76224F197DF52C0049215B</string>
-				<string>AB762251197DF52C0049215B</string>
-				<string>AB76226F197DF52D0049215B</string>
-				<string>742B86741E6541009779294D</string>
-				<string>10ED5AA88426D9D10080B8A0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB76224D197DF52C0049215B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>AB76224E197DF52C0049215B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB76224D197DF52C0049215B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB76224F197DF52C0049215B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>AB762250197DF52C0049215B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB76224F197DF52C0049215B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB762251197DF52C0049215B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>AB762252197DF52C0049215B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB762251197DF52C0049215B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB762253197DF52C0049215B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB76225C197DF52C0049215B</string>
-				<string>AB76225D197DF52C0049215B</string>
-				<string>ABB35817197E0A9E00F19C58</string>
-				<string>AB76225F197DF52C0049215B</string>
-				<string>AB762262197DF52C0049215B</string>
-				<string>AB762265197DF52C0049215B</string>
-				<string>AB762266197DF52C0049215B</string>
-				<string>AB762268197DF52C0049215B</string>
-				<string>AB762254197DF52C0049215B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>HaidoraBase</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762254197DF52C0049215B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB762255197DF52C0049215B</string>
-				<string>AB762256197DF52C0049215B</string>
-				<string>AB762259197DF52C0049215B</string>
-				<string>AB76225B197DF52C0049215B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762255197DF52C0049215B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>HaidoraBase-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762256197DF52C0049215B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB762257197DF52C0049215B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762257197DF52C0049215B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762258197DF52C0049215B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB762256197DF52C0049215B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB762259197DF52C0049215B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB76225A197DF52C0049215B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB762259197DF52C0049215B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB76225B197DF52C0049215B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HaidoraBase-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB76225C197DF52C0049215B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB76225D197DF52C0049215B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB76225E197DF52C0049215B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB76225D197DF52C0049215B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB76225F197DF52C0049215B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB762260197DF52C0049215B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main_iPhone.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762260197DF52C0049215B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main_iPhone.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762261197DF52C0049215B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB76225F197DF52C0049215B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB762262197DF52C0049215B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB762263197DF52C0049215B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main_iPad.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762263197DF52C0049215B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main_iPad.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762264197DF52C0049215B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB762262197DF52C0049215B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB762265197DF52C0049215B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>ViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762266197DF52C0049215B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762267197DF52C0049215B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB762266197DF52C0049215B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB762268197DF52C0049215B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762269197DF52C0049215B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB762268197DF52C0049215B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB76226A197DF52D0049215B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>AB76227C197DF52D0049215B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>AB76226B197DF52D0049215B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>AB762270197DF52D0049215B</string>
-				<string>AB762272197DF52D0049215B</string>
-				<string>AB762271197DF52D0049215B</string>
-				<string>BB7524E7295159C0906C3021</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>AB76226C197DF52D0049215B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>AB76227A197DF52D0049215B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>AB76226D197DF52D0049215B</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>AB762282197DF52D0049215B</string>
-			<key>buildPhases</key>
-			<array>
-				<string>A939AFB82142BA5A0050B787</string>
-				<string>AB76226A197DF52D0049215B</string>
-				<string>AB76226B197DF52D0049215B</string>
-				<string>AB76226C197DF52D0049215B</string>
-				<string>5F640B5B563109598557F12A</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>AB762274197DF52D0049215B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>HaidoraBaseTests</string>
-			<key>productName</key>
-			<string>HaidoraBaseTests</string>
-			<key>productReference</key>
-			<string>AB76226E197DF52D0049215B</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>AB76226E197DF52D0049215B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>HaidoraBaseTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>AB76226F197DF52D0049215B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>AB762270197DF52D0049215B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB76226F197DF52D0049215B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB762271197DF52D0049215B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB76224D197DF52C0049215B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB762272197DF52D0049215B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB762251197DF52C0049215B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB762273197DF52D0049215B</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>AB762242197DF52C0049215B</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>AB762249197DF52C0049215B</string>
-			<key>remoteInfo</key>
-			<string>HaidoraBase</string>
-		</dict>
-		<key>AB762274197DF52D0049215B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>AB762249197DF52C0049215B</string>
-			<key>targetProxy</key>
-			<string>AB762273197DF52D0049215B</string>
-		</dict>
-		<key>AB762275197DF52D0049215B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB76227B197DF52D0049215B</string>
-				<string>AB762276197DF52D0049215B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>HaidoraBaseTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762276197DF52D0049215B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB762277197DF52D0049215B</string>
-				<string>AB762278197DF52D0049215B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762277197DF52D0049215B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>HaidoraBaseTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762278197DF52D0049215B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB762279197DF52D0049215B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762279197DF52D0049215B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB76227A197DF52D0049215B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB762278197DF52D0049215B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB76227B197DF52D0049215B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>HaidoraBaseTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB76227C197DF52D0049215B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB76227B197DF52D0049215B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB76227D197DF52D0049215B</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>AB76227E197DF52D0049215B</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>AB76227F197DF52D0049215B</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>AB762280197DF52D0049215B</string>
-				<string>AB762281197DF52D0049215B</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>AB762280197DF52D0049215B</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>B72ACF08A4914B9AE6056F56</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>HaidoraBase/HaidoraBase-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>HaidoraBase/HaidoraBase-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>AB762281197DF52D0049215B</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>2B7043DDD5FC98FF26A632DA</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>HaidoraBase/HaidoraBase-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>HaidoraBase/HaidoraBase-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>AB762282197DF52D0049215B</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>AB762283197DF52D0049215B</string>
-				<string>AB762284197DF52D0049215B</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>AB762283197DF52D0049215B</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>ED38BEAF607D993A11A1D2D7</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/HaidoraBase.app/HaidoraBase</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>HaidoraBase/HaidoraBase-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>HaidoraBaseTests/HaidoraBaseTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>AB762284197DF52D0049215B</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>4D5F1E3B77B39610D6FCFCAA</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/HaidoraBase.app/HaidoraBase</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>HaidoraBase/HaidoraBase-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>HaidoraBaseTests/HaidoraBaseTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>AB762285197DF5430049215B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB150AE8197E298E006E99D4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Resource</string>
-			<key>path</key>
-			<string>../../Resource</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762286197DF5430049215B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB762287197DF55D0049215B</string>
-				<string>AB8B86D219AEDA9100EE4B06</string>
-				<string>AB92FD4719B043F400D30562</string>
-				<string>AB76229D197E06BE0049215B</string>
-				<string>AB76228E197DF5F30049215B</string>
-				<string>AB76228F197DF5F30049215B</string>
-				<string>AB762290197DF5F30049215B</string>
-				<string>AB8F478C19B04CD00043509A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Source</string>
-			<key>path</key>
-			<string>../../Source</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762287197DF55D0049215B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HaidoraBase.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB76228E197DF5F30049215B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB762293197DF6110049215B</string>
-				<string>AB8F479A19B0736D0043509A</string>
-				<string>AB8F479B19B0736D0043509A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>HABCategory</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB76228F197DF5F30049215B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB762292197DF6080049215B</string>
-				<string>AB762294197DF9970049215B</string>
-				<string>AB762295197DF9970049215B</string>
-				<string>AB762297197DF9C90049215B</string>
-				<string>AB762298197DF9C90049215B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>HABNetWork</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762290197DF5F30049215B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB762291197DF5FF0049215B</string>
-				<string>AB76229A197E03A50049215B</string>
-				<string>AB76229B197E03A50049215B</string>
-				<string>AB7E8A3F19FE8A0B00E5663B</string>
-				<string>ABC67FB919FC0A9800025BFA</string>
-				<string>AB8968A719B86D4800FEC07B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>HABView</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762291197DF5FF0049215B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HABView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762292197DF6080049215B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HABNetWork.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762293197DF6110049215B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HABCategory.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762294197DF9970049215B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HABNetworkEngine.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762295197DF9970049215B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>HABNetworkEngine.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762296197DF9970049215B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB762295197DF9970049215B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB762297197DF9C90049215B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HABNetworkOperation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762298197DF9C90049215B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>HABNetworkOperation.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB762299197DF9C90049215B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB762298197DF9C90049215B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB76229A197E03A50049215B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HABTableViewCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB76229B197E03A50049215B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>HABTableViewCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB76229C197E03A50049215B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB76229B197E03A50049215B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB76229D197E06BE0049215B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB76229F197E06CF0049215B</string>
-				<string>AB76229E197E06BE0049215B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>HABStyle</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB76229E197E06BE0049215B</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>RetableView</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB76229F197E06CF0049215B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HABStyle.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB768C1F1A075CCD009BC576</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TestCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB768C201A075CCD009BC576</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TestCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB768C211A075CCD009BC576</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB768C201A075CCD009BC576</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB768C221A075CD5009BC576</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>TestCell.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB768C231A075CD5009BC576</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB768C221A075CD5009BC576</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB7847E21A14B180005D603E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB7847E31A14B196005D603E</string>
-				<string>AB7847E41A14B196005D603E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>UITextField</string>
-			<key>path</key>
-			<string>../UITextField</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB7847E31A14B196005D603E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HABTextField.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB7847E41A14B196005D603E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>HABTextField.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB7847E51A14B196005D603E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB7847E41A14B196005D603E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB7E8A3F19FE8A0B00E5663B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB7E8A4019FE8A2F00E5663B</string>
-				<string>AB7E8A4119FE8A2F00E5663B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>UITextView</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB7E8A4019FE8A2F00E5663B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HABTextView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB7E8A4119FE8A2F00E5663B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>HABTextView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB7E8A4219FE8A2F00E5663B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB7E8A4119FE8A2F00E5663B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB8968A719B86D4800FEC07B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB8968A819B86E9000FEC07B</string>
-				<string>AB8968A919B86E9000FEC07B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>UILabel</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8968A819B86E9000FEC07B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HABAliginLabel.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8968A919B86E9000FEC07B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>HABAliginLabel.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8968AA19B86E9000FEC07B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB8968A919B86E9000FEC07B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB8B86D219AEDA9100EE4B06</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB8B86D319AEDAA800EE4B06</string>
-				<string>AB8B86D419AEDACF00EE4B06</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>HABCore</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8B86D319AEDAA800EE4B06</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HABCore.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8B86D419AEDACF00EE4B06</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HABCoreMacros.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8F478C19B04CD00043509A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB8F478D19B04CFC0043509A</string>
-				<string>AB8F478E19B04D1C0043509A</string>
-				<string>AB8F478F19B04D1C0043509A</string>
-				<string>AB8F479119B04FD30043509A</string>
-				<string>AB8F479219B04FD30043509A</string>
-				<string>AB8F479419B070E80043509A</string>
-				<string>AB8F479519B070E80043509A</string>
-				<string>AB8F479719B071860043509A</string>
-				<string>AB8F479819B071860043509A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>HABUtil</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8F478D19B04CFC0043509A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HABUtil.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8F478E19B04D1C0043509A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HABUtil_Device.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8F478F19B04D1C0043509A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>HABUtil_Device.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8F479019B04D1C0043509A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB8F478F19B04D1C0043509A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB8F479119B04FD30043509A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HABUtil_Path.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8F479219B04FD30043509A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>HABUtil_Path.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8F479319B04FD30043509A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB8F479219B04FD30043509A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB8F479419B070E80043509A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HABUtil_UI.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8F479519B070E80043509A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>HABUtil_UI.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8F479619B070E80043509A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB8F479519B070E80043509A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB8F479719B071860043509A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HABUtil_UserDefaults.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8F479819B071860043509A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>HABUtil_UserDefaults.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8F479919B071860043509A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB8F479819B071860043509A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB8F479A19B0736D0043509A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB8F47A819B0738C0043509A</string>
-				<string>ABDA558E19EE22A8008D6E03</string>
-				<string>ABDA558F19EE22A8008D6E03</string>
-				<string>AB33DA8D19F68F7400C4EAF0</string>
-				<string>AB33DA8E19F68F7400C4EAF0</string>
-				<string>AB27F0FE1A1C3EC10028A98E</string>
-				<string>AB27F0FF1A1C3EC10028A98E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Foundation</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8F479B19B0736D0043509A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB8F47A919B0739F0043509A</string>
-				<string>AB8F479C19B0736D0043509A</string>
-				<string>AB8F479D19B0736D0043509A</string>
-				<string>AB8F479E19B0736D0043509A</string>
-				<string>AB8F479F19B0736D0043509A</string>
-				<string>AB8F47A019B0736D0043509A</string>
-				<string>AB8F47A119B0736D0043509A</string>
-				<string>AB8F47A219B0736D0043509A</string>
-				<string>AB8F47A319B0736D0043509A</string>
-				<string>AB59970D19B4735000BD2B67</string>
-				<string>AB59970E19B4735000BD2B67</string>
-				<string>ABC2091B19C6C7C200420CE3</string>
-				<string>ABC2091C19C6C7C200420CE3</string>
-				<string>ABDE74E019EF960500509F78</string>
-				<string>ABDE74E119EF960500509F78</string>
-				<string>ABA01B8219F7A8370015C5E9</string>
-				<string>ABA01B8319F7A8370015C5E9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>UIKit</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8F479C19B0736D0043509A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UIApplication+HABBase.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8F479D19B0736D0043509A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UIApplication+HABBase.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8F479E19B0736D0043509A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UINavigationController+HABBase.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8F479F19B0736D0043509A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UINavigationController+HABBase.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8F47A019B0736D0043509A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UIViewController+HABBarButton.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8F47A119B0736D0043509A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UIViewController+HABBarButton.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8F47A219B0736D0043509A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UIViewController+HABBase.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8F47A319B0736D0043509A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UIViewController+HABBase.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8F47A419B0736D0043509A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB8F479D19B0736D0043509A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB8F47A519B0736D0043509A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB8F479F19B0736D0043509A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB8F47A619B0736D0043509A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB8F47A119B0736D0043509A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB8F47A719B0736D0043509A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB8F47A319B0736D0043509A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB8F47A819B0738C0043509A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HABCategory_Foundation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB8F47A919B0739F0043509A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HABCategory_UIKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB92FD4719B043F400D30562</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB92FD4819B0440A00D30562</string>
-				<string>AB92FD4919B0443A00D30562</string>
-				<string>AB92FD4A19B0474000D30562</string>
-				<string>AB92FD4B19B0489600D30562</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>HABMacro</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB92FD4819B0440A00D30562</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HABMacro.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB92FD4919B0443A00D30562</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HABMacro_Color.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB92FD4A19B0474000D30562</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HABMacro_Util.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB92FD4B19B0489600D30562</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HABMacro_Singleton.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ABA01B8219F7A8370015C5E9</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UIScrollView+HABBase.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ABA01B8319F7A8370015C5E9</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UIScrollView+HABBase.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ABA01B8419F7A8370015C5E9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ABA01B8319F7A8370015C5E9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ABB35814197E0A9500F19C58</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BaseViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ABB35815197E0A9500F19C58</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BaseViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ABB35816197E0A9500F19C58</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ABB35815197E0A9500F19C58</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ABB35817197E0A9E00F19C58</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>ABB35814197E0A9500F19C58</string>
-				<string>ABB35815197E0A9500F19C58</string>
-				<string>ABCFBF02197F862D003ED1F1</string>
-				<string>ABCFBF03197F862D003ED1F1</string>
-				<string>AB768C1F1A075CCD009BC576</string>
-				<string>AB768C221A075CD5009BC576</string>
-				<string>AB768C201A075CCD009BC576</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>TestVC</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ABC2091B19C6C7C200420CE3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UIView+HABShadow.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ABC2091C19C6C7C200420CE3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UIView+HABShadow.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ABC2091D19C6C7C200420CE3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ABC2091C19C6C7C200420CE3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ABC67FB919FC0A9800025BFA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>ABC67FBA19FC0A9800025BFA</string>
-				<string>ABC67FBB19FC0A9800025BFA</string>
-				<string>AB7847E21A14B180005D603E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>UIView</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ABC67FBA19FC0A9800025BFA</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HABLineView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ABC67FBB19FC0A9800025BFA</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>HABLineView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ABC67FBC19FC0A9800025BFA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ABC67FBB19FC0A9800025BFA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ABCFBF02197F862D003ED1F1</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HABViewVC.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ABCFBF03197F862D003ED1F1</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>HABViewVC.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ABCFBF04197F862D003ED1F1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ABCFBF03197F862D003ED1F1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ABDA558E19EE22A8008D6E03</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSObject+HABEnumerate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ABDA558F19EE22A8008D6E03</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSObject+HABEnumerate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ABDA559019EE22A8008D6E03</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ABDA558F19EE22A8008D6E03</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ABDE74E019EF960500509F78</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UIView+HABBundle.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ABDE74E119EF960500509F78</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UIView+HABBundle.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ABDE74E219EF960500509F78</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ABDE74E119EF960500509F78</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B72ACF08A4914B9AE6056F56</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-HaidoraBase.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-HaidoraBase/Pods-HaidoraBase.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BB7524E7295159C0906C3021</key>
-		<dict>
-			<key>fileRef</key>
-			<string>10ED5AA88426D9D10080B8A0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C5BC598F63344D8EB0CA6A6F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>742B86741E6541009779294D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ED38BEAF607D993A11A1D2D7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-HaidoraBaseTests.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-HaidoraBaseTests/Pods-HaidoraBaseTests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F381782073224FCEA802CBCB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-HaidoraBase/Pods-HaidoraBase-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>F6D7BAB709D02E7886932CD5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B72ACF08A4914B9AE6056F56</string>
-				<string>2B7043DDD5FC98FF26A632DA</string>
-				<string>ED38BEAF607D993A11A1D2D7</string>
-				<string>4D5F1E3B77B39610D6FCFCAA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>AB762242197DF52C0049215B</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB150AEA197E298E006E99D4 /* HaidoraBase.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AB150AE9197E298E006E99D4 /* HaidoraBase.bundle */; };
+		AB27F1001A1C3EC10028A98E /* NSString+HABUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AB27F0FF1A1C3EC10028A98E /* NSString+HABUtils.m */; };
+		AB33DA8F19F68F7400C4EAF0 /* NSObject+HABCurrent.m in Sources */ = {isa = PBXBuildFile; fileRef = AB33DA8E19F68F7400C4EAF0 /* NSObject+HABCurrent.m */; };
+		AB59970F19B4735000BD2B67 /* UIView+HABGeometryExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = AB59970E19B4735000BD2B67 /* UIView+HABGeometryExtend.m */; };
+		AB697F0D1A220B6A009A3631 /* UITableView+HABAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AB697F0C1A220B6A009A3631 /* UITableView+HABAutoLayout.m */; };
+		AB76224E197DF52C0049215B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB76224D197DF52C0049215B /* Foundation.framework */; };
+		AB762250197DF52C0049215B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB76224F197DF52C0049215B /* CoreGraphics.framework */; };
+		AB762252197DF52C0049215B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB762251197DF52C0049215B /* UIKit.framework */; };
+		AB762258197DF52C0049215B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB762256197DF52C0049215B /* InfoPlist.strings */; };
+		AB76225A197DF52C0049215B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB762259197DF52C0049215B /* main.m */; };
+		AB76225E197DF52C0049215B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB76225D197DF52C0049215B /* AppDelegate.m */; };
+		AB762261197DF52C0049215B /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB76225F197DF52C0049215B /* Main_iPhone.storyboard */; };
+		AB762264197DF52C0049215B /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB762262197DF52C0049215B /* Main_iPad.storyboard */; };
+		AB762267197DF52C0049215B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB762266197DF52C0049215B /* ViewController.m */; };
+		AB762269197DF52C0049215B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB762268197DF52C0049215B /* Images.xcassets */; };
+		AB762270197DF52D0049215B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB76226F197DF52D0049215B /* XCTest.framework */; };
+		AB762271197DF52D0049215B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB76224D197DF52C0049215B /* Foundation.framework */; };
+		AB762272197DF52D0049215B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB762251197DF52C0049215B /* UIKit.framework */; };
+		AB76227A197DF52D0049215B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB762278197DF52D0049215B /* InfoPlist.strings */; };
+		AB76227C197DF52D0049215B /* HaidoraBaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB76227B197DF52D0049215B /* HaidoraBaseTests.m */; };
+		AB762296197DF9970049215B /* HABNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = AB762295197DF9970049215B /* HABNetworkEngine.m */; };
+		AB762299197DF9C90049215B /* HABNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AB762298197DF9C90049215B /* HABNetworkOperation.m */; };
+		AB76229C197E03A50049215B /* HABTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB76229B197E03A50049215B /* HABTableViewCell.m */; };
+		AB768C211A075CCD009BC576 /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB768C201A075CCD009BC576 /* TestCell.m */; };
+		AB768C231A075CD5009BC576 /* TestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB768C221A075CD5009BC576 /* TestCell.xib */; };
+		AB7847E51A14B196005D603E /* HABTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7847E41A14B196005D603E /* HABTextField.m */; };
+		AB7E8A4219FE8A2F00E5663B /* HABTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7E8A4119FE8A2F00E5663B /* HABTextView.m */; };
+		AB8968AA19B86E9000FEC07B /* HABAliginLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8968A919B86E9000FEC07B /* HABAliginLabel.m */; };
+		AB8F479019B04D1C0043509A /* HABUtil_Device.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F478F19B04D1C0043509A /* HABUtil_Device.m */; };
+		AB8F479319B04FD30043509A /* HABUtil_Path.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F479219B04FD30043509A /* HABUtil_Path.m */; };
+		AB8F479619B070E80043509A /* HABUtil_UI.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F479519B070E80043509A /* HABUtil_UI.m */; };
+		AB8F479919B071860043509A /* HABUtil_UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F479819B071860043509A /* HABUtil_UserDefaults.m */; };
+		AB8F47A419B0736D0043509A /* UIApplication+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F479D19B0736D0043509A /* UIApplication+HABBase.m */; };
+		AB8F47A519B0736D0043509A /* UINavigationController+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F479F19B0736D0043509A /* UINavigationController+HABBase.m */; };
+		AB8F47A619B0736D0043509A /* UIViewController+HABBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F47A119B0736D0043509A /* UIViewController+HABBarButton.m */; };
+		AB8F47A719B0736D0043509A /* UIViewController+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F47A319B0736D0043509A /* UIViewController+HABBase.m */; };
+		ABA01B8419F7A8370015C5E9 /* UIScrollView+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA01B8319F7A8370015C5E9 /* UIScrollView+HABBase.m */; };
+		ABB35816197E0A9500F19C58 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB35815197E0A9500F19C58 /* BaseViewController.m */; };
+		ABC2091D19C6C7C200420CE3 /* UIView+HABShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2091C19C6C7C200420CE3 /* UIView+HABShadow.m */; };
+		ABC67FBC19FC0A9800025BFA /* HABLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC67FBB19FC0A9800025BFA /* HABLineView.m */; };
+		ABCFBF04197F862D003ED1F1 /* HABViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCFBF03197F862D003ED1F1 /* HABViewVC.m */; };
+		ABDA559019EE22A8008D6E03 /* NSObject+HABEnumerate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDA558F19EE22A8008D6E03 /* NSObject+HABEnumerate.m */; };
+		ABDE74E219EF960500509F78 /* UIView+HABBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDE74E119EF960500509F78 /* UIView+HABBundle.m */; };
+		BB7524E7295159C0906C3021 /* libPods-HaidoraBaseTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10ED5AA88426D9D10080B8A0 /* libPods-HaidoraBaseTests.a */; };
+		C5BC598F63344D8EB0CA6A6F /* libPods-HaidoraBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 742B86741E6541009779294D /* libPods-HaidoraBase.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB762273197DF52D0049215B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB762242197DF52C0049215B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB762249197DF52C0049215B;
+			remoteInfo = HaidoraBase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10ED5AA88426D9D10080B8A0 /* libPods-HaidoraBaseTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HaidoraBaseTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B7043DDD5FC98FF26A632DA /* Pods-HaidoraBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaidoraBase.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaidoraBase/Pods-HaidoraBase.release.xcconfig"; sourceTree = "<group>"; };
+		4D5F1E3B77B39610D6FCFCAA /* Pods-HaidoraBaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaidoraBaseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaidoraBaseTests/Pods-HaidoraBaseTests.release.xcconfig"; sourceTree = "<group>"; };
+		742B86741E6541009779294D /* libPods-HaidoraBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HaidoraBase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB150AE9197E298E006E99D4 /* HaidoraBase.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HaidoraBase.bundle; sourceTree = "<group>"; };
+		AB27F0FE1A1C3EC10028A98E /* NSString+HABUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HABUtils.h"; sourceTree = "<group>"; };
+		AB27F0FF1A1C3EC10028A98E /* NSString+HABUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HABUtils.m"; sourceTree = "<group>"; };
+		AB33DA8D19F68F7400C4EAF0 /* NSObject+HABCurrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HABCurrent.h"; sourceTree = "<group>"; };
+		AB33DA8E19F68F7400C4EAF0 /* NSObject+HABCurrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HABCurrent.m"; sourceTree = "<group>"; };
+		AB59970D19B4735000BD2B67 /* UIView+HABGeometryExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HABGeometryExtend.h"; sourceTree = "<group>"; };
+		AB59970E19B4735000BD2B67 /* UIView+HABGeometryExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HABGeometryExtend.m"; sourceTree = "<group>"; };
+		AB697F0B1A220B6A009A3631 /* UITableView+HABAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+HABAutoLayout.h"; sourceTree = "<group>"; };
+		AB697F0C1A220B6A009A3631 /* UITableView+HABAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+HABAutoLayout.m"; sourceTree = "<group>"; };
+		AB76224A197DF52C0049215B /* HaidoraBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaidoraBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB76224D197DF52C0049215B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AB76224F197DF52C0049215B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AB762251197DF52C0049215B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AB762255197DF52C0049215B /* HaidoraBase-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HaidoraBase-Info.plist"; sourceTree = "<group>"; };
+		AB762257197DF52C0049215B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB762259197DF52C0049215B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB76225B197DF52C0049215B /* HaidoraBase-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HaidoraBase-Prefix.pch"; sourceTree = "<group>"; };
+		AB76225C197DF52C0049215B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AB76225D197DF52C0049215B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AB762260197DF52C0049215B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		AB762263197DF52C0049215B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		AB762265197DF52C0049215B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AB762266197DF52C0049215B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AB762268197DF52C0049215B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AB76226E197DF52D0049215B /* HaidoraBaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaidoraBaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB76226F197DF52D0049215B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AB762277197DF52D0049215B /* HaidoraBaseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HaidoraBaseTests-Info.plist"; sourceTree = "<group>"; };
+		AB762279197DF52D0049215B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB76227B197DF52D0049215B /* HaidoraBaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaidoraBaseTests.m; sourceTree = "<group>"; };
+		AB762287197DF55D0049215B /* HaidoraBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HaidoraBase.h; sourceTree = "<group>"; };
+		AB762291197DF5FF0049215B /* HABView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABView.h; sourceTree = "<group>"; };
+		AB762292197DF6080049215B /* HABNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABNetWork.h; sourceTree = "<group>"; };
+		AB762293197DF6110049215B /* HABCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABCategory.h; sourceTree = "<group>"; };
+		AB762294197DF9970049215B /* HABNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABNetworkEngine.h; sourceTree = "<group>"; };
+		AB762295197DF9970049215B /* HABNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABNetworkEngine.m; sourceTree = "<group>"; };
+		AB762297197DF9C90049215B /* HABNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABNetworkOperation.h; sourceTree = "<group>"; };
+		AB762298197DF9C90049215B /* HABNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABNetworkOperation.m; sourceTree = "<group>"; };
+		AB76229A197E03A50049215B /* HABTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABTableViewCell.h; sourceTree = "<group>"; };
+		AB76229B197E03A50049215B /* HABTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABTableViewCell.m; sourceTree = "<group>"; };
+		AB76229F197E06CF0049215B /* HABStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABStyle.h; sourceTree = "<group>"; };
+		AB768C1F1A075CCD009BC576 /* TestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCell.h; sourceTree = "<group>"; };
+		AB768C201A075CCD009BC576 /* TestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
+		AB768C221A075CD5009BC576 /* TestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestCell.xib; sourceTree = "<group>"; };
+		AB7847E31A14B196005D603E /* HABTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABTextField.h; sourceTree = "<group>"; };
+		AB7847E41A14B196005D603E /* HABTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABTextField.m; sourceTree = "<group>"; };
+		AB7E8A4019FE8A2F00E5663B /* HABTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABTextView.h; sourceTree = "<group>"; };
+		AB7E8A4119FE8A2F00E5663B /* HABTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABTextView.m; sourceTree = "<group>"; };
+		AB8968A819B86E9000FEC07B /* HABAliginLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABAliginLabel.h; sourceTree = "<group>"; };
+		AB8968A919B86E9000FEC07B /* HABAliginLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABAliginLabel.m; sourceTree = "<group>"; };
+		AB8B86D319AEDAA800EE4B06 /* HABCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABCore.h; sourceTree = "<group>"; };
+		AB8B86D419AEDACF00EE4B06 /* HABCoreMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABCoreMacros.h; sourceTree = "<group>"; };
+		AB8F478D19B04CFC0043509A /* HABUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABUtil.h; sourceTree = "<group>"; };
+		AB8F478E19B04D1C0043509A /* HABUtil_Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABUtil_Device.h; sourceTree = "<group>"; };
+		AB8F478F19B04D1C0043509A /* HABUtil_Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABUtil_Device.m; sourceTree = "<group>"; };
+		AB8F479119B04FD30043509A /* HABUtil_Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABUtil_Path.h; sourceTree = "<group>"; };
+		AB8F479219B04FD30043509A /* HABUtil_Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABUtil_Path.m; sourceTree = "<group>"; };
+		AB8F479419B070E80043509A /* HABUtil_UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABUtil_UI.h; sourceTree = "<group>"; };
+		AB8F479519B070E80043509A /* HABUtil_UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABUtil_UI.m; sourceTree = "<group>"; };
+		AB8F479719B071860043509A /* HABUtil_UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABUtil_UserDefaults.h; sourceTree = "<group>"; };
+		AB8F479819B071860043509A /* HABUtil_UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABUtil_UserDefaults.m; sourceTree = "<group>"; };
+		AB8F479C19B0736D0043509A /* UIApplication+HABBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+HABBase.h"; sourceTree = "<group>"; };
+		AB8F479D19B0736D0043509A /* UIApplication+HABBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+HABBase.m"; sourceTree = "<group>"; };
+		AB8F479E19B0736D0043509A /* UINavigationController+HABBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+HABBase.h"; sourceTree = "<group>"; };
+		AB8F479F19B0736D0043509A /* UINavigationController+HABBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+HABBase.m"; sourceTree = "<group>"; };
+		AB8F47A019B0736D0043509A /* UIViewController+HABBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HABBarButton.h"; sourceTree = "<group>"; };
+		AB8F47A119B0736D0043509A /* UIViewController+HABBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HABBarButton.m"; sourceTree = "<group>"; };
+		AB8F47A219B0736D0043509A /* UIViewController+HABBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HABBase.h"; sourceTree = "<group>"; };
+		AB8F47A319B0736D0043509A /* UIViewController+HABBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HABBase.m"; sourceTree = "<group>"; };
+		AB8F47A819B0738C0043509A /* HABCategory_Foundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABCategory_Foundation.h; sourceTree = "<group>"; };
+		AB8F47A919B0739F0043509A /* HABCategory_UIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABCategory_UIKit.h; sourceTree = "<group>"; };
+		AB92FD4819B0440A00D30562 /* HABMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABMacro.h; sourceTree = "<group>"; };
+		AB92FD4919B0443A00D30562 /* HABMacro_Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABMacro_Color.h; sourceTree = "<group>"; };
+		AB92FD4A19B0474000D30562 /* HABMacro_Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABMacro_Util.h; sourceTree = "<group>"; };
+		AB92FD4B19B0489600D30562 /* HABMacro_Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABMacro_Singleton.h; sourceTree = "<group>"; };
+		ABA01B8219F7A8370015C5E9 /* UIScrollView+HABBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+HABBase.h"; sourceTree = "<group>"; };
+		ABA01B8319F7A8370015C5E9 /* UIScrollView+HABBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+HABBase.m"; sourceTree = "<group>"; };
+		ABB35814197E0A9500F19C58 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		ABB35815197E0A9500F19C58 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		ABC2091B19C6C7C200420CE3 /* UIView+HABShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HABShadow.h"; sourceTree = "<group>"; };
+		ABC2091C19C6C7C200420CE3 /* UIView+HABShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HABShadow.m"; sourceTree = "<group>"; };
+		ABC67FBA19FC0A9800025BFA /* HABLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABLineView.h; sourceTree = "<group>"; };
+		ABC67FBB19FC0A9800025BFA /* HABLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABLineView.m; sourceTree = "<group>"; };
+		ABCFBF02197F862D003ED1F1 /* HABViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABViewVC.h; sourceTree = "<group>"; };
+		ABCFBF03197F862D003ED1F1 /* HABViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABViewVC.m; sourceTree = "<group>"; };
+		ABDA558E19EE22A8008D6E03 /* NSObject+HABEnumerate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HABEnumerate.h"; sourceTree = "<group>"; };
+		ABDA558F19EE22A8008D6E03 /* NSObject+HABEnumerate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HABEnumerate.m"; sourceTree = "<group>"; };
+		ABDE74E019EF960500509F78 /* UIView+HABBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HABBundle.h"; sourceTree = "<group>"; };
+		ABDE74E119EF960500509F78 /* UIView+HABBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HABBundle.m"; sourceTree = "<group>"; };
+		B72ACF08A4914B9AE6056F56 /* Pods-HaidoraBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaidoraBase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaidoraBase/Pods-HaidoraBase.debug.xcconfig"; sourceTree = "<group>"; };
+		ED38BEAF607D993A11A1D2D7 /* Pods-HaidoraBaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaidoraBaseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaidoraBaseTests/Pods-HaidoraBaseTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB762247197DF52C0049215B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB762250197DF52C0049215B /* CoreGraphics.framework in Frameworks */,
+				AB762252197DF52C0049215B /* UIKit.framework in Frameworks */,
+				AB76224E197DF52C0049215B /* Foundation.framework in Frameworks */,
+				C5BC598F63344D8EB0CA6A6F /* libPods-HaidoraBase.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB76226B197DF52D0049215B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB762270197DF52D0049215B /* XCTest.framework in Frameworks */,
+				AB762272197DF52D0049215B /* UIKit.framework in Frameworks */,
+				AB762271197DF52D0049215B /* Foundation.framework in Frameworks */,
+				BB7524E7295159C0906C3021 /* libPods-HaidoraBaseTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB150AE8197E298E006E99D4 /* bundle */ = {
+			isa = PBXGroup;
+			children = (
+				AB150AE9197E298E006E99D4 /* HaidoraBase.bundle */,
+			);
+			path = bundle;
+			sourceTree = "<group>";
+		};
+		AB762241197DF52C0049215B = {
+			isa = PBXGroup;
+			children = (
+				AB762285197DF5430049215B /* Resource */,
+				AB762286197DF5430049215B /* Source */,
+				AB762253197DF52C0049215B /* HaidoraBase */,
+				AB762275197DF52D0049215B /* HaidoraBaseTests */,
+				AB76224C197DF52C0049215B /* Frameworks */,
+				AB76224B197DF52C0049215B /* Products */,
+				F6D7BAB709D02E7886932CD5 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		AB76224B197DF52C0049215B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB76224A197DF52C0049215B /* HaidoraBase.app */,
+				AB76226E197DF52D0049215B /* HaidoraBaseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB76224C197DF52C0049215B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB76224D197DF52C0049215B /* Foundation.framework */,
+				AB76224F197DF52C0049215B /* CoreGraphics.framework */,
+				AB762251197DF52C0049215B /* UIKit.framework */,
+				AB76226F197DF52D0049215B /* XCTest.framework */,
+				742B86741E6541009779294D /* libPods-HaidoraBase.a */,
+				10ED5AA88426D9D10080B8A0 /* libPods-HaidoraBaseTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB762253197DF52C0049215B /* HaidoraBase */ = {
+			isa = PBXGroup;
+			children = (
+				AB76225C197DF52C0049215B /* AppDelegate.h */,
+				AB76225D197DF52C0049215B /* AppDelegate.m */,
+				ABB35817197E0A9E00F19C58 /* TestVC */,
+				AB76225F197DF52C0049215B /* Main_iPhone.storyboard */,
+				AB762262197DF52C0049215B /* Main_iPad.storyboard */,
+				AB762265197DF52C0049215B /* ViewController.h */,
+				AB762266197DF52C0049215B /* ViewController.m */,
+				AB762268197DF52C0049215B /* Images.xcassets */,
+				AB762254197DF52C0049215B /* Supporting Files */,
+			);
+			path = HaidoraBase;
+			sourceTree = "<group>";
+		};
+		AB762254197DF52C0049215B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB762255197DF52C0049215B /* HaidoraBase-Info.plist */,
+				AB762256197DF52C0049215B /* InfoPlist.strings */,
+				AB762259197DF52C0049215B /* main.m */,
+				AB76225B197DF52C0049215B /* HaidoraBase-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB762275197DF52D0049215B /* HaidoraBaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB76227B197DF52D0049215B /* HaidoraBaseTests.m */,
+				AB762276197DF52D0049215B /* Supporting Files */,
+			);
+			path = HaidoraBaseTests;
+			sourceTree = "<group>";
+		};
+		AB762276197DF52D0049215B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB762277197DF52D0049215B /* HaidoraBaseTests-Info.plist */,
+				AB762278197DF52D0049215B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB762285197DF5430049215B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				AB150AE8197E298E006E99D4 /* bundle */,
+			);
+			name = Resource;
+			path = ../../Resource;
+			sourceTree = "<group>";
+		};
+		AB762286197DF5430049215B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				AB762287197DF55D0049215B /* HaidoraBase.h */,
+				AB8B86D219AEDA9100EE4B06 /* HABCore */,
+				AB92FD4719B043F400D30562 /* HABMacro */,
+				AB76229D197E06BE0049215B /* HABStyle */,
+				AB76228E197DF5F30049215B /* HABCategory */,
+				AB76228F197DF5F30049215B /* HABNetWork */,
+				AB762290197DF5F30049215B /* HABView */,
+				AB8F478C19B04CD00043509A /* HABUtil */,
+			);
+			name = Source;
+			path = ../../Source;
+			sourceTree = "<group>";
+		};
+		AB76228E197DF5F30049215B /* HABCategory */ = {
+			isa = PBXGroup;
+			children = (
+				AB762293197DF6110049215B /* HABCategory.h */,
+				AB8F479A19B0736D0043509A /* Foundation */,
+				AB8F479B19B0736D0043509A /* UIKit */,
+			);
+			path = HABCategory;
+			sourceTree = "<group>";
+		};
+		AB76228F197DF5F30049215B /* HABNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				AB762292197DF6080049215B /* HABNetWork.h */,
+				AB762294197DF9970049215B /* HABNetworkEngine.h */,
+				AB762295197DF9970049215B /* HABNetworkEngine.m */,
+				AB762297197DF9C90049215B /* HABNetworkOperation.h */,
+				AB762298197DF9C90049215B /* HABNetworkOperation.m */,
+			);
+			path = HABNetWork;
+			sourceTree = "<group>";
+		};
+		AB762290197DF5F30049215B /* HABView */ = {
+			isa = PBXGroup;
+			children = (
+				AB762291197DF5FF0049215B /* HABView.h */,
+				AB76229A197E03A50049215B /* HABTableViewCell.h */,
+				AB76229B197E03A50049215B /* HABTableViewCell.m */,
+				AB7E8A3F19FE8A0B00E5663B /* UITextView */,
+				ABC67FB919FC0A9800025BFA /* UIView */,
+				AB8968A719B86D4800FEC07B /* UILabel */,
+			);
+			path = HABView;
+			sourceTree = "<group>";
+		};
+		AB76229D197E06BE0049215B /* HABStyle */ = {
+			isa = PBXGroup;
+			children = (
+				AB76229F197E06CF0049215B /* HABStyle.h */,
+				AB76229E197E06BE0049215B /* RetableView */,
+			);
+			path = HABStyle;
+			sourceTree = "<group>";
+		};
+		AB76229E197E06BE0049215B /* RetableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RetableView;
+			sourceTree = "<group>";
+		};
+		AB7847E21A14B180005D603E /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				AB7847E31A14B196005D603E /* HABTextField.h */,
+				AB7847E41A14B196005D603E /* HABTextField.m */,
+			);
+			name = UITextField;
+			path = ../UITextField;
+			sourceTree = "<group>";
+		};
+		AB7E8A3F19FE8A0B00E5663B /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				AB7E8A4019FE8A2F00E5663B /* HABTextView.h */,
+				AB7E8A4119FE8A2F00E5663B /* HABTextView.m */,
+			);
+			path = UITextView;
+			sourceTree = "<group>";
+		};
+		AB8968A719B86D4800FEC07B /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				AB8968A819B86E9000FEC07B /* HABAliginLabel.h */,
+				AB8968A919B86E9000FEC07B /* HABAliginLabel.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		AB8B86D219AEDA9100EE4B06 /* HABCore */ = {
+			isa = PBXGroup;
+			children = (
+				AB8B86D319AEDAA800EE4B06 /* HABCore.h */,
+				AB8B86D419AEDACF00EE4B06 /* HABCoreMacros.h */,
+			);
+			path = HABCore;
+			sourceTree = "<group>";
+		};
+		AB8F478C19B04CD00043509A /* HABUtil */ = {
+			isa = PBXGroup;
+			children = (
+				AB8F478D19B04CFC0043509A /* HABUtil.h */,
+				AB8F478E19B04D1C0043509A /* HABUtil_Device.h */,
+				AB8F478F19B04D1C0043509A /* HABUtil_Device.m */,
+				AB8F479119B04FD30043509A /* HABUtil_Path.h */,
+				AB8F479219B04FD30043509A /* HABUtil_Path.m */,
+				AB8F479419B070E80043509A /* HABUtil_UI.h */,
+				AB8F479519B070E80043509A /* HABUtil_UI.m */,
+				AB8F479719B071860043509A /* HABUtil_UserDefaults.h */,
+				AB8F479819B071860043509A /* HABUtil_UserDefaults.m */,
+			);
+			path = HABUtil;
+			sourceTree = "<group>";
+		};
+		AB8F479A19B0736D0043509A /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				AB8F47A819B0738C0043509A /* HABCategory_Foundation.h */,
+				ABDA558E19EE22A8008D6E03 /* NSObject+HABEnumerate.h */,
+				ABDA558F19EE22A8008D6E03 /* NSObject+HABEnumerate.m */,
+				AB33DA8D19F68F7400C4EAF0 /* NSObject+HABCurrent.h */,
+				AB33DA8E19F68F7400C4EAF0 /* NSObject+HABCurrent.m */,
+				AB27F0FE1A1C3EC10028A98E /* NSString+HABUtils.h */,
+				AB27F0FF1A1C3EC10028A98E /* NSString+HABUtils.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		AB8F479B19B0736D0043509A /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				AB8F47A919B0739F0043509A /* HABCategory_UIKit.h */,
+				AB8F479C19B0736D0043509A /* UIApplication+HABBase.h */,
+				AB8F479D19B0736D0043509A /* UIApplication+HABBase.m */,
+				AB8F479E19B0736D0043509A /* UINavigationController+HABBase.h */,
+				AB8F479F19B0736D0043509A /* UINavigationController+HABBase.m */,
+				AB8F47A019B0736D0043509A /* UIViewController+HABBarButton.h */,
+				AB8F47A119B0736D0043509A /* UIViewController+HABBarButton.m */,
+				AB8F47A219B0736D0043509A /* UIViewController+HABBase.h */,
+				AB8F47A319B0736D0043509A /* UIViewController+HABBase.m */,
+				AB59970D19B4735000BD2B67 /* UIView+HABGeometryExtend.h */,
+				AB59970E19B4735000BD2B67 /* UIView+HABGeometryExtend.m */,
+				ABC2091B19C6C7C200420CE3 /* UIView+HABShadow.h */,
+				ABC2091C19C6C7C200420CE3 /* UIView+HABShadow.m */,
+				ABDE74E019EF960500509F78 /* UIView+HABBundle.h */,
+				ABDE74E119EF960500509F78 /* UIView+HABBundle.m */,
+				ABA01B8219F7A8370015C5E9 /* UIScrollView+HABBase.h */,
+				ABA01B8319F7A8370015C5E9 /* UIScrollView+HABBase.m */,
+				AB697F0B1A220B6A009A3631 /* UITableView+HABAutoLayout.h */,
+				AB697F0C1A220B6A009A3631 /* UITableView+HABAutoLayout.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		AB92FD4719B043F400D30562 /* HABMacro */ = {
+			isa = PBXGroup;
+			children = (
+				AB92FD4819B0440A00D30562 /* HABMacro.h */,
+				AB92FD4919B0443A00D30562 /* HABMacro_Color.h */,
+				AB92FD4A19B0474000D30562 /* HABMacro_Util.h */,
+				AB92FD4B19B0489600D30562 /* HABMacro_Singleton.h */,
+			);
+			path = HABMacro;
+			sourceTree = "<group>";
+		};
+		ABB35817197E0A9E00F19C58 /* TestVC */ = {
+			isa = PBXGroup;
+			children = (
+				ABB35814197E0A9500F19C58 /* BaseViewController.h */,
+				ABB35815197E0A9500F19C58 /* BaseViewController.m */,
+				ABCFBF02197F862D003ED1F1 /* HABViewVC.h */,
+				ABCFBF03197F862D003ED1F1 /* HABViewVC.m */,
+				AB768C1F1A075CCD009BC576 /* TestCell.h */,
+				AB768C221A075CD5009BC576 /* TestCell.xib */,
+				AB768C201A075CCD009BC576 /* TestCell.m */,
+			);
+			name = TestVC;
+			sourceTree = "<group>";
+		};
+		ABC67FB919FC0A9800025BFA /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				ABC67FBA19FC0A9800025BFA /* HABLineView.h */,
+				ABC67FBB19FC0A9800025BFA /* HABLineView.m */,
+				AB7847E21A14B180005D603E /* UITextField */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		F6D7BAB709D02E7886932CD5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B72ACF08A4914B9AE6056F56 /* Pods-HaidoraBase.debug.xcconfig */,
+				2B7043DDD5FC98FF26A632DA /* Pods-HaidoraBase.release.xcconfig */,
+				ED38BEAF607D993A11A1D2D7 /* Pods-HaidoraBaseTests.debug.xcconfig */,
+				4D5F1E3B77B39610D6FCFCAA /* Pods-HaidoraBaseTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB762249197DF52C0049215B /* HaidoraBase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB76227F197DF52D0049215B /* Build configuration list for PBXNativeTarget "HaidoraBase" */;
+			buildPhases = (
+				8621A15CCFD34FAE87A5944D /* Check Pods Manifest.lock */,
+				AB762246197DF52C0049215B /* Sources */,
+				AB762247197DF52C0049215B /* Frameworks */,
+				AB762248197DF52C0049215B /* Resources */,
+				F381782073224FCEA802CBCB /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HaidoraBase;
+			productName = HaidoraBase;
+			productReference = AB76224A197DF52C0049215B /* HaidoraBase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB76226D197DF52D0049215B /* HaidoraBaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB762282197DF52D0049215B /* Build configuration list for PBXNativeTarget "HaidoraBaseTests" */;
+			buildPhases = (
+				A939AFB82142BA5A0050B787 /* Check Pods Manifest.lock */,
+				AB76226A197DF52D0049215B /* Sources */,
+				AB76226B197DF52D0049215B /* Frameworks */,
+				AB76226C197DF52D0049215B /* Resources */,
+				5F640B5B563109598557F12A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB762274197DF52D0049215B /* PBXTargetDependency */,
+			);
+			name = HaidoraBaseTests;
+			productName = HaidoraBaseTests;
+			productReference = AB76226E197DF52D0049215B /* HaidoraBaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB762242197DF52C0049215B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Haidora;
+				TargetAttributes = {
+					AB76226D197DF52D0049215B = {
+						TestTargetID = AB762249197DF52C0049215B;
+					};
+				};
+			};
+			buildConfigurationList = AB762245197DF52C0049215B /* Build configuration list for PBXProject "HaidoraBase" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB762241197DF52C0049215B;
+			productRefGroup = AB76224B197DF52C0049215B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB762249197DF52C0049215B /* HaidoraBase */,
+				AB76226D197DF52D0049215B /* HaidoraBaseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB762248197DF52C0049215B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB762264197DF52C0049215B /* Main_iPad.storyboard in Resources */,
+				AB762269197DF52C0049215B /* Images.xcassets in Resources */,
+				AB150AEA197E298E006E99D4 /* HaidoraBase.bundle in Resources */,
+				AB762261197DF52C0049215B /* Main_iPhone.storyboard in Resources */,
+				AB762258197DF52C0049215B /* InfoPlist.strings in Resources */,
+				AB768C231A075CD5009BC576 /* TestCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB76226C197DF52D0049215B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB76227A197DF52D0049215B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F640B5B563109598557F12A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HaidoraBaseTests/Pods-HaidoraBaseTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8621A15CCFD34FAE87A5944D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A939AFB82142BA5A0050B787 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F381782073224FCEA802CBCB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HaidoraBase/Pods-HaidoraBase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB762246197DF52C0049215B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB59970F19B4735000BD2B67 /* UIView+HABGeometryExtend.m in Sources */,
+				AB27F1001A1C3EC10028A98E /* NSString+HABUtils.m in Sources */,
+				AB8F47A419B0736D0043509A /* UIApplication+HABBase.m in Sources */,
+				AB8968AA19B86E9000FEC07B /* HABAliginLabel.m in Sources */,
+				AB8F479919B071860043509A /* HABUtil_UserDefaults.m in Sources */,
+				AB8F47A619B0736D0043509A /* UIViewController+HABBarButton.m in Sources */,
+				AB768C211A075CCD009BC576 /* TestCell.m in Sources */,
+				AB33DA8F19F68F7400C4EAF0 /* NSObject+HABCurrent.m in Sources */,
+				ABC67FBC19FC0A9800025BFA /* HABLineView.m in Sources */,
+				AB7E8A4219FE8A2F00E5663B /* HABTextView.m in Sources */,
+				AB8F47A719B0736D0043509A /* UIViewController+HABBase.m in Sources */,
+				ABDA559019EE22A8008D6E03 /* NSObject+HABEnumerate.m in Sources */,
+				ABCFBF04197F862D003ED1F1 /* HABViewVC.m in Sources */,
+				ABB35816197E0A9500F19C58 /* BaseViewController.m in Sources */,
+				AB762296197DF9970049215B /* HABNetworkEngine.m in Sources */,
+				ABA01B8419F7A8370015C5E9 /* UIScrollView+HABBase.m in Sources */,
+				AB76229C197E03A50049215B /* HABTableViewCell.m in Sources */,
+				ABDE74E219EF960500509F78 /* UIView+HABBundle.m in Sources */,
+				AB7847E51A14B196005D603E /* HABTextField.m in Sources */,
+				AB8F479619B070E80043509A /* HABUtil_UI.m in Sources */,
+				ABC2091D19C6C7C200420CE3 /* UIView+HABShadow.m in Sources */,
+				AB762267197DF52C0049215B /* ViewController.m in Sources */,
+				AB8F47A519B0736D0043509A /* UINavigationController+HABBase.m in Sources */,
+				AB697F0D1A220B6A009A3631 /* UITableView+HABAutoLayout.m in Sources */,
+				AB8F479019B04D1C0043509A /* HABUtil_Device.m in Sources */,
+				AB8F479319B04FD30043509A /* HABUtil_Path.m in Sources */,
+				AB76225E197DF52C0049215B /* AppDelegate.m in Sources */,
+				AB762299197DF9C90049215B /* HABNetworkOperation.m in Sources */,
+				AB76225A197DF52C0049215B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB76226A197DF52D0049215B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB76227C197DF52D0049215B /* HaidoraBaseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB762274197DF52D0049215B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB762249197DF52C0049215B /* HaidoraBase */;
+			targetProxy = AB762273197DF52D0049215B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB762256197DF52C0049215B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB762257197DF52C0049215B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AB76225F197DF52C0049215B /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB762260197DF52C0049215B /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		AB762262197DF52C0049215B /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB762263197DF52C0049215B /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		AB762278197DF52D0049215B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB762279197DF52D0049215B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB76227D197DF52D0049215B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB76227E197DF52D0049215B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB762280197DF52D0049215B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B72ACF08A4914B9AE6056F56 /* Pods-HaidoraBase.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HaidoraBase/HaidoraBase-Prefix.pch";
+				INFOPLIST_FILE = "HaidoraBase/HaidoraBase-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AB762281197DF52D0049215B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B7043DDD5FC98FF26A632DA /* Pods-HaidoraBase.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HaidoraBase/HaidoraBase-Prefix.pch";
+				INFOPLIST_FILE = "HaidoraBase/HaidoraBase-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AB762283197DF52D0049215B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED38BEAF607D993A11A1D2D7 /* Pods-HaidoraBaseTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HaidoraBase.app/HaidoraBase";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HaidoraBase/HaidoraBase-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HaidoraBaseTests/HaidoraBaseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AB762284197DF52D0049215B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D5F1E3B77B39610D6FCFCAA /* Pods-HaidoraBaseTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HaidoraBase.app/HaidoraBase";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HaidoraBase/HaidoraBase-Prefix.pch";
+				INFOPLIST_FILE = "HaidoraBaseTests/HaidoraBaseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB762245197DF52C0049215B /* Build configuration list for PBXProject "HaidoraBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB76227D197DF52D0049215B /* Debug */,
+				AB76227E197DF52D0049215B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB76227F197DF52D0049215B /* Build configuration list for PBXNativeTarget "HaidoraBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB762280197DF52D0049215B /* Debug */,
+				AB762281197DF52D0049215B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB762282197DF52D0049215B /* Build configuration list for PBXNativeTarget "HaidoraBaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB762283197DF52D0049215B /* Debug */,
+				AB762284197DF52D0049215B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB762242197DF52C0049215B /* Project object */;
+}

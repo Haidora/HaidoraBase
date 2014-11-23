@@ -23,6 +23,11 @@
 
 - (NSString *)trim
 {
+    return [self stringByTrimingWhitespace];
+}
+
+- (NSString *)stringByTrimingWhitespace
+{
     NSString *returnString;
     if ([self isEmpty])
     {

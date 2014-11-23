@@ -10,7 +10,7 @@
 #define HaidoraBase_HABCoreMacros_h
 
 /**
- *  See https://github.com/jverkoey/nimbus/blob/master/src/core/src/NIPreprocessorMacros.h 105 line
+ *  See https://github.com/jverkoey/nimbus/blob/master/src/core/src/NIPreprocessorMacros.h#L105
  */
 #define HAB_DEPRECATED_METHOD __attribute__((deprecated))
 #define HAB_DEPRECATED_METHOD_NEW_METHOD(...) __attribute__((deprecated("" __VA_ARGS__)))

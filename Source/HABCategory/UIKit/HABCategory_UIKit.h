@@ -20,5 +20,6 @@
 #import "UIView+HABBundle.h"
 
 #import "UIScrollView+HABBase.h"
+#import "UITableView+HABAutoLayout.h"
 
 #endif

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "HABCoreMacros.h"
 
 @interface NSString (HABUtils)
 
@@ -15,6 +16,13 @@
  *
  *  @return new trim String
  */
-- (NSString *)trim;
+- (NSString *)trim HAB_DEPRECATED_METHOD_NEW_METHOD("use - stringByTrimingWhitespace");
+
+/**
+ *  trim Whitespace
+ *
+ *  @return new trim String
+ */
+- (NSString *)stringByTrimingWhitespace;
 
 @end
