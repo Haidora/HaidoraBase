@@ -70,6 +70,10 @@
     if ([self.dataSource respondsToSelector:@selector(tableView:cellForRowAtIndexPath:)])
     {
         cell = [self.dataSource tableView:tableView cellForRowAtIndexPath:indexPath];
+        if (!cell && [_cellClass isSubclassOfClass:[HABTableViewCell class]])
+        {
+            cell = [_cellClass cellForTableView:tableView fromNib:self.nib];
+        }
     }
     else
     {
