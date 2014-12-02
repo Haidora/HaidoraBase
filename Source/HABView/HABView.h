@@ -29,4 +29,10 @@
 
 #endif
 
+#if __has_include("HABTableViewManager.h")
+
+#import "HABTableViewManager.h"
+
+#endif
+
 #endif
