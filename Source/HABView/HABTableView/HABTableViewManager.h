@@ -16,7 +16,7 @@
 @interface HABTableViewManager : NSObject <UITableViewDataSource, UITableViewDelegate>
 
 //@[@[],@[]]
-@property (nonatomic, weak) NSMutableArray *cellDatas;
+@property (nonatomic, strong) NSMutableArray *cellDatas;
 @property (nonatomic, copy) HABTableViewCellConfigureBlock cellConfigureBlock;
 @property (nonatomic, weak) id<HABTableViewManagerDataSource> dataSource;
 @property (nonatomic, weak) id<HABTableViewManagerDelegate> delegate;
