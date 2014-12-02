@@ -64,4 +64,8 @@
 #undef HABM_StringIsEmpty
 #define HABM_StringIsEmpty(string) (((string) == nil || [(string)isEqualToString:@""]) ? YES : NO)
 
+#pragma mark
+#pragma mark Type Define
+typedef void (^HABTableViewCellConfigureBlock)(id cell, id item, NSIndexPath *index);
+
 #endif

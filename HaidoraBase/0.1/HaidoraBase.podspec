@@ -53,6 +53,7 @@ Pod::Spec.new do |s|
   s.subspec 'HABView' do |habView|
     habView.source_files = 'Source/HABView/**/*.{h,m}','Source/*.{h,m}'
     habView.dependency 'HaidoraBase/HABCore'
+    habView.dependency 'HaidoraBase/HABMacro'
     habView.dependency 'HaidoraBase/HABUtil'
   end
   s.subspec 'HABUtil' do |habUtil|

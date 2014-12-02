@@ -10,6 +10,8 @@
 		AB150AEA197E298E006E99D4 /* HaidoraBase.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AB150AE9197E298E006E99D4 /* HaidoraBase.bundle */; };
 		AB27F1001A1C3EC10028A98E /* NSString+HABUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AB27F0FF1A1C3EC10028A98E /* NSString+HABUtils.m */; };
 		AB33DA8F19F68F7400C4EAF0 /* NSObject+HABCurrent.m in Sources */ = {isa = PBXBuildFile; fileRef = AB33DA8E19F68F7400C4EAF0 /* NSObject+HABCurrent.m */; };
+		AB40C5601A2D9E90007DE9D1 /* HABTableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB40C55F1A2D9E90007DE9D1 /* HABTableViewManager.m */; };
+		AB40C5631A2DA0C1007DE9D1 /* HABTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB40C5621A2DA0C1007DE9D1 /* HABTableViewCell.m */; };
 		AB59970F19B4735000BD2B67 /* UIView+HABGeometryExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = AB59970E19B4735000BD2B67 /* UIView+HABGeometryExtend.m */; };
 		AB697F0D1A220B6A009A3631 /* UITableView+HABAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AB697F0C1A220B6A009A3631 /* UITableView+HABAutoLayout.m */; };
 		AB76224E197DF52C0049215B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB76224D197DF52C0049215B /* Foundation.framework */; };
@@ -29,7 +31,6 @@
 		AB76227C197DF52D0049215B /* HaidoraBaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB76227B197DF52D0049215B /* HaidoraBaseTests.m */; };
 		AB762296197DF9970049215B /* HABNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = AB762295197DF9970049215B /* HABNetworkEngine.m */; };
 		AB762299197DF9C90049215B /* HABNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AB762298197DF9C90049215B /* HABNetworkOperation.m */; };
-		AB76229C197E03A50049215B /* HABTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB76229B197E03A50049215B /* HABTableViewCell.m */; };
 		AB768C211A075CCD009BC576 /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB768C201A075CCD009BC576 /* TestCell.m */; };
 		AB768C231A075CD5009BC576 /* TestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB768C221A075CD5009BC576 /* TestCell.xib */; };
 		AB7847E51A14B196005D603E /* HABTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7847E41A14B196005D603E /* HABTextField.m */; };
@@ -74,6 +75,10 @@
 		AB27F0FF1A1C3EC10028A98E /* NSString+HABUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HABUtils.m"; sourceTree = "<group>"; };
 		AB33DA8D19F68F7400C4EAF0 /* NSObject+HABCurrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HABCurrent.h"; sourceTree = "<group>"; };
 		AB33DA8E19F68F7400C4EAF0 /* NSObject+HABCurrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HABCurrent.m"; sourceTree = "<group>"; };
+		AB40C55E1A2D9E90007DE9D1 /* HABTableViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABTableViewManager.h; sourceTree = "<group>"; };
+		AB40C55F1A2D9E90007DE9D1 /* HABTableViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABTableViewManager.m; sourceTree = "<group>"; };
+		AB40C5611A2DA0C1007DE9D1 /* HABTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABTableViewCell.h; sourceTree = "<group>"; };
+		AB40C5621A2DA0C1007DE9D1 /* HABTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABTableViewCell.m; sourceTree = "<group>"; };
 		AB59970D19B4735000BD2B67 /* UIView+HABGeometryExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HABGeometryExtend.h"; sourceTree = "<group>"; };
 		AB59970E19B4735000BD2B67 /* UIView+HABGeometryExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HABGeometryExtend.m"; sourceTree = "<group>"; };
 		AB697F0B1A220B6A009A3631 /* UITableView+HABAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+HABAutoLayout.h"; sourceTree = "<group>"; };
@@ -106,8 +111,6 @@
 		AB762295197DF9970049215B /* HABNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABNetworkEngine.m; sourceTree = "<group>"; };
 		AB762297197DF9C90049215B /* HABNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABNetworkOperation.h; sourceTree = "<group>"; };
 		AB762298197DF9C90049215B /* HABNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABNetworkOperation.m; sourceTree = "<group>"; };
-		AB76229A197E03A50049215B /* HABTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABTableViewCell.h; sourceTree = "<group>"; };
-		AB76229B197E03A50049215B /* HABTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABTableViewCell.m; sourceTree = "<group>"; };
 		AB76229F197E06CF0049215B /* HABStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABStyle.h; sourceTree = "<group>"; };
 		AB768C1F1A075CCD009BC576 /* TestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCell.h; sourceTree = "<group>"; };
 		AB768C201A075CCD009BC576 /* TestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
@@ -193,6 +196,17 @@
 				AB150AE9197E298E006E99D4 /* HaidoraBase.bundle */,
 			);
 			path = bundle;
+			sourceTree = "<group>";
+		};
+		AB40C55D1A2D9E52007DE9D1 /* HABTableView */ = {
+			isa = PBXGroup;
+			children = (
+				AB40C5611A2DA0C1007DE9D1 /* HABTableViewCell.h */,
+				AB40C5621A2DA0C1007DE9D1 /* HABTableViewCell.m */,
+				AB40C55E1A2D9E90007DE9D1 /* HABTableViewManager.h */,
+				AB40C55F1A2D9E90007DE9D1 /* HABTableViewManager.m */,
+			);
+			path = HABTableView;
 			sourceTree = "<group>";
 		};
 		AB762241197DF52C0049215B = {
@@ -326,8 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				AB762291197DF5FF0049215B /* HABView.h */,
-				AB76229A197E03A50049215B /* HABTableViewCell.h */,
-				AB76229B197E03A50049215B /* HABTableViewCell.m */,
+				AB40C55D1A2D9E52007DE9D1 /* HABTableView */,
 				AB7E8A3F19FE8A0B00E5663B /* UITextView */,
 				ABC67FB919FC0A9800025BFA /* UIView */,
 				AB8968A719B86D4800FEC07B /* UILabel */,
@@ -666,6 +679,7 @@
 				AB768C211A075CCD009BC576 /* TestCell.m in Sources */,
 				AB33DA8F19F68F7400C4EAF0 /* NSObject+HABCurrent.m in Sources */,
 				ABC67FBC19FC0A9800025BFA /* HABLineView.m in Sources */,
+				AB40C5601A2D9E90007DE9D1 /* HABTableViewManager.m in Sources */,
 				AB7E8A4219FE8A2F00E5663B /* HABTextView.m in Sources */,
 				AB8F47A719B0736D0043509A /* UIViewController+HABBase.m in Sources */,
 				ABDA559019EE22A8008D6E03 /* NSObject+HABEnumerate.m in Sources */,
@@ -673,7 +687,6 @@
 				ABB35816197E0A9500F19C58 /* BaseViewController.m in Sources */,
 				AB762296197DF9970049215B /* HABNetworkEngine.m in Sources */,
 				ABA01B8419F7A8370015C5E9 /* UIScrollView+HABBase.m in Sources */,
-				AB76229C197E03A50049215B /* HABTableViewCell.m in Sources */,
 				ABDE74E219EF960500509F78 /* UIView+HABBundle.m in Sources */,
 				AB7847E51A14B196005D603E /* HABTextField.m in Sources */,
 				AB8F479619B070E80043509A /* HABUtil_UI.m in Sources */,
@@ -682,6 +695,7 @@
 				AB8F47A519B0736D0043509A /* UINavigationController+HABBase.m in Sources */,
 				AB697F0D1A220B6A009A3631 /* UITableView+HABAutoLayout.m in Sources */,
 				AB8F479019B04D1C0043509A /* HABUtil_Device.m in Sources */,
+				AB40C5631A2DA0C1007DE9D1 /* HABTableViewCell.m in Sources */,
 				AB8F479319B04FD30043509A /* HABUtil_Path.m in Sources */,
 				AB76225E197DF52C0049215B /* AppDelegate.m in Sources */,
 				AB762299197DF9C90049215B /* HABNetworkOperation.m in Sources */,
