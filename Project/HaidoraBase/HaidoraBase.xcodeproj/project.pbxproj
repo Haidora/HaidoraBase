@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AB150AEA197E298E006E99D4 /* HaidoraBase.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AB150AE9197E298E006E99D4 /* HaidoraBase.bundle */; };
-		AB27F1001A1C3EC10028A98E /* NSString+HABUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AB27F0FF1A1C3EC10028A98E /* NSString+HABUtils.m */; };
 		AB33DA8F19F68F7400C4EAF0 /* NSObject+HABCurrent.m in Sources */ = {isa = PBXBuildFile; fileRef = AB33DA8E19F68F7400C4EAF0 /* NSObject+HABCurrent.m */; };
 		AB40C5601A2D9E90007DE9D1 /* HABTableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB40C55F1A2D9E90007DE9D1 /* HABTableViewManager.m */; };
 		AB40C5631A2DA0C1007DE9D1 /* HABTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB40C5621A2DA0C1007DE9D1 /* HABTableViewCell.m */; };
@@ -46,6 +45,8 @@
 		AB8F47A719B0736D0043509A /* UIViewController+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F47A319B0736D0043509A /* UIViewController+HABBase.m */; };
 		ABA01B8419F7A8370015C5E9 /* UIScrollView+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA01B8319F7A8370015C5E9 /* UIScrollView+HABBase.m */; };
 		ABB35816197E0A9500F19C58 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB35815197E0A9500F19C58 /* BaseViewController.m */; };
+		ABB8E6281A2EEC2300B2DCFE /* NSString+HABUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB8E6271A2EEC2300B2DCFE /* NSString+HABUtils.m */; };
+		ABB8E62B1A2EEC8900B2DCFE /* NSString+HABCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB8E62A1A2EEC8900B2DCFE /* NSString+HABCrypto.m */; };
 		ABC2091D19C6C7C200420CE3 /* UIView+HABShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2091C19C6C7C200420CE3 /* UIView+HABShadow.m */; };
 		ABC67FBC19FC0A9800025BFA /* HABLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC67FBB19FC0A9800025BFA /* HABLineView.m */; };
 		ABCFBF04197F862D003ED1F1 /* HABViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCFBF03197F862D003ED1F1 /* HABViewVC.m */; };
@@ -71,8 +72,6 @@
 		4D5F1E3B77B39610D6FCFCAA /* Pods-HaidoraBaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaidoraBaseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaidoraBaseTests/Pods-HaidoraBaseTests.release.xcconfig"; sourceTree = "<group>"; };
 		742B86741E6541009779294D /* libPods-HaidoraBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HaidoraBase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB150AE9197E298E006E99D4 /* HaidoraBase.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HaidoraBase.bundle; sourceTree = "<group>"; };
-		AB27F0FE1A1C3EC10028A98E /* NSString+HABUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HABUtils.h"; sourceTree = "<group>"; };
-		AB27F0FF1A1C3EC10028A98E /* NSString+HABUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HABUtils.m"; sourceTree = "<group>"; };
 		AB33DA8D19F68F7400C4EAF0 /* NSObject+HABCurrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HABCurrent.h"; sourceTree = "<group>"; };
 		AB33DA8E19F68F7400C4EAF0 /* NSObject+HABCurrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HABCurrent.m"; sourceTree = "<group>"; };
 		AB40C55E1A2D9E90007DE9D1 /* HABTableViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABTableViewManager.h; sourceTree = "<group>"; };
@@ -150,6 +149,10 @@
 		ABA01B8319F7A8370015C5E9 /* UIScrollView+HABBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+HABBase.m"; sourceTree = "<group>"; };
 		ABB35814197E0A9500F19C58 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		ABB35815197E0A9500F19C58 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		ABB8E6261A2EEC2300B2DCFE /* NSString+HABUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HABUtils.h"; sourceTree = "<group>"; };
+		ABB8E6271A2EEC2300B2DCFE /* NSString+HABUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HABUtils.m"; sourceTree = "<group>"; };
+		ABB8E6291A2EEC8900B2DCFE /* NSString+HABCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HABCrypto.h"; sourceTree = "<group>"; };
+		ABB8E62A1A2EEC8900B2DCFE /* NSString+HABCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HABCrypto.m"; sourceTree = "<group>"; };
 		ABC2091B19C6C7C200420CE3 /* UIView+HABShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HABShadow.h"; sourceTree = "<group>"; };
 		ABC2091C19C6C7C200420CE3 /* UIView+HABShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HABShadow.m"; sourceTree = "<group>"; };
 		ABC67FBA19FC0A9800025BFA /* HABLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABLineView.h; sourceTree = "<group>"; };
@@ -425,8 +428,7 @@
 				ABDA558F19EE22A8008D6E03 /* NSObject+HABEnumerate.m */,
 				AB33DA8D19F68F7400C4EAF0 /* NSObject+HABCurrent.h */,
 				AB33DA8E19F68F7400C4EAF0 /* NSObject+HABCurrent.m */,
-				AB27F0FE1A1C3EC10028A98E /* NSString+HABUtils.h */,
-				AB27F0FF1A1C3EC10028A98E /* NSString+HABUtils.m */,
+				ABB8E6251A2EEC2300B2DCFE /* NSString */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -480,6 +482,17 @@
 				AB768C201A075CCD009BC576 /* TestCell.m */,
 			);
 			name = TestVC;
+			sourceTree = "<group>";
+		};
+		ABB8E6251A2EEC2300B2DCFE /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				ABB8E6261A2EEC2300B2DCFE /* NSString+HABUtils.h */,
+				ABB8E6271A2EEC2300B2DCFE /* NSString+HABUtils.m */,
+				ABB8E6291A2EEC8900B2DCFE /* NSString+HABCrypto.h */,
+				ABB8E62A1A2EEC8900B2DCFE /* NSString+HABCrypto.m */,
+			);
+			path = NSString;
 			sourceTree = "<group>";
 		};
 		ABC67FB919FC0A9800025BFA /* UIView */ = {
@@ -671,7 +684,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB59970F19B4735000BD2B67 /* UIView+HABGeometryExtend.m in Sources */,
-				AB27F1001A1C3EC10028A98E /* NSString+HABUtils.m in Sources */,
 				AB8F47A419B0736D0043509A /* UIApplication+HABBase.m in Sources */,
 				AB8968AA19B86E9000FEC07B /* HABAliginLabel.m in Sources */,
 				AB8F479919B071860043509A /* HABUtil_UserDefaults.m in Sources */,
@@ -693,11 +705,13 @@
 				ABC2091D19C6C7C200420CE3 /* UIView+HABShadow.m in Sources */,
 				AB762267197DF52C0049215B /* ViewController.m in Sources */,
 				AB8F47A519B0736D0043509A /* UINavigationController+HABBase.m in Sources */,
+				ABB8E62B1A2EEC8900B2DCFE /* NSString+HABCrypto.m in Sources */,
 				AB697F0D1A220B6A009A3631 /* UITableView+HABAutoLayout.m in Sources */,
 				AB8F479019B04D1C0043509A /* HABUtil_Device.m in Sources */,
 				AB40C5631A2DA0C1007DE9D1 /* HABTableViewCell.m in Sources */,
 				AB8F479319B04FD30043509A /* HABUtil_Path.m in Sources */,
 				AB76225E197DF52C0049215B /* AppDelegate.m in Sources */,
+				ABB8E6281A2EEC2300B2DCFE /* NSString+HABUtils.m in Sources */,
 				AB762299197DF9C90049215B /* HABNetworkOperation.m in Sources */,
 				AB76225A197DF52C0049215B /* main.m in Sources */,
 			);

@@ -11,6 +11,8 @@
 
 #import "NSObject+HABEnumerate.h"
 #import "NSObject+HABCurrent.h"
+
 #import "NSString+HABUtils.h"
+#import "NSString+HABCrypto.h"
 
 #endif
