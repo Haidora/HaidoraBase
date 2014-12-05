@@ -10,6 +10,11 @@
 
 @interface NSString (HABCrypto)
 
-- (NSString *)stringFromMD5;
+- (NSString *)hab_StringFromMD5;
+
+#pragma mark
+#pragma mark Deprecated Method
+
+- (NSString *)stringFromMD5 HAB_DEPRECATED_METHOD_NEW_METHOD("use - hab_StringFromMD5");
 
 @end

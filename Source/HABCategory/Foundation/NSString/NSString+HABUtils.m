@@ -21,12 +21,7 @@
     return isEmpty;
 }
 
-- (NSString *)trim
-{
-    return [self stringByTrimingWhitespace];
-}
-
-- (NSString *)stringByTrimingWhitespace
+- (NSString *)hab_StringByTrimingWhitespace
 {
     NSString *returnString;
     if ([self isEmpty])
@@ -39,6 +34,19 @@
             stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     }
     return returnString;
+}
+
+#pragma mark
+#pragma mark Deprecated Method
+
+- (NSString *)trim
+{
+    return [self stringByTrimingWhitespace];
+}
+
+- (NSString *)stringByTrimingWhitespace
+{
+    return [self hab_StringByTrimingWhitespace];
 }
 
 @end

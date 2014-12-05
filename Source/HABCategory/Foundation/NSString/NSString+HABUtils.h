@@ -11,6 +11,11 @@
 
 @interface NSString (HABUtils)
 
+- (NSString *)hab_StringByTrimingWhitespace;
+
+#pragma mark
+#pragma mark Deprecated Method
+
 /**
  *  trim whitespaceAndNewlineCharacterSet
  *
@@ -23,6 +28,7 @@
  *
  *  @return new trim String
  */
-- (NSString *)stringByTrimingWhitespace;
+- (NSString *)stringByTrimingWhitespace
+    HAB_DEPRECATED_METHOD_NEW_METHOD("use - hab_StringByTrimingWhitespace");
 
 @end

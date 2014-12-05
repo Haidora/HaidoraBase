@@ -10,12 +10,12 @@
 
 @implementation NSObject (HABCurrent)
 
-- (UIView *)currentView
+- (UIView *)hab_CurrentView
 {
-    return [self currentController].view;
+    return [self hab_CurrentController].view;
 }
 
-- (UIWindow *)currentWindow
+- (UIWindow *)hab_CurrentWindow
 {
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     if (!window)
@@ -25,13 +25,13 @@
     return window;
 }
 
-- (UIViewController *)currentController
+- (UIViewController *)hab_CurrentController
 {
-    UIWindow *window = [self currentWindow];
-    return [self currentControllerFor:window.rootViewController];
+    UIWindow *window = [self hab_CurrentWindow];
+    return [self hab_CurrentControllerFor:window.rootViewController];
 }
 
-- (UIViewController *)currentControllerFor:(UIViewController *)viewController
+- (UIViewController *)hab_CurrentControllerFor:(UIViewController *)viewController
 {
     UIViewController *currentController;
     if ([viewController isKindOfClass:[UINavigationController class]])
@@ -59,9 +59,33 @@
     }
     if (currentController.presentedViewController)
     {
-        currentController = [self currentControllerFor:currentController.presentedViewController];
+        currentController =
+            [self hab_CurrentControllerFor:currentController.presentedViewController];
     }
     return currentController;
+}
+
+#pragma mark
+#pragma mark Deprecated Method
+
+- (UIView *)currentView
+{
+    return [self hab_CurrentView];
+}
+
+- (UIWindow *)currentWindow
+{
+    return [self hab_CurrentWindow];
+}
+
+- (UIViewController *)currentController
+{
+    return [self hab_CurrentController];
+}
+
+- (UIViewController *)currentControllerFor:(UIViewController *)viewController
+{
+    return [self hab_CurrentControllerFor:viewController];
 }
 
 @end

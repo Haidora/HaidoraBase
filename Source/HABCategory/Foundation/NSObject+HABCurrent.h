@@ -13,9 +13,18 @@
 #pragma mark
 #pragma mark HABCurrent
 
--(UIView *)currentView;
--(UIWindow *)currentWindow;
--(UIViewController *)currentController;
--(UIViewController *)currentControllerFor:(UIViewController *)viewController;
+- (UIView *)hab_CurrentView;
+- (UIWindow *)hab_CurrentWindow;
+- (UIViewController *)hab_CurrentController;
+- (UIViewController *)hab_CurrentControllerFor:(UIViewController *)viewController;
+
+#pragma mark
+#pragma mark Deprecated Method
+- (UIView *)currentView HAB_DEPRECATED_METHOD_NEW_METHOD("-use hab_CurrentView");
+- (UIWindow *)currentWindow HAB_DEPRECATED_METHOD_NEW_METHOD("-use hab_CurrentWindow");
+- (UIViewController *)currentController
+    HAB_DEPRECATED_METHOD_NEW_METHOD("-use hab_CurrentController");
+- (UIViewController *)currentControllerFor:(UIViewController *)viewController
+    HAB_DEPRECATED_METHOD_NEW_METHOD("-use hab_CurrentControllerFor:");
 
 @end
