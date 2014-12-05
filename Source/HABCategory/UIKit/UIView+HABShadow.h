@@ -8,6 +8,7 @@
 // @link https://github.com/Seitk/UIView-Shadow-Maker
 
 #import <UIKit/UIKit.h>
+#import "HABCoreMacros.h"
 
 typedef NS_OPTIONS(NSUInteger, HABShadowDirection){
     HABShadowDirectionTop = 1 << 0, HABShadowDirectionBottom = 1 << 1,

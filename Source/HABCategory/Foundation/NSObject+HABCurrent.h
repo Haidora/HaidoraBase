@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "HABCoreMacros.h"
 
 @interface NSObject (HABCurrent)
 
