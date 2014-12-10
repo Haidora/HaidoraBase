@@ -44,6 +44,7 @@ Pod::Spec.new do |s|
       habCategory_UIKit.source_files = 'Source/HABCategory/UIKit/**/*.{h,m}','Source/HABCategory/*.{h,m}'
       habCategory.dependency "NUI", "~> 0.5.4"
       habCategory.dependency "MBProgressHUD", "~> 0.8"
+      habCategory.dependency "REValidation", "~> 0.1.4"
     end
   end
   s.subspec 'HABNetWork' do |habNetWork|
