@@ -8,6 +8,7 @@ pod 'JRSwizzle', '~> 1.0'
 pod 'NUI', '~> 0.5.4'
 pod 'RETableViewManager', '~> 1.5.11'
 pod 'MBProgressHUD', '~> 0.8'
+pod 'REValidation', '~> 0.1.4'
 
 end
 
@@ -18,6 +19,7 @@ pod 'JRSwizzle', '~> 1.0'
 pod 'NUI', '~> 0.5.4'
 pod 'RETableViewManager', '~> 1.5.11'
 pod 'MBProgressHUD', '~> 0.8'
+pod 'REValidation', '~> 0.1.4'
 
 end
 

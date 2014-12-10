@@ -7,34 +7,93 @@
 //
 
 #import "HABUtil_UI.h"
+#import "UITextField+HABValidate.h"
+#import "UITextView+HABValidate.h"
 
 @implementation HABUtil_UI
 
-+(void)showAlertMessage:(NSString *)message
++ (void)hab_ShowAlertMessage:(NSString *)message
 {
-	[self showAlertMessageWithTitle:NSLocalizedString(@"Warning", @"")
-						 andMessage:message];
+    [self hab_ShowAlertMessageWithTitle:NSLocalizedString(@"Warning", @"") andMessage:message];
 }
 
-+(void)showAlertMessageWithTitle:(NSString *)title
-                      andMessage:(NSString *)message
++ (void)hab_ShowAlertMessageWithTitle:(NSString *)title andMessage:(NSString *)message
 {
-	[self showAlertMessageWithTitle:title
-						 andMessage:message
-					 cancelBtnTitle:NSLocalizedString(@"Cancel", @"")
-					  otherBtnTille:nil];
+    [self hab_ShowAlertMessageWithTitle:title
+                             andMessage:message
+                         cancelBtnTitle:NSLocalizedString(@"Cancel", @"")
+                          otherBtnTille:nil];
 }
 
-+(void)showAlertMessageWithTitle:(NSString *)title
-					  andMessage:(NSString *)message
-				  cancelBtnTitle:(NSString *)cancelTitle
-				   otherBtnTille:(NSString *)otherTitle
++ (void)hab_ShowAlertMessageWithTitle:(NSString *)title
+                           andMessage:(NSString *)message
+                       cancelBtnTitle:(NSString *)cancelTitle
+                        otherBtnTille:(NSString *)otherTitle
 {
-	UIAlertView *alertMessageView = [[UIAlertView alloc]initWithTitle:title
-                                                              message:message
-                                                             delegate:nil
-                                                    cancelButtonTitle:cancelTitle
-                                                    otherButtonTitles:otherTitle,nil];
+    UIAlertView *alertMessageView = [[UIAlertView alloc] initWithTitle:title
+                                                               message:message
+                                                              delegate:nil
+                                                     cancelButtonTitle:cancelTitle
+                                                     otherButtonTitles:otherTitle, nil];
     [alertMessageView show];
+}
+
++ (BOOL)hab_CheckInputs:(NSArray *)inputs
+{
+    BOOL isError = YES;
+    NSMutableArray *validatorErros = [NSMutableArray array];
+    [inputs enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        if ([obj isKindOfClass:[UITextField class]])
+        {
+            UITextField *input = obj;
+            NSArray *erros = [REValidation validateObject:input.text
+                                                     name:input.habValidatorName
+                                               validators:input.habvalidators];
+            [validatorErros addObjectsFromArray:erros];
+        }
+        else if ([obj isKindOfClass:[UITextView class]])
+        {
+            UITextView *input = obj;
+            NSArray *erros = [REValidation validateObject:input.text
+                                                     name:input.habValidatorName
+                                               validators:input.habvalidators];
+            [validatorErros addObjectsFromArray:erros];
+        }
+    }];
+    if (validatorErros.count > 0)
+    {
+        isError = NO;
+        NSString *erroString = [NSString string];
+        for (NSError *error in validatorErros)
+        {
+            erroString = [erroString stringByAppendingFormat:@"%@\n", error.localizedDescription];
+        }
+        [self hab_ShowAlertMessage:erroString];
+    }
+
+    return isError;
+}
+
+#pragma mark
+#pragma mark Deprecated Method
++ (void)showAlertMessage:(NSString *)message
+{
+    [self hab_ShowAlertMessage:message];
+}
+
++ (void)showAlertMessageWithTitle:(NSString *)title andMessage:(NSString *)message
+{
+    [self hab_ShowAlertMessageWithTitle:title andMessage:message];
+}
+
++ (void)showAlertMessageWithTitle:(NSString *)title
+                       andMessage:(NSString *)message
+                   cancelBtnTitle:(NSString *)cancelTitle
+                    otherBtnTille:(NSString *)otherTitle
+{
+    [self hab_ShowAlertMessageWithTitle:title
+                             andMessage:message
+                         cancelBtnTitle:cancelTitle
+                          otherBtnTille:otherTitle];
 }
 @end

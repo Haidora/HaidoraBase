@@ -22,4 +22,10 @@
 #import "UIScrollView+HABBase.h"
 #import "UITableView+HABAutoLayout.h"
 
+// UITextField
+#import "UITextField+HABValidate.h"
+
+// UITextView
+#import "UITextView+HABValidate.h"
+
 #endif

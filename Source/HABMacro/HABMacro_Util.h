@@ -63,7 +63,38 @@
 
 #undef HABM_StringIsEmpty
 #define HABM_StringIsEmpty(string) (((string) == nil || [(string)isEqualToString:@""]) ? YES : NO)
+#pragma mark
+#pragma mark Category Property
 
+#define HABM_PropertyDynamic_AssignS(propertyType, propertyName)                                   \
+    @property (nonatomic, strong, setter=set##propertyName :) propertyType *propertyName
+#define HABM_PropertyDynamic_AssignW(propertyType, propertyName)                                   \
+    @property (nonatomic, weak, setter=set##propertyName :) propertyType *propertyName
+
+#define HABM_PropertyDynamic_DefineS(propertyType, propertyName)                                   \
+    static char kHab_##propertyName;                                                               \
+    @dynamic propertyName;                                                                         \
+    -(void)set##propertyName : (propertyType *)propertyName                                        \
+    {                                                                                              \
+        objc_setAssociatedObject(self, &kHab_##propertyName, propertyName,                         \
+                                 OBJC_ASSOCIATION_RETAIN);                                         \
+    }                                                                                              \
+    -(propertyType *)propertyName                                                                  \
+    {                                                                                              \
+        return objc_getAssociatedObject(self, &kHab_##propertyName);                               \
+    }
+#define HABM_PropertyDynamic_DefineW(propertyType, propertyName)                                   \
+    static char kHab_##propertyName;                                                               \
+    @dynamic propertyName;                                                                         \
+    -(void)set##propertyName : (propertyType *)propertyName                                        \
+    {                                                                                              \
+        objc_setAssociatedObject(self, &kHab_##propertyName, propertyName,                         \
+                                 OBJC_ASSOCIATION_ASSIGN);                                         \
+    }                                                                                              \
+    -(propertyType *)propertyName                                                                  \
+    {                                                                                              \
+        return objc_getAssociatedObject(self, &kHab_##propertyName);                               \
+    }
 #pragma mark
 #pragma mark Type Define
 typedef void (^HABTableViewCellConfigureBlock)(id cell, id item, NSIndexPath *index);

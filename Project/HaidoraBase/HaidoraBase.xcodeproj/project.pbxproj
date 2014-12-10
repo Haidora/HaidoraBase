@@ -34,6 +34,8 @@
 		AB768C231A075CD5009BC576 /* TestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB768C221A075CD5009BC576 /* TestCell.xib */; };
 		AB7847E51A14B196005D603E /* HABTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7847E41A14B196005D603E /* HABTextField.m */; };
 		AB7E8A4219FE8A2F00E5663B /* HABTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7E8A4119FE8A2F00E5663B /* HABTextView.m */; };
+		AB8481A21A3828A500212325 /* UITextField+HABValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8481A11A3828A500212325 /* UITextField+HABValidate.m */; };
+		AB8481AC1A382C8900212325 /* UITextView+HABValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8481AB1A382C8900212325 /* UITextView+HABValidate.m */; };
 		AB8968AA19B86E9000FEC07B /* HABAliginLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8968A919B86E9000FEC07B /* HABAliginLabel.m */; };
 		AB8F479019B04D1C0043509A /* HABUtil_Device.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F478F19B04D1C0043509A /* HABUtil_Device.m */; };
 		AB8F479319B04FD30043509A /* HABUtil_Path.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F479219B04FD30043509A /* HABUtil_Path.m */; };
@@ -118,6 +120,10 @@
 		AB7847E41A14B196005D603E /* HABTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABTextField.m; sourceTree = "<group>"; };
 		AB7E8A4019FE8A2F00E5663B /* HABTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABTextView.h; sourceTree = "<group>"; };
 		AB7E8A4119FE8A2F00E5663B /* HABTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABTextView.m; sourceTree = "<group>"; };
+		AB8481A01A3828A500212325 /* UITextField+HABValidate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+HABValidate.h"; sourceTree = "<group>"; };
+		AB8481A11A3828A500212325 /* UITextField+HABValidate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+HABValidate.m"; sourceTree = "<group>"; };
+		AB8481AA1A382C8900212325 /* UITextView+HABValidate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+HABValidate.h"; sourceTree = "<group>"; };
+		AB8481AB1A382C8900212325 /* UITextView+HABValidate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+HABValidate.m"; sourceTree = "<group>"; };
 		AB8968A819B86E9000FEC07B /* HABAliginLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABAliginLabel.h; sourceTree = "<group>"; };
 		AB8968A919B86E9000FEC07B /* HABAliginLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABAliginLabel.m; sourceTree = "<group>"; };
 		AB8B86D319AEDAA800EE4B06 /* HABCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABCore.h; sourceTree = "<group>"; };
@@ -386,6 +392,24 @@
 			path = UITextView;
 			sourceTree = "<group>";
 		};
+		AB84819F1A38288400212325 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				AB8481A01A3828A500212325 /* UITextField+HABValidate.h */,
+				AB8481A11A3828A500212325 /* UITextField+HABValidate.m */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		AB8481A31A382C2700212325 /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				AB8481AA1A382C8900212325 /* UITextView+HABValidate.h */,
+				AB8481AB1A382C8900212325 /* UITextView+HABValidate.m */,
+			);
+			path = UITextView;
+			sourceTree = "<group>";
+		};
 		AB8968A719B86D4800FEC07B /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +479,8 @@
 				ABA01B8319F7A8370015C5E9 /* UIScrollView+HABBase.m */,
 				AB697F0B1A220B6A009A3631 /* UITableView+HABAutoLayout.h */,
 				AB697F0C1A220B6A009A3631 /* UITableView+HABAutoLayout.m */,
+				AB8481A31A382C2700212325 /* UITextView */,
+				AB84819F1A38288400212325 /* UITextField */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -684,6 +710,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB59970F19B4735000BD2B67 /* UIView+HABGeometryExtend.m in Sources */,
+				AB8481AC1A382C8900212325 /* UITextView+HABValidate.m in Sources */,
 				AB8F47A419B0736D0043509A /* UIApplication+HABBase.m in Sources */,
 				AB8968AA19B86E9000FEC07B /* HABAliginLabel.m in Sources */,
 				AB8F479919B071860043509A /* HABUtil_UserDefaults.m in Sources */,
@@ -710,6 +737,7 @@
 				AB8F479019B04D1C0043509A /* HABUtil_Device.m in Sources */,
 				AB40C5631A2DA0C1007DE9D1 /* HABTableViewCell.m in Sources */,
 				AB8F479319B04FD30043509A /* HABUtil_Path.m in Sources */,
+				AB8481A21A3828A500212325 /* UITextField+HABValidate.m in Sources */,
 				AB76225E197DF52C0049215B /* AppDelegate.m in Sources */,
 				ABB8E6281A2EEC2300B2DCFE /* NSString+HABUtils.m in Sources */,
 				AB762299197DF9C90049215B /* HABNetworkOperation.m in Sources */,

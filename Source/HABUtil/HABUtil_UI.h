@@ -7,16 +7,40 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <REValidation.h>
+#import "HABCoreMacros.h"
 
 @interface HABUtil_UI : NSObject
 
-+(void)showAlertMessage:(NSString *)message;
++ (void)hab_ShowAlertMessage:(NSString *)message;
 
-+(void)showAlertMessageWithTitle:(NSString *)title
-                      andMessage:(NSString *)message;
++ (void)hab_ShowAlertMessageWithTitle:(NSString *)title andMessage:(NSString *)message;
 
-+(void)showAlertMessageWithTitle:(NSString *)title
-					  andMessage:(NSString *)message
-				  cancelBtnTitle:(NSString *)cancelTitle
-				   otherBtnTille:(NSString *)otherTitle;
++ (void)hab_ShowAlertMessageWithTitle:(NSString *)title
+                           andMessage:(NSString *)message
+                       cancelBtnTitle:(NSString *)cancelTitle
+                        otherBtnTille:(NSString *)otherTitle;
+/**
+ *  Check input For UITextField or UITextView
+ *
+ */
++ (BOOL)hab_CheckInputs:(NSArray *)inputs;
+
+#pragma mark
+#pragma mark Deprecated Method
+
++ (void)showAlertMessage:(NSString *)message
+    HAB_DEPRECATED_METHOD_NEW_METHOD("-use hab_ShowAlertMessage:");
+
++ (void)showAlertMessageWithTitle:(NSString *)title
+                       andMessage:(NSString *)message
+    HAB_DEPRECATED_METHOD_NEW_METHOD("-use hab_ShowAlertMessageWithTitle:andMessage:");
+
++ (void)showAlertMessageWithTitle:(NSString *)title
+                       andMessage:(NSString *)message
+                   cancelBtnTitle:(NSString *)cancelTitle
+                    otherBtnTille:(NSString *)otherTitle
+    HAB_DEPRECATED_METHOD_NEW_METHOD("-use "
+                                     "hab_ShowAlertMessageWithTitle:andMessage:"
+                                     "cancelBtnTitle:otherBtnTille:");
 @end
