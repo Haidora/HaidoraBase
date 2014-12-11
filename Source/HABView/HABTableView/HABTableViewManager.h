@@ -26,6 +26,8 @@
     configureCellBlock:(HABTableViewCellConfigureBlock)cellConfigureBlock;
 - (id)itemAtIndexPath:(NSIndexPath *)indexPath;
 
+- (CGFloat)habTableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
+
 @end
 
 #pragma mark

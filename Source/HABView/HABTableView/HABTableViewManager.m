@@ -48,6 +48,17 @@
     return _cellDatas[indexPath.section][indexPath.row];
 }
 
+- (CGFloat)habTableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell =
+        [_cellClass cellForTableView:tableView fromNib:self.nib indexPath:indexPath];
+    self.cellConfigureBlock(cell, [self itemAtIndexPath:indexPath], indexPath);
+    [cell layoutIfNeeded];
+    CGSize size = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+    // fix contenView height +1
+    return size.height + 1;
+}
+
 #pragma mark
 #pragma mark UITableView DataSource
 
