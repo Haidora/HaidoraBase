@@ -50,13 +50,23 @@
 
 - (CGFloat)habTableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell =
-        [_cellClass cellForTableView:tableView fromNib:self.nib indexPath:indexPath];
-    self.cellConfigureBlock(cell, [self itemAtIndexPath:indexPath], indexPath);
-    [cell layoutIfNeeded];
-    CGSize size = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
-    // fix contenView height +1
-    return size.height + 1;
+    CGFloat height = 0;
+    if (IOS_OR_LATER(@"8.0"))
+    {
+        height = UITableViewAutomaticDimension;
+    }
+    else
+    {
+        UITableViewCell *cell =
+            [_cellClass cellForTableView:tableView fromNib:self.nib indexPath:indexPath];
+        self.cellConfigureBlock(cell, [self itemAtIndexPath:indexPath], indexPath);
+        [cell layoutIfNeeded];
+        CGSize size = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+        // fix contenView height +1
+        // for uilabel you need set preferredMaxLayoutWidth
+        height = size.height + 1;
+    }
+    return height;
 }
 
 #pragma mark
