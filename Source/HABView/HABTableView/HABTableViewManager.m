@@ -111,6 +111,44 @@
 }
 
 #pragma mark
+#pragma mark optional Delete Action
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    BOOL canEdit = NO;
+    if ([self.dataSource respondsToSelector:@selector(tableView:canEditRowAtIndexPath:)])
+    {
+        canEdit = [self.dataSource tableView:tableView canEditRowAtIndexPath:indexPath];
+    }
+    return canEdit;
+}
+
+- (void)tableView:(UITableView *)tableView
+    commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+     forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([self.dataSource
+            respondsToSelector:@selector(tableView:commitEditingStyle:forRowAtIndexPath:)])
+    {
+        [self.dataSource tableView:tableView
+                commitEditingStyle:editingStyle
+                 forRowAtIndexPath:indexPath];
+    }
+    else
+    {
+        [tableView beginUpdates];
+        if (editingStyle == UITableViewCellEditingStyleDelete)
+        {
+            NSMutableArray *cells = _cellDatas[indexPath.section];
+            [cells removeObjectAtIndex:indexPath.row];
+            [tableView deleteRowsAtIndexPaths:@[ indexPath ]
+                             withRowAnimation:UITableViewRowAnimationAutomatic];
+        }
+        [tableView endUpdates];
+    }
+}
+
+#pragma mark
 #pragma mark UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -179,6 +217,33 @@
     {
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
     }
+}
+
+#pragma mark
+#pragma mark Delete Action
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView
+           editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCellEditingStyle editingStyle = UITableViewCellEditingStyleNone;
+    if ([self.delegate respondsToSelector:@selector(tableView:editingStyleForRowAtIndexPath:)])
+    {
+        editingStyle = [self.delegate tableView:tableView editingStyleForRowAtIndexPath:indexPath];
+    }
+    return editingStyle;
+}
+
+- (NSString *)tableView:(UITableView *)tableView
+    titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *titleForDelete = NSLocalizedString(@"Delete", @"");
+    if ([self.delegate respondsToSelector:@selector(tableView:
+                                              titleForDeleteConfirmationButtonForRowAtIndexPath:)])
+    {
+        [self.delegate tableView:tableView
+            titleForDeleteConfirmationButtonForRowAtIndexPath:indexPath];
+    }
+    return titleForDelete;
 }
 
 @end
