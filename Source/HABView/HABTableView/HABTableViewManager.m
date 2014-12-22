@@ -149,6 +149,18 @@
 }
 
 #pragma mark
+#pragma mark optional Title
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    NSString *title = @"";
+    if ([self.dataSource respondsToSelector:@selector(tableView:titleForHeaderInSection:)])
+    {
+        title = [self.dataSource tableView:tableView titleForHeaderInSection:section];
+    }
+    return title;
+}
+
+#pragma mark
 #pragma mark UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
