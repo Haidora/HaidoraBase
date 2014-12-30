@@ -16,4 +16,9 @@
  */
 - (void)sizeHeaderViewFit;
 
+/**
+ *  Auto size fit tableViewFooterView frame
+ */
+- (void)sizeFooterViewFit;
+
 @end

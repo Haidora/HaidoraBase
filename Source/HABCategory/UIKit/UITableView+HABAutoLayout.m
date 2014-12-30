@@ -26,4 +26,20 @@
     self.tableHeaderView = headView;
 }
 
+- (void)sizeFooterViewFit
+{
+    UIView *footView = self.tableFooterView;
+    [footView setNeedsLayout];
+    [footView layoutIfNeeded];
+
+    CGFloat height = [footView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    footView.frame = (
+        {
+            CGRect footerFrame = footView.frame;
+            footerFrame.size.height = height;
+            footerFrame;
+        });
+    self.tableFooterView = footView;
+}
+
 @end
