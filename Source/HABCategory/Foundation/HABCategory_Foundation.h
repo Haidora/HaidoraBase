@@ -15,4 +15,6 @@
 #import "NSString+HABUtils.h"
 #import "NSString+HABCrypto.h"
 
+#import "NSDate+HABUtils.h"
+
 #endif
