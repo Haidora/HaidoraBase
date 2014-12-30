@@ -28,4 +28,7 @@
 // UITextView
 #import "UITextView+HABValidate.h"
 
+// UILabel
+#import "UILabel+HABAutoLayout.h"
+
 #endif

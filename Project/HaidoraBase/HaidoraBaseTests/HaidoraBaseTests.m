@@ -35,14 +35,14 @@
 
 - (void)testStringEmpty
 {
-    NSString *value1;
-    NSString *value2 = @"";
-    NSString *value3 = @"   ";
-    XCTAssertTrue(HABM_StringIsEmpty(value1) == YES, @"");
-    XCTAssertTrue(HABM_StringIsEmpty(value2) == YES, @"");
-    XCTAssertTrue(HABM_StringIsEmpty(value3) == NO, @"");
-    XCTAssertFalse([[value3 trim] isEqualToString:value3], @"");
-    XCTAssertTrue(HABM_StringIsEmpty([value3 trim]) == YES, @"");
+    //    NSString *value1;
+    //    NSString *value2 = @"";
+    //    NSString *value3 = @"   ";
+    //    XCTAssertTrue(HABM_StringIsEmpty(value1) == YES, @"");
+    //    XCTAssertTrue(HABM_StringIsEmpty(value2) == YES, @"");
+    //    XCTAssertTrue(HABM_StringIsEmpty(value3) == NO, @"");
+    //    XCTAssertFalse([[value3 trim] isEqualToString:value3], @"");
+    //    XCTAssertTrue(HABM_StringIsEmpty([value3 trim]) == YES, @"");
 }
 
 @end
