@@ -31,4 +31,7 @@
 // UILabel
 #import "UILabel+HABAutoLayout.h"
 
+// UIAlertView
+#import "UIAlertView+HABBase.h"
+
 #endif

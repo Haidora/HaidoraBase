@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB02C9D61A64B22B0022A465 /* UIAlertView+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = AB02C9D51A64B22B0022A465 /* UIAlertView+HABBase.m */; };
+		AB02C9D91A64B6B10022A465 /* TestUIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB02C9D81A64B6B10022A465 /* TestUIAlertView.m */; };
 		AB150AEA197E298E006E99D4 /* HaidoraBase.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AB150AE9197E298E006E99D4 /* HaidoraBase.bundle */; };
 		AB1B36441A3D8A0300F709AB /* UILabel+HABAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1B36431A3D8A0300F709AB /* UILabel+HABAutoLayout.m */; };
 		AB290E2D1A52809D00BA12DB /* NSDate+HABUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AB290E2C1A52809D00BA12DB /* NSDate+HABUtils.m */; };
@@ -76,6 +78,10 @@
 		2B7043DDD5FC98FF26A632DA /* Pods-HaidoraBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaidoraBase.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaidoraBase/Pods-HaidoraBase.release.xcconfig"; sourceTree = "<group>"; };
 		4D5F1E3B77B39610D6FCFCAA /* Pods-HaidoraBaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaidoraBaseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaidoraBaseTests/Pods-HaidoraBaseTests.release.xcconfig"; sourceTree = "<group>"; };
 		742B86741E6541009779294D /* libPods-HaidoraBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HaidoraBase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB02C9D41A64B22B0022A465 /* UIAlertView+HABBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+HABBase.h"; sourceTree = "<group>"; };
+		AB02C9D51A64B22B0022A465 /* UIAlertView+HABBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+HABBase.m"; sourceTree = "<group>"; };
+		AB02C9D71A64B6B10022A465 /* TestUIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestUIAlertView.h; sourceTree = "<group>"; };
+		AB02C9D81A64B6B10022A465 /* TestUIAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestUIAlertView.m; sourceTree = "<group>"; };
 		AB150AE9197E298E006E99D4 /* HaidoraBase.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HaidoraBase.bundle; sourceTree = "<group>"; };
 		AB1B36421A3D8A0300F709AB /* UILabel+HABAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+HABAutoLayout.h"; sourceTree = "<group>"; };
 		AB1B36431A3D8A0300F709AB /* UILabel+HABAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+HABAutoLayout.m"; sourceTree = "<group>"; };
@@ -207,6 +213,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB02C9D31A64B20D0022A465 /* UIAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				AB02C9D41A64B22B0022A465 /* UIAlertView+HABBase.h */,
+				AB02C9D51A64B22B0022A465 /* UIAlertView+HABBase.m */,
+			);
+			path = UIAlertView;
+			sourceTree = "<group>";
+		};
 		AB150AE8197E298E006E99D4 /* bundle */ = {
 			isa = PBXGroup;
 			children = (
@@ -507,6 +522,7 @@
 				ABA01B8319F7A8370015C5E9 /* UIScrollView+HABBase.m */,
 				AB697F0B1A220B6A009A3631 /* UITableView+HABAutoLayout.h */,
 				AB697F0C1A220B6A009A3631 /* UITableView+HABAutoLayout.m */,
+				AB02C9D31A64B20D0022A465 /* UIAlertView */,
 				AB1B36411A3D89EC00F709AB /* UILabel */,
 				AB8481A31A382C2700212325 /* UITextView */,
 				AB84819F1A38288400212325 /* UITextField */,
@@ -535,6 +551,8 @@
 				AB768C1F1A075CCD009BC576 /* TestCell.h */,
 				AB768C221A075CD5009BC576 /* TestCell.xib */,
 				AB768C201A075CCD009BC576 /* TestCell.m */,
+				AB02C9D71A64B6B10022A465 /* TestUIAlertView.h */,
+				AB02C9D81A64B6B10022A465 /* TestUIAlertView.m */,
 			);
 			name = TestVC;
 			sourceTree = "<group>";
@@ -756,6 +774,7 @@
 				ABB35816197E0A9500F19C58 /* BaseViewController.m in Sources */,
 				AB762296197DF9970049215B /* HABNetworkEngine.m in Sources */,
 				ABA01B8419F7A8370015C5E9 /* UIScrollView+HABBase.m in Sources */,
+				AB02C9D61A64B22B0022A465 /* UIAlertView+HABBase.m in Sources */,
 				ABDE74E219EF960500509F78 /* UIView+HABBundle.m in Sources */,
 				AB7847E51A14B196005D603E /* HABTextField.m in Sources */,
 				AB8F479619B070E80043509A /* HABUtil_UI.m in Sources */,
@@ -769,6 +788,7 @@
 				AB8F479319B04FD30043509A /* HABUtil_Path.m in Sources */,
 				AB8481A21A3828A500212325 /* UITextField+HABValidate.m in Sources */,
 				AB76225E197DF52C0049215B /* AppDelegate.m in Sources */,
+				AB02C9D91A64B6B10022A465 /* TestUIAlertView.m in Sources */,
 				ABB8E6281A2EEC2300B2DCFE /* NSString+HABUtils.m in Sources */,
 				AB762299197DF9C90049215B /* HABNetworkOperation.m in Sources */,
 				AB76225A197DF52C0049215B /* main.m in Sources */,

@@ -20,6 +20,13 @@
                            andMessage:(NSString *)message
                        cancelBtnTitle:(NSString *)cancelTitle
                         otherBtnTille:(NSString *)otherTitle;
+
++ (void)hab_ShowAlertMessageWithTitle:(NSString *)title
+                           andMessage:(NSString *)message
+                       cancelBtnTitle:(NSString *)cancelTitle
+                        otherBtnTille:(NSString *)otherTitle
+                          clickAction:(void (^)(id view, NSInteger index))clickAction;
+
 /**
  *  Check input For UITextField or UITextView
  *

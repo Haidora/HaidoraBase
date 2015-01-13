@@ -10,6 +10,8 @@
 #import "UITextField+HABValidate.h"
 #import "UITextView+HABValidate.h"
 
+#import "UIAlertView+HABBase.h"
+
 @implementation HABUtil_UI
 
 + (void)hab_ShowAlertMessage:(NSString *)message
@@ -30,11 +32,25 @@
                        cancelBtnTitle:(NSString *)cancelTitle
                         otherBtnTille:(NSString *)otherTitle
 {
+    [self hab_ShowAlertMessageWithTitle:title
+                             andMessage:message
+                         cancelBtnTitle:cancelTitle
+                          otherBtnTille:otherTitle
+                            clickAction:nil];
+}
+
++ (void)hab_ShowAlertMessageWithTitle:(NSString *)title
+                           andMessage:(NSString *)message
+                       cancelBtnTitle:(NSString *)cancelTitle
+                        otherBtnTille:(NSString *)otherTitle
+                          clickAction:(void (^)(id view, NSInteger index))clickAction
+{
     UIAlertView *alertMessageView = [[UIAlertView alloc] initWithTitle:title
                                                                message:message
-                                                              delegate:nil
+                                                           clickAction:clickAction
                                                      cancelButtonTitle:cancelTitle
                                                      otherButtonTitles:otherTitle, nil];
+
     [alertMessageView show];
 }
 
