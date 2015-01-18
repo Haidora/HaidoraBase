@@ -111,6 +111,19 @@
 }
 
 #pragma mark
+#pragma mark optional
+
+- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
+{
+    NSArray *indexTitles = nil;
+    if ([self.dataSource respondsToSelector:@selector(sectionIndexTitlesForTableView:)])
+    {
+        indexTitles = [self.dataSource sectionIndexTitlesForTableView:tableView];
+    }
+    return indexTitles;
+}
+
+#pragma mark
 #pragma mark optional Delete Action
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
