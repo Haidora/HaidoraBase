@@ -12,6 +12,6 @@
 @interface UITextField (HABValidate)
 
 HABM_PropertyDynamic_AssignS(NSString, habValidatorName);
-HABM_PropertyDynamic_AssignS(NSArray, habvalidators);
+HABM_PropertyDynamic_AssignS(NSArray, habValidators);
 
 @end
