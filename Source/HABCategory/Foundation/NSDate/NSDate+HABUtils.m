@@ -21,7 +21,7 @@
 {
     format = format ?: kHab_DefaultTimeFormat;
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
+    [formatter setTimeZone:[NSTimeZone localTimeZone]];
     [formatter setDateFormat:format];
     return [formatter stringFromDate:date];
 }
