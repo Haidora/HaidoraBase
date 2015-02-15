@@ -12,6 +12,6 @@
 @implementation UITextView (HABValidate)
 
 HABM_PropertyDynamic_DefineS(NSString, habValidatorName);
-HABM_PropertyDynamic_DefineS(NSArray, habvalidators);
+HABM_PropertyDynamic_DefineS(NSArray, habValidators);
 
 @end

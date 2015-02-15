@@ -21,7 +21,7 @@
     return isEmpty;
 }
 
-- (NSString *)hab_StringByTrimingWhitespace
+- (NSString *)stringByTrimingWhitespace_HABUtils
 {
     NSString *returnString;
     if ([self isEmpty])
@@ -38,6 +38,11 @@
 
 #pragma mark
 #pragma mark Deprecated Method
+
+- (NSString *)hab_StringByTrimingWhitespace
+{
+    return [self stringByTrimingWhitespace_HABUtils];
+}
 
 - (NSString *)trim
 {

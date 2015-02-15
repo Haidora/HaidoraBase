@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "HaidoraBase"
-  s.version      = "1.0"
+  s.version      = "0.1"
   s.summary      = "some basic codes for app."
 
   s.description  = <<-DESC
@@ -27,10 +27,10 @@ Pod::Spec.new do |s|
   s.subspec 'HABMacro' do |habMacro|
     habMacro.source_files = 'Source/HABMacro/**/*.{h,m}','Source/*.{h,m}'
   end
-  s.subspec 'HABStyle' do |habStyle|
-    habStyle.source_files = 'Source/HABStyle/**/*.{h,m}','Source/*.{h,m}'
+  #s.subspec 'HABStyle' do |habStyle|
+    #habStyle.source_files = 'Source/HABStyle/**/*.{h,m}','Source/*.{h,m}'
     #habStyle.dependency "RETableViewManager", "~> 1.5.11"
-  end
+  #end
   s.subspec 'HABCategory' do |habCategory|
     habCategory.source_files = 'Source/*.{h,m}'
     habCategory.dependency 'HaidoraBase/HABCore'

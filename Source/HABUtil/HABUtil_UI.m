@@ -59,22 +59,22 @@
     BOOL isError = YES;
     NSMutableArray *validatorErros = [NSMutableArray array];
     [inputs enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        if ([obj isKindOfClass:[UITextField class]])
-        {
-            UITextField *input = obj;
-            NSArray *erros = [REValidation validateObject:input.text
-                                                     name:input.habValidatorName
-                                               validators:input.habvalidators];
-            [validatorErros addObjectsFromArray:erros];
-        }
-        else if ([obj isKindOfClass:[UITextView class]])
-        {
-            UITextView *input = obj;
-            NSArray *erros = [REValidation validateObject:input.text
-                                                     name:input.habValidatorName
-                                               validators:input.habvalidators];
-            [validatorErros addObjectsFromArray:erros];
-        }
+      if ([obj isKindOfClass:[UITextField class]])
+      {
+          UITextField *input = obj;
+          NSArray *erros = [REValidation validateObject:input.text
+                                                   name:input.habValidatorName
+                                             validators:input.habValidators];
+          [validatorErros addObjectsFromArray:erros];
+      }
+      else if ([obj isKindOfClass:[UITextView class]])
+      {
+          UITextView *input = obj;
+          NSArray *erros = [REValidation validateObject:input.text
+                                                   name:input.habValidatorName
+                                             validators:input.habValidators];
+          [validatorErros addObjectsFromArray:erros];
+      }
     }];
     if (validatorErros.count > 0)
     {

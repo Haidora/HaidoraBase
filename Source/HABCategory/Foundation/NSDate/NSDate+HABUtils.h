@@ -7,15 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "HABCoreMacros.h"
 
 @interface NSDate (HABUtils)
+
 /**
  *  Format NSDate with formatString
  *
  *  @param format Default is 'yyy-MM-dd hh:mm:ss'
  *
  */
-- (NSString *)hab_DateWithFormat:(NSString *)format;
+- (NSString *)dateWithFormat_HABUtils:(NSString *)format;
 /**
  *  Format NSDate with formatString
  *
@@ -23,7 +25,7 @@
  *  @param format Default is 'YYYY-MM-DD'
  *
  */
-+ (NSString *)hab_Date:(NSDate *)date withFormat:(NSString *)format;
++ (NSString *)date_HABUtils:(NSDate *)date withFormat:(NSString *)format;
 /**
  *  Format NSDate with dateString and formatString
  *
@@ -31,6 +33,18 @@
  *  @param format Default is 'YYYY-MM-DD'
  *
  */
-+ (NSDate *)hab_DateWithString:(NSString *)dateString withFormat:(NSString *)format;
++ (NSDate *)dateWithString_HABUtils:(NSString *)dateString withFormat:(NSString *)format;
+
+#pragma mark
+#pragma mark Deprecated Method
+
+- (NSString *)hab_DateWithFormat:(NSString *)format
+    HAB_DEPRECATED_METHOD_NEW_METHOD("-use dateWithFormat_HABUtils:");
++ (NSString *)hab_Date:(NSDate *)date
+            withFormat:(NSString *)format
+    HAB_DEPRECATED_METHOD_NEW_METHOD("-use date_HABUtils:withFormat:");
++ (NSDate *)hab_DateWithString:(NSString *)dateString
+                    withFormat:(NSString *)format
+    HAB_DEPRECATED_METHOD_NEW_METHOD("-use dateWithString_HABUtils:withFormat:");
 
 @end

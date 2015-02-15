@@ -11,7 +11,7 @@
 
 @implementation NSString (HABCrypto)
 
-- (NSString *)hab_StringFromMD5
+- (NSString *)stringFromMD5_HABCrypto
 {
     NSString *md5String = @"";
     if (![md5String isEqualToString:@""] || md5String.length == 0)
@@ -34,6 +34,11 @@
 
 #pragma mark
 #pragma mark Deprecated Method
+
+- (NSString *)hab_StringFromMD5
+{
+    return [self stringFromMD5_HABCrypto];
+}
 
 - (NSString *)stringFromMD5
 {

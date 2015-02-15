@@ -12,8 +12,12 @@
 /**
  *  See https://github.com/jverkoey/nimbus/blob/master/src/core/src/NIPreprocessorMacros.h#L105
  */
-#define HAB_DEPRECATED_METHOD __attribute__((deprecated))
-#define HAB_DEPRECATED_METHOD_NEW_METHOD(...) __attribute__((deprecated("" __VA_ARGS__)))
+#pragma mark
+#pragma mark Mark __attribute__
+
+#define HAB_Attribute_method_objc_requires_super __attribute__((objc_requires_super))
+#define HAB_Attribute_method_deprecated __attribute__((deprecated))
+#define HAB_Attribute_method_deprecatedWith(...) __attribute__((deprecated("" __VA_ARGS__)))
 
 #pragma mark
 #pragma mark Living Render Supporting older Xcode
@@ -29,5 +33,11 @@
 #define IBInspectable
 
 #endif
+
+#pragma mark
+#pragma mark Mark deprecated
+
+#define HAB_DEPRECATED_METHOD HAB_Attribute_method_objc_requires_super
+#define HAB_DEPRECATED_METHOD_NEW_METHOD(...) HAB_Attribute_method_deprecatedWith(__VA_ARGS__)
 
 #endif

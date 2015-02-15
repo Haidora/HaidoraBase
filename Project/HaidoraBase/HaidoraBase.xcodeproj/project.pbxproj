@@ -13,7 +13,6 @@
 		AB1B36441A3D8A0300F709AB /* UILabel+HABAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1B36431A3D8A0300F709AB /* UILabel+HABAutoLayout.m */; };
 		AB290E2D1A52809D00BA12DB /* NSDate+HABUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AB290E2C1A52809D00BA12DB /* NSDate+HABUtils.m */; };
 		AB290E2F1A5285E500BA12DB /* HaidoraBasetTest_Categorys.m in Sources */ = {isa = PBXBuildFile; fileRef = AB290E2E1A5285E500BA12DB /* HaidoraBasetTest_Categorys.m */; };
-		AB33DA8F19F68F7400C4EAF0 /* NSObject+HABCurrent.m in Sources */ = {isa = PBXBuildFile; fileRef = AB33DA8E19F68F7400C4EAF0 /* NSObject+HABCurrent.m */; };
 		AB40C5601A2D9E90007DE9D1 /* HABTableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB40C55F1A2D9E90007DE9D1 /* HABTableViewManager.m */; };
 		AB40C5631A2DA0C1007DE9D1 /* HABTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB40C5621A2DA0C1007DE9D1 /* HABTableViewCell.m */; };
 		AB59970F19B4735000BD2B67 /* UIView+HABGeometryExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = AB59970E19B4735000BD2B67 /* UIView+HABGeometryExtend.m */; };
@@ -52,12 +51,13 @@
 		AB8F47A719B0736D0043509A /* UIViewController+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F47A319B0736D0043509A /* UIViewController+HABBase.m */; };
 		ABA01B8419F7A8370015C5E9 /* UIScrollView+HABBase.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA01B8319F7A8370015C5E9 /* UIScrollView+HABBase.m */; };
 		ABB35816197E0A9500F19C58 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB35815197E0A9500F19C58 /* BaseViewController.m */; };
+		ABB78B1F1A7A66DF00838305 /* NSObject+HABCurrent.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB78B1C1A7A66DF00838305 /* NSObject+HABCurrent.m */; };
+		ABB78B201A7A66DF00838305 /* NSObject+HABEnumerate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB78B1E1A7A66DF00838305 /* NSObject+HABEnumerate.m */; };
 		ABB8E6281A2EEC2300B2DCFE /* NSString+HABUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB8E6271A2EEC2300B2DCFE /* NSString+HABUtils.m */; };
 		ABB8E62B1A2EEC8900B2DCFE /* NSString+HABCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB8E62A1A2EEC8900B2DCFE /* NSString+HABCrypto.m */; };
 		ABC2091D19C6C7C200420CE3 /* UIView+HABShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2091C19C6C7C200420CE3 /* UIView+HABShadow.m */; };
 		ABC67FBC19FC0A9800025BFA /* HABLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC67FBB19FC0A9800025BFA /* HABLineView.m */; };
 		ABCFBF04197F862D003ED1F1 /* HABViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCFBF03197F862D003ED1F1 /* HABViewVC.m */; };
-		ABDA559019EE22A8008D6E03 /* NSObject+HABEnumerate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDA558F19EE22A8008D6E03 /* NSObject+HABEnumerate.m */; };
 		ABDE74E219EF960500509F78 /* UIView+HABBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDE74E119EF960500509F78 /* UIView+HABBundle.m */; };
 		BB7524E7295159C0906C3021 /* libPods-HaidoraBaseTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10ED5AA88426D9D10080B8A0 /* libPods-HaidoraBaseTests.a */; };
 		C5BC598F63344D8EB0CA6A6F /* libPods-HaidoraBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 742B86741E6541009779294D /* libPods-HaidoraBase.a */; };
@@ -88,8 +88,6 @@
 		AB290E2B1A52809D00BA12DB /* NSDate+HABUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+HABUtils.h"; sourceTree = "<group>"; };
 		AB290E2C1A52809D00BA12DB /* NSDate+HABUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HABUtils.m"; sourceTree = "<group>"; };
 		AB290E2E1A5285E500BA12DB /* HaidoraBasetTest_Categorys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HaidoraBasetTest_Categorys.m; sourceTree = "<group>"; };
-		AB33DA8D19F68F7400C4EAF0 /* NSObject+HABCurrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HABCurrent.h"; sourceTree = "<group>"; };
-		AB33DA8E19F68F7400C4EAF0 /* NSObject+HABCurrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HABCurrent.m"; sourceTree = "<group>"; };
 		AB40C55E1A2D9E90007DE9D1 /* HABTableViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABTableViewManager.h; sourceTree = "<group>"; };
 		AB40C55F1A2D9E90007DE9D1 /* HABTableViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABTableViewManager.m; sourceTree = "<group>"; };
 		AB40C5611A2DA0C1007DE9D1 /* HABTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABTableViewCell.h; sourceTree = "<group>"; };
@@ -169,6 +167,10 @@
 		ABA01B8319F7A8370015C5E9 /* UIScrollView+HABBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+HABBase.m"; sourceTree = "<group>"; };
 		ABB35814197E0A9500F19C58 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		ABB35815197E0A9500F19C58 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		ABB78B1B1A7A66DF00838305 /* NSObject+HABCurrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HABCurrent.h"; sourceTree = "<group>"; };
+		ABB78B1C1A7A66DF00838305 /* NSObject+HABCurrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HABCurrent.m"; sourceTree = "<group>"; };
+		ABB78B1D1A7A66DF00838305 /* NSObject+HABEnumerate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HABEnumerate.h"; sourceTree = "<group>"; };
+		ABB78B1E1A7A66DF00838305 /* NSObject+HABEnumerate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HABEnumerate.m"; sourceTree = "<group>"; };
 		ABB8E6261A2EEC2300B2DCFE /* NSString+HABUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HABUtils.h"; sourceTree = "<group>"; };
 		ABB8E6271A2EEC2300B2DCFE /* NSString+HABUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HABUtils.m"; sourceTree = "<group>"; };
 		ABB8E6291A2EEC8900B2DCFE /* NSString+HABCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HABCrypto.h"; sourceTree = "<group>"; };
@@ -179,8 +181,6 @@
 		ABC67FBB19FC0A9800025BFA /* HABLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABLineView.m; sourceTree = "<group>"; };
 		ABCFBF02197F862D003ED1F1 /* HABViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HABViewVC.h; sourceTree = "<group>"; };
 		ABCFBF03197F862D003ED1F1 /* HABViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABViewVC.m; sourceTree = "<group>"; };
-		ABDA558E19EE22A8008D6E03 /* NSObject+HABEnumerate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HABEnumerate.h"; sourceTree = "<group>"; };
-		ABDA558F19EE22A8008D6E03 /* NSObject+HABEnumerate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HABEnumerate.m"; sourceTree = "<group>"; };
 		ABDE74E019EF960500509F78 /* UIView+HABBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HABBundle.h"; sourceTree = "<group>"; };
 		ABDE74E119EF960500509F78 /* UIView+HABBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HABBundle.m"; sourceTree = "<group>"; };
 		B72ACF08A4914B9AE6056F56 /* Pods-HaidoraBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaidoraBase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaidoraBase/Pods-HaidoraBase.debug.xcconfig"; sourceTree = "<group>"; };
@@ -490,10 +490,7 @@
 			isa = PBXGroup;
 			children = (
 				AB8F47A819B0738C0043509A /* HABCategory_Foundation.h */,
-				ABDA558E19EE22A8008D6E03 /* NSObject+HABEnumerate.h */,
-				ABDA558F19EE22A8008D6E03 /* NSObject+HABEnumerate.m */,
-				AB33DA8D19F68F7400C4EAF0 /* NSObject+HABCurrent.h */,
-				AB33DA8E19F68F7400C4EAF0 /* NSObject+HABCurrent.m */,
+				ABB78B1A1A7A66DF00838305 /* NSObject */,
 				AB290E2A1A52801100BA12DB /* NSDate */,
 				ABB8E6251A2EEC2300B2DCFE /* NSString */,
 			);
@@ -555,6 +552,17 @@
 				AB02C9D81A64B6B10022A465 /* TestUIAlertView.m */,
 			);
 			name = TestVC;
+			sourceTree = "<group>";
+		};
+		ABB78B1A1A7A66DF00838305 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				ABB78B1B1A7A66DF00838305 /* NSObject+HABCurrent.h */,
+				ABB78B1C1A7A66DF00838305 /* NSObject+HABCurrent.m */,
+				ABB78B1D1A7A66DF00838305 /* NSObject+HABEnumerate.h */,
+				ABB78B1E1A7A66DF00838305 /* NSObject+HABEnumerate.m */,
+			);
+			path = NSObject;
 			sourceTree = "<group>";
 		};
 		ABB8E6251A2EEC2300B2DCFE /* NSString */ = {
@@ -760,15 +768,14 @@
 				AB8481AC1A382C8900212325 /* UITextView+HABValidate.m in Sources */,
 				AB8F47A419B0736D0043509A /* UIApplication+HABBase.m in Sources */,
 				AB8968AA19B86E9000FEC07B /* HABAliginLabel.m in Sources */,
+				ABB78B201A7A66DF00838305 /* NSObject+HABEnumerate.m in Sources */,
 				AB8F479919B071860043509A /* HABUtil_UserDefaults.m in Sources */,
 				AB8F47A619B0736D0043509A /* UIViewController+HABBarButton.m in Sources */,
 				AB768C211A075CCD009BC576 /* TestCell.m in Sources */,
-				AB33DA8F19F68F7400C4EAF0 /* NSObject+HABCurrent.m in Sources */,
 				ABC67FBC19FC0A9800025BFA /* HABLineView.m in Sources */,
 				AB40C5601A2D9E90007DE9D1 /* HABTableViewManager.m in Sources */,
 				AB7E8A4219FE8A2F00E5663B /* HABTextView.m in Sources */,
 				AB8F47A719B0736D0043509A /* UIViewController+HABBase.m in Sources */,
-				ABDA559019EE22A8008D6E03 /* NSObject+HABEnumerate.m in Sources */,
 				AB290E2D1A52809D00BA12DB /* NSDate+HABUtils.m in Sources */,
 				ABCFBF04197F862D003ED1F1 /* HABViewVC.m in Sources */,
 				ABB35816197E0A9500F19C58 /* BaseViewController.m in Sources */,
@@ -783,6 +790,7 @@
 				AB8F47A519B0736D0043509A /* UINavigationController+HABBase.m in Sources */,
 				ABB8E62B1A2EEC8900B2DCFE /* NSString+HABCrypto.m in Sources */,
 				AB697F0D1A220B6A009A3631 /* UITableView+HABAutoLayout.m in Sources */,
+				ABB78B1F1A7A66DF00838305 /* NSObject+HABCurrent.m in Sources */,
 				AB8F479019B04D1C0043509A /* HABUtil_Device.m in Sources */,
 				AB40C5631A2DA0C1007DE9D1 /* HABTableViewCell.m in Sources */,
 				AB8F479319B04FD30043509A /* HABUtil_Path.m in Sources */,
