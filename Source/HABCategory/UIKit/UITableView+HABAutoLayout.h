@@ -10,6 +10,7 @@
 
 @interface UITableView (HABAutoLayout)
 
+// https://github.com/cmittendorf/TableViewFooterResize/blob/master/TableViewFooterResize/MyTableViewController.m#L31
 // https://gist.github.com/andreacremaschi/833829c80367d751cb83#file-uitableview-headerview-m
 /**
  *  Auto size fit tableViewHeaderView frame
