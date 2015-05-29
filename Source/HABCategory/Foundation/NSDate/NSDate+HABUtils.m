@@ -12,6 +12,17 @@
 
 @implementation NSDate (HABUtils)
 
+- (NSDate *)dateWithFormatString_HABUtils:(NSString *)formatString
+{
+    NSString *format = formatString;
+    format = format ?: kHab_DefaultTimeFormat;
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setTimeZone:[NSTimeZone localTimeZone]];
+    [formatter setDateFormat:format];
+    NSString *dataString = [formatter stringFromDate:self];
+    return [formatter dateFromString:dataString];
+}
+
 - (NSString *)dateWithFormat_HABUtils:(NSString *)format
 {
     return [NSDate date_HABUtils:[NSDate date] withFormat:format];
@@ -33,6 +44,36 @@
     [formatter setTimeZone:[NSTimeZone localTimeZone]];
     [formatter setDateFormat:format];
     return [formatter dateFromString:dateString];
+}
+
+#pragma mark
+#pragma mark Specified Date
+
+- (NSDate *)dateWithSpecifiedYear_HABUtils:(NSInteger)yearNum
+{
+    return [self dateWithSpecifiedYear_HABUtils:yearNum month:0 day:0];
+}
+
+- (NSDate *)dateWithSpecifiedMonth_HABUtils:(NSInteger)monthNum
+{
+    return [self dateWithSpecifiedYear_HABUtils:0 month:monthNum day:0];
+}
+
+- (NSDate *)dateWithSpecifiedDay_HABUtils:(NSInteger)dayNum
+{
+    return [self dateWithSpecifiedYear_HABUtils:0 month:0 day:dayNum];
+}
+
+- (NSDate *)dateWithSpecifiedYear_HABUtils:(NSInteger)yearNum
+                                     month:(NSInteger)monthNum
+                                       day:(NSInteger)dayNum
+{
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *compenents = [[NSDateComponents alloc] init];
+    [compenents setYear:yearNum];
+    [compenents setMonth:monthNum];
+    [compenents setDay:dayNum];
+    return [calendar dateByAddingComponents:compenents toDate:self options:0];
 }
 
 #pragma mark

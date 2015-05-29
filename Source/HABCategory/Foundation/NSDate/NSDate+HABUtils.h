@@ -12,7 +12,15 @@
 @interface NSDate (HABUtils)
 
 /**
- *  Format NSDate with formatString
+ *  Format NSDate with formatString to NSDate
+ *
+ *  @param format Default is 'yyy-MM-dd hh:mm:ss'
+ *
+ */
+- (NSDate *)dateWithFormatString_HABUtils:(NSString *)formatString;
+
+/**
+ *  Format NSDate with formatString to NSString
  *
  *  @param format Default is 'yyy-MM-dd hh:mm:ss'
  *
@@ -34,6 +42,16 @@
  *
  */
 + (NSDate *)dateWithString_HABUtils:(NSString *)dateString withFormat:(NSString *)format;
+
+#pragma mark
+#pragma mark Specified Date
+
+- (NSDate *)dateWithSpecifiedYear_HABUtils:(NSInteger)yearNum;
+- (NSDate *)dateWithSpecifiedMonth_HABUtils:(NSInteger)monthNum;
+- (NSDate *)dateWithSpecifiedDay_HABUtils:(NSInteger)dayNum;
+- (NSDate *)dateWithSpecifiedYear_HABUtils:(NSInteger)yearNum
+                                     month:(NSInteger)monthNum
+                                       day:(NSInteger)dayNum;
 
 #pragma mark
 #pragma mark Deprecated Method
