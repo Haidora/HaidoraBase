@@ -12,7 +12,7 @@
 #pragma mark
 #pragma mark WeakSelf
 
-#define HABM_WeakSelf __weak __typeof(self) weakSelf = self;
+#define HABM_WeakSelf __weak __typeof(self) weakSelf = self
 
 #pragma mark
 #pragma mark DLog

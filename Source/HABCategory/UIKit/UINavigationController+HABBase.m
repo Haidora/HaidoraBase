@@ -9,35 +9,36 @@
 #import "UINavigationController+HABBase.h"
 #import "HABMacro.h"
 #import "UIViewController+HABBase.h"
-#import <JRSwizzle.h>
+#import <Aspects.h>
 
 @implementation UINavigationController (HABBase)
 
-+(void)load
++ (void)load
 {
-    HABM_DLog(@"UINavigationController (HABBase) JRSwizzle start");
     NSError *error;
-    [self jr_swizzleMethod:@selector(pushViewController:animated:)
-                withMethod:@selector(habbase_pushViewController:animated:)
-                     error:&error];
+    [self aspect_hookSelector:@selector(pushViewController:animated:)
+                  withOptions:AspectPositionAfter
+                   usingBlock:^(id<AspectInfo> aspectInfo, UIViewController *viewController,
+                                BOOL animated) {
+                     UINavigationController *vc = (UINavigationController *)aspectInfo;
+                     [vc habbase_pushViewController:viewController animated:animated];
+                   } error:&error];
     if (error)
     {
-        HABM_DLog(@"%@",error.domain);
+        HABM_DLog(@"%@", error);
     }
-    HABM_DLog(@"UINavigationController (HABBase) JRSwizzle end");
 }
 
--(void)habbase_pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+- (void)habbase_pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    [self habbase_pushViewController:viewController animated:animated];
-
-	if (IOS7_OR_LATER)
-	{		
-		if ([self isCustomBackItem] &&[self respondsToSelector:@selector(interactivePopGestureRecognizer)])
-		{
-			self.interactivePopGestureRecognizer.delegate = nil;
-		}
-	}
+    if (IOS7_OR_LATER)
+    {
+        if ([self isCustomBackItem] &&
+            [self respondsToSelector:@selector(interactivePopGestureRecognizer)])
+        {
+            self.interactivePopGestureRecognizer.delegate = nil;
+        }
+    }
 }
 
 @end

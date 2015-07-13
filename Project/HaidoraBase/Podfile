@@ -4,7 +4,7 @@
 target "HaidoraBase" do
 
 pod 'MKNetworkKit', '~> 0.87'
-pod 'JRSwizzle', '~> 1.0'
+pod 'Aspects'
 pod 'NUI', '~> 0.5.4'
 pod 'RETableViewManager', '~> 1.5.11'
 pod 'MBProgressHUD', '~> 0.8'
@@ -15,7 +15,7 @@ end
 target "HaidoraBaseTests" do
     
 pod 'MKNetworkKit', '~> 0.87'
-pod 'JRSwizzle', '~> 1.0'
+pod 'Aspects'
 pod 'NUI', '~> 0.5.4'
 pod 'RETableViewManager', '~> 1.5.11'
 pod 'MBProgressHUD', '~> 0.8'
