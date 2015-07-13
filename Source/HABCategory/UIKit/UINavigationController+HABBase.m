@@ -20,7 +20,7 @@
                   withOptions:AspectPositionAfter
                    usingBlock:^(id<AspectInfo> aspectInfo, UIViewController *viewController,
                                 BOOL animated) {
-                     UINavigationController *vc = (UINavigationController *)aspectInfo;
+                     UINavigationController *vc = (UINavigationController *)(aspectInfo.instance);
                      [vc habbase_pushViewController:viewController animated:animated];
                    } error:&error];
     if (error)

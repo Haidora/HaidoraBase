@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/Haidora/HaidoraBase"
   s.license      = { :type => "BSD", :file => "LICENSE" }
-  
+
   s.author             = { "mrdaios" => "mrdaios@gmail.com" }
 
   s.platform     = :ios, "6.0"
@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
   s.subspec 'HABCategory' do |habCategory|
     habCategory.source_files = 'Source/*.{h,m}'
     habCategory.dependency 'HaidoraBase/HABCore'
-    habCategory.dependency "JRSwizzle", "~> 1.0"
+    habCategory.dependency "Aspects"
 
     habCategory.subspec 'HABCategory_Foundation' do |habCategory_Foundation|
       habCategory_Foundation.source_files = 'Source/HABCategory/Foundation/**/*.{h,m}','Source/HABCategory/*.{h,m}'

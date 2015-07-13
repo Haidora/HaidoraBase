@@ -33,7 +33,7 @@
     [self aspect_hookSelector:@selector(viewDidLoad)
                   withOptions:AspectPositionAfter
                    usingBlock:^(id<AspectInfo> aspectInfo) {
-                     UIViewController *vc = (UIViewController *)aspectInfo;
+                     UIViewController *vc = (UIViewController *)(aspectInfo.instance);
                      [vc habbase_viewDidLoad];
                    } error:&error];
     if (error)
@@ -43,7 +43,7 @@
     [self aspect_hookSelector:@selector(viewWillAppear:)
                   withOptions:AspectPositionAfter
                    usingBlock:^(id<AspectInfo> aspectInfo, BOOL animated) {
-                     UIViewController *vc = (UIViewController *)aspectInfo;
+                     UIViewController *vc = (UIViewController *)(aspectInfo.instance);
                      [vc habbase_viewWillAppear:animated];
                    } error:&error];
     if (error)
@@ -53,7 +53,7 @@
     [self aspect_hookSelector:@selector(viewWillDisappear:)
                   withOptions:AspectPositionAfter
                    usingBlock:^(id<AspectInfo> aspectInfo, BOOL animated) {
-                     UIViewController *vc = (UIViewController *)aspectInfo;
+                     UIViewController *vc = (UIViewController *)(aspectInfo.instance);
                      [vc habbase_viewWillDisappear:animated];
                    } error:&error];
     if (error)
