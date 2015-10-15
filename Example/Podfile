@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'HaidoraBase_Example', :exclusive => true do
+  pod "HaidoraBase", :path => "../"
+end
+
+target 'HaidoraBase_Tests', :exclusive => true do
+  pod "HaidoraBase", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+end
