@@ -7,6 +7,7 @@
 //
 
 #import "HDAppDelegate.h"
+#import <HaidoraBase.h>
 
 @implementation HDAppDelegate
 
