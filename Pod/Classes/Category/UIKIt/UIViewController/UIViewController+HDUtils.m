@@ -47,7 +47,11 @@
     {
         buttonStyle(buttonItem);
     }
-    [buttonItem sizeToFit];
+    // if set image,you need change frame by yourself.
+    if (!buttonItem.imageView.image)
+    {
+        [buttonItem sizeToFit];
+    }
     [buttonItem addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *barItem = [[UIBarButtonItem alloc] initWithCustomView:buttonItem];
     return barItem;
