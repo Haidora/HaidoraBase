@@ -47,8 +47,8 @@
     {
         buttonStyle(buttonItem);
     }
-    // if set image,you need change frame by yourself.
-    if (!buttonItem.imageView.image)
+    // if set image,you need change frame by yourself.is frame size is zero.
+    if (!buttonItem.imageView.image && CGSizeEqualToSize(CGSizeZero, buttonItem.frame.size))
     {
         [buttonItem sizeToFit];
     }
