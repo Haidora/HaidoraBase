@@ -35,7 +35,7 @@
 
 #if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
 
-#define IOS_OR_LATER(systemVersion) ([IOS_Version compare:systemVersion] != NSOrderedAscending)
+#define IOS_OR_LATER(systemVersion) ([IOS_Version doubleValue] >= [systemVersion doubleValue])
 
 #else
 
@@ -90,7 +90,7 @@
 #if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
 
 #define IOS_Version ([[UIDevice currentDevice] systemVersion])
-#define IOS7_OR_LATER ([IOS_Version compare:@"7.0"] != NSOrderedAscending)
+#define IOS7_OR_LATER ([IOS_Version doubleValue] >= [@"7.0" doubleValue])
 
 #else
 
