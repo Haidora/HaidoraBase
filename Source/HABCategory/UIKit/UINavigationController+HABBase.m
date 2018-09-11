@@ -9,7 +9,7 @@
 #import "UINavigationController+HABBase.h"
 #import "HABMacro.h"
 #import "UIViewController+HABBase.h"
-#import <JRSwizzle.h>
+#import <JRSwizzle/JRSwizzle.h>
 
 @implementation UINavigationController (HABBase)
 

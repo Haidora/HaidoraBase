@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 Haidora. All rights reserved.
 //
 
-#import <MKNetworkOperation.h>
+#import <MKNetworkKit/MKNetworkOperation.h>
 
 #define HABNetworkOperationFinishedNotification    @"HABNetworkOperationFinishedNotification"
 

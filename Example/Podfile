@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HaidoraBase_Example' do
+  pod 'HaidoraBase', :path => '../'
+
+  target 'HaidoraBase_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

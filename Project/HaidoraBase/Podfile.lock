@@ -21,15 +21,29 @@ DEPENDENCIES:
   - RETableViewManager (~> 1.5.11)
   - REValidation (~> 0.1.4)
 
-SPEC CHECKSUMS:
-  JRSwizzle: 30da7a2c539a4ebf954b16d15f6dd8221c9f6fa5
-  MBProgressHUD: c356980b0cd097f19acec959b49dca5eb8ec31be
-  MKNetworkKit: 83e6296a8d42e98a71880424a889773654846d74
-  NUI: ce8570dc3bb7983ffa8ae58ab0fc852d378b00cb
-  NUIParse: f29eb240cfc9848b216c827884f37ae64abd19e4
-  Reachability: 8e9635e3cb4f98e7f825e51147f677ecc694d0e7
-  REFormattedNumberField: 86318c549b60130a6d7a05abebb142f08f671319
-  RETableViewManager: 10bd6eaddd36ac587e037983619273192a1500e1
-  REValidation: a0033a582415848854e875dfcbe69c107de19f81
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - JRSwizzle
+    - MBProgressHUD
+    - MKNetworkKit
+    - NUI
+    - NUIParse
+    - Reachability
+    - REFormattedNumberField
+    - RETableViewManager
+    - REValidation
 
-COCOAPODS: 0.34.4
+SPEC CHECKSUMS:
+  JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
+  MBProgressHUD: 8688c331cb64702283be37ab8d7d329cdd25f251
+  MKNetworkKit: 60ad3c83b62183e40ba75ce772c9427c25b520de
+  NUI: df261a2573a89ade3b08b4461ed688e809e11d8b
+  NUIParse: 9b6d5a6b782dc654ac6c846d623885080306f07f
+  Reachability: dd9aa4fb6667b9f787690a74f53cb7634ce99893
+  REFormattedNumberField: be3d55dd709f65541fb26b7e1709da07903147f8
+  RETableViewManager: e109ae2e5cddf3f49478088766f655fafc0291fb
+  REValidation: 38c4de1be58455f8b00aab208ac80db316a66b7f
+
+PODFILE CHECKSUM: aa76043af4dfb74b14f35ee40fe2ca0afb7ac608
+
+COCOAPODS: 1.5.3

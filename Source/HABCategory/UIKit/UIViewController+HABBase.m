@@ -10,9 +10,9 @@
 #import "UIViewController+HABBarButton.h"
 #import "HABMacro.h"
 #import <objc/runtime.h>
-#import <JRSwizzle.h>
-#import <NUIRenderer.h>
-#import <MBProgressHUD.h>
+#import <JRSwizzle/JRSwizzle.h>
+#import <NUI/NUIRenderer.h>
+#import <MBProgressHUD/MBProgressHUD.h>
 
 #define kTitleLabel_HABBase @"kTitleLabel_HABBase"
 #define kCurrent_HABBase  @"kCurrent_HABBase"

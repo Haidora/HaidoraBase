@@ -7,7 +7,7 @@
 //
 
 #import "UIViewController+HABBarButton.h"
-#import <NUIRenderer.h>
+#import <NUI/NUIRenderer.h>
 
 @implementation UIViewController (HABBarButton)
 

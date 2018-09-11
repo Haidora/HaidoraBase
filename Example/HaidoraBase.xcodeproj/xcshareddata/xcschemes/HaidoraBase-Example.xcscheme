@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AB762249197DF52C0049215B"
-               BuildableName = "HaidoraBase.app"
-               BlueprintName = "HaidoraBase"
-               ReferencedContainer = "container:HaidoraBase.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AB76226D197DF52D0049215B"
-               BuildableName = "HaidoraBaseTests.xctest"
-               BlueprintName = "HaidoraBaseTests"
+               BlueprintIdentifier = "6003F589195388D20070C39A"
+               BuildableName = "HaidoraBase_Example.app"
+               BlueprintName = "HaidoraBase_Example"
                ReferencedContainer = "container:HaidoraBase.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AB76226D197DF52D0049215B"
-               BuildableName = "HaidoraBaseTests.xctest"
-               BlueprintName = "HaidoraBaseTests"
+               BlueprintIdentifier = "6003F5AD195388D20070C39A"
+               BuildableName = "HaidoraBase_Tests.xctest"
+               BlueprintName = "HaidoraBase_Tests"
                ReferencedContainer = "container:HaidoraBase.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -56,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AB762249197DF52C0049215B"
-            BuildableName = "HaidoraBase.app"
-            BlueprintName = "HaidoraBase"
+            BlueprintIdentifier = "6003F589195388D20070C39A"
+            BuildableName = "HaidoraBase_Example.app"
+            BlueprintName = "HaidoraBase_Example"
             ReferencedContainer = "container:HaidoraBase.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -79,9 +65,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AB762249197DF52C0049215B"
-            BuildableName = "HaidoraBase.app"
-            BlueprintName = "HaidoraBase"
+            BlueprintIdentifier = "6003F589195388D20070C39A"
+            BuildableName = "HaidoraBase_Example.app"
+            BlueprintName = "HaidoraBase_Example"
             ReferencedContainer = "container:HaidoraBase.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -98,9 +84,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AB762249197DF52C0049215B"
-            BuildableName = "HaidoraBase.app"
-            BlueprintName = "HaidoraBase"
+            BlueprintIdentifier = "6003F589195388D20070C39A"
+            BuildableName = "HaidoraBase_Example.app"
+            BlueprintName = "HaidoraBase_Example"
             ReferencedContainer = "container:HaidoraBase.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

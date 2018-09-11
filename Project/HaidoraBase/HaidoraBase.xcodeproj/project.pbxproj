@@ -59,8 +59,8 @@
 		ABC67FBC19FC0A9800025BFA /* HABLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC67FBB19FC0A9800025BFA /* HABLineView.m */; };
 		ABCFBF04197F862D003ED1F1 /* HABViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCFBF03197F862D003ED1F1 /* HABViewVC.m */; };
 		ABDE74E219EF960500509F78 /* UIView+HABBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDE74E119EF960500509F78 /* UIView+HABBundle.m */; };
-		BB7524E7295159C0906C3021 /* libPods-HaidoraBaseTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10ED5AA88426D9D10080B8A0 /* libPods-HaidoraBaseTests.a */; };
-		C5BC598F63344D8EB0CA6A6F /* libPods-HaidoraBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 742B86741E6541009779294D /* libPods-HaidoraBase.a */; };
+		DFDF996C6559D73FD5AB2604 /* libPods-HaidoraBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B538E24DF622942D32F2BDF5 /* libPods-HaidoraBase.a */; };
+		EFAC0276CACA1798974D20EC /* libPods-HaidoraBaseTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C024082582AFACD3A729C7BE /* libPods-HaidoraBaseTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,10 +74,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10ED5AA88426D9D10080B8A0 /* libPods-HaidoraBaseTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HaidoraBaseTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B7043DDD5FC98FF26A632DA /* Pods-HaidoraBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaidoraBase.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaidoraBase/Pods-HaidoraBase.release.xcconfig"; sourceTree = "<group>"; };
-		4D5F1E3B77B39610D6FCFCAA /* Pods-HaidoraBaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaidoraBaseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaidoraBaseTests/Pods-HaidoraBaseTests.release.xcconfig"; sourceTree = "<group>"; };
-		742B86741E6541009779294D /* libPods-HaidoraBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HaidoraBase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1001097F48072858489EDC83 /* Pods-HaidoraBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaidoraBase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaidoraBase/Pods-HaidoraBase.debug.xcconfig"; sourceTree = "<group>"; };
+		1E88F718EE01FEFE858C680E /* Pods-HaidoraBaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaidoraBaseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaidoraBaseTests/Pods-HaidoraBaseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7691A117AFAD14DC7314A664 /* Pods-HaidoraBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaidoraBase.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaidoraBase/Pods-HaidoraBase.release.xcconfig"; sourceTree = "<group>"; };
+		8CBB4809313215C4B3F51183 /* Pods-HaidoraBaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaidoraBaseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaidoraBaseTests/Pods-HaidoraBaseTests.release.xcconfig"; sourceTree = "<group>"; };
 		AB02C9D41A64B22B0022A465 /* UIAlertView+HABBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+HABBase.h"; sourceTree = "<group>"; };
 		AB02C9D51A64B22B0022A465 /* UIAlertView+HABBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+HABBase.m"; sourceTree = "<group>"; };
 		AB02C9D71A64B6B10022A465 /* TestUIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestUIAlertView.h; sourceTree = "<group>"; };
@@ -183,8 +183,8 @@
 		ABCFBF03197F862D003ED1F1 /* HABViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HABViewVC.m; sourceTree = "<group>"; };
 		ABDE74E019EF960500509F78 /* UIView+HABBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HABBundle.h"; sourceTree = "<group>"; };
 		ABDE74E119EF960500509F78 /* UIView+HABBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HABBundle.m"; sourceTree = "<group>"; };
-		B72ACF08A4914B9AE6056F56 /* Pods-HaidoraBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaidoraBase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaidoraBase/Pods-HaidoraBase.debug.xcconfig"; sourceTree = "<group>"; };
-		ED38BEAF607D993A11A1D2D7 /* Pods-HaidoraBaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaidoraBaseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaidoraBaseTests/Pods-HaidoraBaseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B538E24DF622942D32F2BDF5 /* libPods-HaidoraBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HaidoraBase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C024082582AFACD3A729C7BE /* libPods-HaidoraBaseTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HaidoraBaseTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,7 +195,7 @@
 				AB762250197DF52C0049215B /* CoreGraphics.framework in Frameworks */,
 				AB762252197DF52C0049215B /* UIKit.framework in Frameworks */,
 				AB76224E197DF52C0049215B /* Foundation.framework in Frameworks */,
-				C5BC598F63344D8EB0CA6A6F /* libPods-HaidoraBase.a in Frameworks */,
+				DFDF996C6559D73FD5AB2604 /* libPods-HaidoraBase.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,13 +206,24 @@
 				AB762270197DF52D0049215B /* XCTest.framework in Frameworks */,
 				AB762272197DF52D0049215B /* UIKit.framework in Frameworks */,
 				AB762271197DF52D0049215B /* Foundation.framework in Frameworks */,
-				BB7524E7295159C0906C3021 /* libPods-HaidoraBaseTests.a in Frameworks */,
+				EFAC0276CACA1798974D20EC /* libPods-HaidoraBaseTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		72593E0C287CB4F51A97A042 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1001097F48072858489EDC83 /* Pods-HaidoraBase.debug.xcconfig */,
+				7691A117AFAD14DC7314A664 /* Pods-HaidoraBase.release.xcconfig */,
+				1E88F718EE01FEFE858C680E /* Pods-HaidoraBaseTests.debug.xcconfig */,
+				8CBB4809313215C4B3F51183 /* Pods-HaidoraBaseTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AB02C9D31A64B20D0022A465 /* UIAlertView */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,7 +279,7 @@
 				AB762275197DF52D0049215B /* HaidoraBaseTests */,
 				AB76224C197DF52C0049215B /* Frameworks */,
 				AB76224B197DF52C0049215B /* Products */,
-				F6D7BAB709D02E7886932CD5 /* Pods */,
+				72593E0C287CB4F51A97A042 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -288,8 +299,8 @@
 				AB76224F197DF52C0049215B /* CoreGraphics.framework */,
 				AB762251197DF52C0049215B /* UIKit.framework */,
 				AB76226F197DF52D0049215B /* XCTest.framework */,
-				742B86741E6541009779294D /* libPods-HaidoraBase.a */,
-				10ED5AA88426D9D10080B8A0 /* libPods-HaidoraBaseTests.a */,
+				B538E24DF622942D32F2BDF5 /* libPods-HaidoraBase.a */,
+				C024082582AFACD3A729C7BE /* libPods-HaidoraBaseTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -586,17 +597,6 @@
 			path = UIView;
 			sourceTree = "<group>";
 		};
-		F6D7BAB709D02E7886932CD5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B72ACF08A4914B9AE6056F56 /* Pods-HaidoraBase.debug.xcconfig */,
-				2B7043DDD5FC98FF26A632DA /* Pods-HaidoraBase.release.xcconfig */,
-				ED38BEAF607D993A11A1D2D7 /* Pods-HaidoraBaseTests.debug.xcconfig */,
-				4D5F1E3B77B39610D6FCFCAA /* Pods-HaidoraBaseTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -604,11 +604,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB76227F197DF52D0049215B /* Build configuration list for PBXNativeTarget "HaidoraBase" */;
 			buildPhases = (
-				8621A15CCFD34FAE87A5944D /* Check Pods Manifest.lock */,
+				315D1C739B04D8D4CD1BE3B4 /* [CP] Check Pods Manifest.lock */,
 				AB762246197DF52C0049215B /* Sources */,
 				AB762247197DF52C0049215B /* Frameworks */,
 				AB762248197DF52C0049215B /* Resources */,
-				F381782073224FCEA802CBCB /* Copy Pods Resources */,
+				FB337EE3723E288A661339A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -623,11 +623,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB762282197DF52D0049215B /* Build configuration list for PBXNativeTarget "HaidoraBaseTests" */;
 			buildPhases = (
-				A939AFB82142BA5A0050B787 /* Check Pods Manifest.lock */,
+				B9BF7B42A11797170D071353 /* [CP] Check Pods Manifest.lock */,
 				AB76226A197DF52D0049215B /* Sources */,
 				AB76226B197DF52D0049215B /* Frameworks */,
 				AB76226C197DF52D0049215B /* Resources */,
-				5F640B5B563109598557F12A /* Copy Pods Resources */,
+				ECA52F5481CB6E57A2E58224 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -645,7 +645,7 @@
 		AB762242197DF52C0049215B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = Haidora;
 				TargetAttributes = {
 					AB76226D197DF52D0049215B = {
@@ -697,60 +697,108 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5F640B5B563109598557F12A /* Copy Pods Resources */ = {
+		315D1C739B04D8D4CD1BE3B4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HaidoraBase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9BF7B42A11797170D071353 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HaidoraBaseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECA52F5481CB6E57A2E58224 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HaidoraBaseTests/Pods-HaidoraBaseTests-resources.sh",
+				"${PODS_ROOT}/NUI/NUI/Resources/NUIViewBackground.png",
+				"${PODS_ROOT}/NUI/NUI/NUIStyle.nss",
+				"${PODS_ROOT}/NUI/NUI/Themes/Blue.NUI.nss",
+				"${PODS_ROOT}/NUI/NUI/Themes/Default.NUI.nss",
+				"${PODS_ROOT}/NUI/NUI/Themes/Googolplex.NUI.nss",
+				"${PODS_ROOT}/NUI/NUI/Themes/Round.NUI.nss",
+				"${PODS_ROOT}/NUI/NUI/Themes/Route.NUI.nss",
+				"${PODS_ROOT}/NUI/NUI/Themes/SkyBlue.NUI.nss",
+				"${PODS_ROOT}/NUI/NUI/Themes/Switchboard.NUI.nss",
+				"${PODS_ROOT}/RETableViewManager/RETableViewManager/RETableViewManager.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NUIViewBackground.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NUIStyle.nss",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Blue.NUI.nss",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Default.NUI.nss",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Googolplex.NUI.nss",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Round.NUI.nss",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Route.NUI.nss",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SkyBlue.NUI.nss",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Switchboard.NUI.nss",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RETableViewManager.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HaidoraBaseTests/Pods-HaidoraBaseTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8621A15CCFD34FAE87A5944D /* Check Pods Manifest.lock */ = {
+		FB337EE3723E288A661339A3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HaidoraBase/Pods-HaidoraBase-resources.sh",
+				"${PODS_ROOT}/NUI/NUI/Resources/NUIViewBackground.png",
+				"${PODS_ROOT}/NUI/NUI/NUIStyle.nss",
+				"${PODS_ROOT}/NUI/NUI/Themes/Blue.NUI.nss",
+				"${PODS_ROOT}/NUI/NUI/Themes/Default.NUI.nss",
+				"${PODS_ROOT}/NUI/NUI/Themes/Googolplex.NUI.nss",
+				"${PODS_ROOT}/NUI/NUI/Themes/Round.NUI.nss",
+				"${PODS_ROOT}/NUI/NUI/Themes/Route.NUI.nss",
+				"${PODS_ROOT}/NUI/NUI/Themes/SkyBlue.NUI.nss",
+				"${PODS_ROOT}/NUI/NUI/Themes/Switchboard.NUI.nss",
+				"${PODS_ROOT}/RETableViewManager/RETableViewManager/RETableViewManager.bundle",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A939AFB82142BA5A0050B787 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F381782073224FCEA802CBCB /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NUIViewBackground.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NUIStyle.nss",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Blue.NUI.nss",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Default.NUI.nss",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Googolplex.NUI.nss",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Round.NUI.nss",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Route.NUI.nss",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SkyBlue.NUI.nss",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Switchboard.NUI.nss",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RETableViewManager.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -867,18 +915,32 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -891,7 +953,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -906,25 +968,38 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -933,13 +1008,14 @@
 		};
 		AB762280197DF52D0049215B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B72ACF08A4914B9AE6056F56 /* Pods-HaidoraBase.debug.xcconfig */;
+			baseConfigurationReference = 1001097F48072858489EDC83 /* Pods-HaidoraBase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HaidoraBase/HaidoraBase-Prefix.pch";
 				INFOPLIST_FILE = "HaidoraBase/HaidoraBase-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.haidora.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -947,13 +1023,14 @@
 		};
 		AB762281197DF52D0049215B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B7043DDD5FC98FF26A632DA /* Pods-HaidoraBase.release.xcconfig */;
+			baseConfigurationReference = 7691A117AFAD14DC7314A664 /* Pods-HaidoraBase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HaidoraBase/HaidoraBase-Prefix.pch";
 				INFOPLIST_FILE = "HaidoraBase/HaidoraBase-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.haidora.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -961,7 +1038,7 @@
 		};
 		AB762283197DF52D0049215B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED38BEAF607D993A11A1D2D7 /* Pods-HaidoraBaseTests.debug.xcconfig */;
+			baseConfigurationReference = 1E88F718EE01FEFE858C680E /* Pods-HaidoraBaseTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HaidoraBase.app/HaidoraBase";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -976,6 +1053,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "HaidoraBaseTests/HaidoraBaseTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.haidora.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -984,7 +1062,7 @@
 		};
 		AB762284197DF52D0049215B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D5F1E3B77B39610D6FCFCAA /* Pods-HaidoraBaseTests.release.xcconfig */;
+			baseConfigurationReference = 8CBB4809313215C4B3F51183 /* Pods-HaidoraBaseTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HaidoraBase.app/HaidoraBase";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -995,6 +1073,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HaidoraBase/HaidoraBase-Prefix.pch";
 				INFOPLIST_FILE = "HaidoraBaseTests/HaidoraBaseTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.haidora.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

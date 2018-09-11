@@ -1,0 +1,76 @@
+PODS:
+  - HaidoraBase (0.1):
+    - HaidoraBase/HABCategory (= 0.1)
+    - HaidoraBase/HABCore (= 0.1)
+    - HaidoraBase/HABMacro (= 0.1)
+    - HaidoraBase/HABNetWork (= 0.1)
+    - HaidoraBase/HABUtil (= 0.1)
+    - HaidoraBase/HABView (= 0.1)
+  - HaidoraBase/HABCategory (0.1):
+    - HaidoraBase/HABCategory/HABCategory_Foundation (= 0.1)
+    - HaidoraBase/HABCategory/HABCategory_UIKit (= 0.1)
+    - HaidoraBase/HABCore
+    - JRSwizzle (~> 1.0)
+    - MBProgressHUD (~> 0.8)
+    - NUI (~> 0.5.4)
+  - HaidoraBase/HABCategory/HABCategory_Foundation (0.1):
+    - HaidoraBase/HABCore
+    - JRSwizzle (~> 1.0)
+    - MBProgressHUD (~> 0.8)
+    - NUI (~> 0.5.4)
+  - HaidoraBase/HABCategory/HABCategory_UIKit (0.1):
+    - HaidoraBase/HABCore
+    - HaidoraBase/HABMacro
+    - JRSwizzle (~> 1.0)
+    - MBProgressHUD (~> 0.8)
+    - NUI (~> 0.5.4)
+  - HaidoraBase/HABCore (0.1)
+  - HaidoraBase/HABMacro (0.1)
+  - HaidoraBase/HABNetWork (0.1):
+    - MKNetworkKit (~> 0.87)
+  - HaidoraBase/HABUtil (0.1):
+    - REValidation (~> 0.1.4)
+  - HaidoraBase/HABView (0.1):
+    - HaidoraBase/HABCore
+    - HaidoraBase/HABMacro
+    - HaidoraBase/HABUtil
+  - JRSwizzle (1.0)
+  - MBProgressHUD (0.9.2)
+  - MKNetworkKit (0.87):
+    - Reachability (~> 3.1.0)
+  - NUI (0.5.5):
+    - NUIParse
+  - NUIParse (1.3)
+  - Reachability (3.1.1)
+  - REValidation (0.1.4)
+
+DEPENDENCIES:
+  - HaidoraBase (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - JRSwizzle
+    - MBProgressHUD
+    - MKNetworkKit
+    - NUI
+    - NUIParse
+    - Reachability
+    - REValidation
+
+EXTERNAL SOURCES:
+  HaidoraBase:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HaidoraBase: 67a5e96f2ea632910b2054d31caac09ea25b686b
+  JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MKNetworkKit: 60ad3c83b62183e40ba75ce772c9427c25b520de
+  NUI: 53de7278003235deb2a375fe6f04c7a3aa3e49eb
+  NUIParse: 2e3885ba7807477266396292626bd387d34c2338
+  Reachability: dd9aa4fb6667b9f787690a74f53cb7634ce99893
+  REValidation: 38c4de1be58455f8b00aab208ac80db316a66b7f
+
+PODFILE CHECKSUM: 3dabdf8cc68dec48aecf56a0e74d8c573451bce0
+
+COCOAPODS: 1.5.3
